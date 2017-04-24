@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="sp_id_detaljiDataSet" targetNamespace="http://www.tempuri.org/sp_id_detalji" xmlns:mstns="http://www.tempuri.org/sp_id_detalji" xmlns="http://www.tempuri.org/sp_id_detalji" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="sp_id_detaljiDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="sp_id_detaljiDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2026" msprop:DataSetName="sp_id_detaljiDataSet" msprop:DataAdapterInterfaceName="Isp_id_detaljiDataAdapter" msprop:ObjectName="sp_id_detalji" msprop:ObjectDescription="sp_id_detalji" msprop:ObjectType="DataProvider" msprop:ObjectPath="\DataProviders\DP_Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.StoredProcedure="S_PLACA_ID_REDOVI" msprop:Deklarit.GroupByAttributes="" msprop:Deklarit.GenerateCRUDForDP="false" msprop:Deklarit.ExtendedView="false" msprop:Deklarit.ShowGroupByDP="True" msprop:Deklarit.UseSuggestInFK="False" msprop:Deklarit.BCForNewOption="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="sp_id_detalji" msprop:ParentLvl="" msprop:LevelName="sp_id_detalji" msprop:Description="SP_ID_DETALJI" msprop:HasOrder="false" msprop:OrderAttributes="" msprop:Deklarit.NumberOfRows="0">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="ididobrasca" msprop:Caption="ididobrasca" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="ididobrasca" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="ididobrasca" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="REDNIBROJ" msprop:Caption="REDNIBROJ" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="REDNIBROJ" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="REDNIBROJ" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDOPCINE" msprop:Caption="Šifra općine" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Šifra općine" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDOPCINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="NAZIVOPCINE" msprop:Caption="Naziv općine" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv općine" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVOPCINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="obracunaniporez" msprop:Caption="obracunaniporez" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="obracunaniporez" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="obracunaniporez" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="obracunaniprirez" msprop:Caption="obracunaniprirez" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="obracunaniprirez" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="obracunaniprirez" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="obracunanoukupno" msprop:Caption="obracunanoukupno" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="obracunanoukupno" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="obracunanoukupno" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="OBRACUNidobracun" dkdata:BusinessComponent="OBRACUN" dkdata:Description="Obraeun" dkdata:DataSetName="OBRACUNDataSet" dkdata:DataAdapterName="OBRACUNDataAdapter" dkdata:DataAdapterInterfaceName="IOBRACUNDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:parameter  name="idobracun"/>
+                  </dkdata:foreignKey>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:parameters>
+            <dkdata:parameter  name="idobracun" type="xs:string" dkdata:length="11" dkdata:decimals="0" dkdata:description="idobracun    " dkdata:type="svchar" dkdata:basedon="IDOBRACUN" msprop:Deklarit.DataProviderForValueList="" msprop:Deklarit.FixedValue="" msprop:Deklarit.DefaultValue=""/>
+            <dkdata:parameter  name="mjeseCISPLATE" type="xs:string" dkdata:length="2" dkdata:decimals="0" dkdata:description="mjese CISPLATE    " dkdata:type="svchar" msprop:Deklarit.DefaultValue="" msprop:Deklarit.DataProviderForValueList="" msprop:Deklarit.FixedValue=""/>
+            <dkdata:parameter  name="godinaISPLATE" type="xs:string" dkdata:length="4" dkdata:decimals="0" dkdata:description="godina ISPLATE    " dkdata:type="svchar" msprop:Deklarit.DataProviderForValueList="" msprop:Deklarit.FixedValue="" msprop:Deklarit.DefaultValue=""/>
+            <dkdata:parameter  name="VOLONTERI" type="xs:short" dkdata:length="1" dkdata:decimals="0" dkdata:description="VOLONTERI " dkdata:type="int" msprop:Deklarit.DataProviderForValueList="" msprop:Deklarit.FixedValue="" msprop:Deklarit.DefaultValue=""/>
+         </dkdata:parameters>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="2">
+         </dkdata:FillMethods>
+         <dkdata:objectLinks>
+         </dkdata:objectLinks>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

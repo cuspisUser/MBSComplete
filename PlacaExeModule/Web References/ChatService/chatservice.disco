@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://mipsed7.vugergrad.hr/chat/chatservice.asmx?wsdl" docRef="http://mipsed7.vugergrad.hr/chat/chatservice.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://mipsed7.vugergrad.hr/chat/chatservice.asmx" xmlns:q1="TFSChat" binding="q1:ChatServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://mipsed7.vugergrad.hr/chat/chatservice.asmx" xmlns:q2="TFSChat" binding="q2:ChatServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

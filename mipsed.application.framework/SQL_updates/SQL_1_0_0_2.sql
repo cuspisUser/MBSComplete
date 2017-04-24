@@ -1,0 +1,1 @@
+﻿Alter table KORISNIK Add PredPorez decimal(5,2) NULL

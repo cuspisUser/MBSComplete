@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95DBD01F-A696-440F-BD4A-3670E1B8F948}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Materijalno</RootNamespace>
+    <AssemblyName>Materijalno</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Deklarit.Practices.CompositeUI">
+      <HintPath>..\LIBRARERIES\Deklarit.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="DeKlarit.Resources, Version=4.5.2008.0, Culture=neutral, PublicKeyToken=e4a9236943390967, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\DeKlarit.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Practices.CompositeUI.WinForms">
+      <HintPath>..\LIBRARERIES\Infragistics.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Shared.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.Misc.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinDataSource.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinGrid.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinPrintPreviewDialog.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=387f38cffbc45540, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=387f38cffbc45540, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Mipsed7.Core">
+      <HintPath>..\Mipsed7.Core\bin\Debug\Mipsed7.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mipsed7.DataAccessLayer">
+      <HintPath>..\Mipsed7.DataAccessLayer\bin\Debug\Mipsed7.DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="PlacaBusinessFramework, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PlacaBusinessFramework\bin\Debug\PlacaBusinessFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="PlacaExeModule">
+      <HintPath>..\PlacaExeModule\bin\Debug\PlacaExeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\Base\Base.cs" />
+    <Compile Include="BusinessLogic\Inventura.cs" />
+    <Compile Include="BusinessLogic\InventuraStavke.cs" />
+    <Compile Include="BusinessLogic\Izdatnica.cs" />
+    <Compile Include="BusinessLogic\Proizvod.cs" />
+    <Compile Include="BusinessLogic\OtvaranjeSkladista.cs" />
+    <Compile Include="BusinessLogic\GrupeProizvoda.cs" />
+    <Compile Include="BusinessLogic\TipSkladista.cs" />
+    <Compile Include="BusinessLogic\Primka.cs" />
+    <Compile Include="BusinessLogic\Meduskladisnica.cs" />
+    <Compile Include="Controls\BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxNumericInteger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DeklaritModuleInit.cs" />
+    <Compile Include="Enums\FormEditMode.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainWorkItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ImageResourcesNew.Designer.cs">
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraForm.Designer.cs">
+      <DependentUpon>InventuraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraFormPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraFormPregled.Designer.cs">
+      <DependentUpon>InventuraFormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraStavkeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraStavkeForm.Designer.cs">
+      <DependentUpon>InventuraStavkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\InventuraWorkItem.cs" />
+    <Compile Include="UI\Dokumenti\IzdatnicaStavkeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaStavkeForm.Designer.cs">
+      <DependentUpon>IzdatnicaStavkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaForm.Designer.cs">
+      <DependentUpon>IzdatnicaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaFormPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaFormPregled.Designer.cs">
+      <DependentUpon>IzdatnicaFormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\IzdatnicaWorkItem.cs" />
+    <Compile Include="UI\Dokumenti\PrimkaStavkeUnosAmbalaza.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaStavkeUnosAmbalaza.Designer.cs">
+      <DependentUpon>PrimkaStavkeUnosAmbalaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\ProizvodForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\ProizvodForm.Designer.cs">
+      <DependentUpon>ProizvodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaStavkeUnosForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaStavkeUnosForm.Designer.cs">
+      <DependentUpon>PrimkaStavkeUnosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaStavkeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaStavkeForm.Designer.cs">
+      <DependentUpon>PrimkaStavkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaForm.Designer.cs">
+      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaFormPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaFormPregled.Designer.cs">
+      <DependentUpon>PrimkaFormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\PrimkaFormPregledWorkItem.cs" />
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceStavkeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceStavkeForm.Designer.cs">
+      <DependentUpon>UnosMeduskladisniceStavkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceFormPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceFormPregled.Designer.cs">
+      <DependentUpon>UnosMeduskladisniceFormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceFormPregledWorkItem.cs" />
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceOdredivanjeKolicineForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dokumenti\UnosMeduskladisniceOdredivanjeKolicineForm.Designer.cs">
+      <DependentUpon>UnosMeduskladisniceOdredivanjeKolicineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormUserControlContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormUserControlContainer.Designer.cs">
+      <DependentUpon>FormUserControlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmInventurnaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmInventurnaLista.Designer.cs">
+      <DependentUpon>frmInventurnaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmKarticeArtikala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmKarticeArtikala.Designer.cs">
+      <DependentUpon>frmKarticeArtikala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmMjestoTroska.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmMjestoTroska.Designer.cs">
+      <DependentUpon>frmMjestoTroska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmPrimkeDobavljac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmPrimkeDobavljac.Designer.cs">
+      <DependentUpon>frmPrimkeDobavljac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmSaldoKartica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmSaldoKartica.Designer.cs">
+      <DependentUpon>frmSaldoKartica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmUlazIzlaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmUlazIzlaz.Designer.cs">
+      <DependentUpon>frmUlazIzlaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmStanjeDokumenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmStanjeDokumenti.Designer.cs">
+      <DependentUpon>frmStanjeDokumenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmStanjeSkladista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmStanjeSkladista.Designer.cs">
+      <DependentUpon>frmStanjeSkladista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmZakljucivanjeGodine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Izvjestaji\frmZakljucivanjeGodine.Designer.cs">
+      <DependentUpon>frmZakljucivanjeGodine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\frmSkladiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\frmSkladiste.Designer.cs">
+      <DependentUpon>frmSkladiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\SkladistePregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\SkladistePregled.Designer.cs">
+      <DependentUpon>SkladistePregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\SkladistePregledWorkItem.cs" />
+    <Compile Include="UI\Skladista\GrupeProizvodaWorkitem.cs" />
+    <Compile Include="UI\Skladista\GrupeProizvodaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\GrupeProizvodaForm.Designer.cs">
+      <DependentUpon>GrupeProizvodaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\TipSkladistaFormWorkItem.cs" />
+    <Compile Include="UI\Skladista\GrupeProizvodaPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\GrupeProizvodaPregled.Designer.cs">
+      <DependentUpon>GrupeProizvodaPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\TipSkladistaPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\TipSkladistaPregled.Designer.cs">
+      <DependentUpon>TipSkladistaPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\TipSkladistaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\TipSkladistaForm.Designer.cs">
+      <DependentUpon>TipSkladistaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\PregledStanjaSkladista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\PregledStanjaSkladista.Designer.cs">
+      <DependentUpon>PregledStanjaSkladista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\OtvaranjeSkladistaFormWorkItem.cs" />
+    <Compile Include="UI\Skladista\OtvaranjeSkladistaPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\OtvaranjeSkladistaPregled.Designer.cs">
+      <DependentUpon>OtvaranjeSkladistaPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\OtvaranjeSkladistaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\OtvaranjeSkladistaForm.Designer.cs">
+      <DependentUpon>OtvaranjeSkladistaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skladista\OdabirSkladistaForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Skladista\OdabirSkladistaForm.Designer.cs">
+      <DependentUpon>OdabirSkladistaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Exceptions\DataValidationException.cs" />
+    <Compile Include="Utils\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JavnaNabava\JavnaNabava.csproj">
+      <Project>{15f57d90-25b2-481a-83d9-309b5079ff6f}</Project>
+      <Name>JavnaNabava</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImageResourcesNew.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\InventuraForm.resx">
+      <DependentUpon>InventuraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\InventuraFormPregled.resx">
+      <DependentUpon>InventuraFormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\InventuraStavkeForm.resx">
+      <DependentUpon>InventuraStavkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\IzdatnicaStavkeForm.resx">
+      <DependentUpon>IzdatnicaStavkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\IzdatnicaForm.resx">
+      <DependentUpon>IzdatnicaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\IzdatnicaFormPregled.resx">
+      <DependentUpon>IzdatnicaFormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\PrimkaStavkeUnosAmbalaza.resx">
+      <DependentUpon>PrimkaStavkeUnosAmbalaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\ProizvodForm.resx">
+      <DependentUpon>ProizvodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\PrimkaStavkeUnosForm.resx">
+      <DependentUpon>PrimkaStavkeUnosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\PrimkaStavkeForm.resx">
+      <DependentUpon>PrimkaStavkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\PrimkaForm.resx">
+      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\PrimkaFormPregled.resx">
+      <DependentUpon>PrimkaFormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\UnosMeduskladisniceStavkeForm.resx">
+      <DependentUpon>UnosMeduskladisniceStavkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\UnosMeduskladisniceFormPregled.resx">
+      <DependentUpon>UnosMeduskladisniceFormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dokumenti\UnosMeduskladisniceOdredivanjeKolicineForm.resx">
+      <DependentUpon>UnosMeduskladisniceOdredivanjeKolicineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormUserControlContainer.resx">
+      <DependentUpon>FormUserControlContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmInventurnaLista.resx">
+      <DependentUpon>frmInventurnaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmKarticeArtikala.resx">
+      <DependentUpon>frmKarticeArtikala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmMjestoTroska.resx">
+      <DependentUpon>frmMjestoTroska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmPrimkeDobavljac.resx">
+      <DependentUpon>frmPrimkeDobavljac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmSaldoKartica.resx">
+      <DependentUpon>frmSaldoKartica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmUlazIzlaz.resx">
+      <DependentUpon>frmUlazIzlaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmStanjeDokumenti.resx">
+      <DependentUpon>frmStanjeDokumenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmStanjeSkladista.resx">
+      <DependentUpon>frmStanjeSkladista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Izvjestaji\frmZakljucivanjeGodine.resx">
+      <DependentUpon>frmZakljucivanjeGodine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\frmSkladiste.resx">
+      <DependentUpon>frmSkladiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\SkladistePregled.resx">
+      <DependentUpon>SkladistePregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\GrupeProizvodaPregled.resx">
+      <DependentUpon>GrupeProizvodaPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\GrupeProizvodaForm.resx">
+      <DependentUpon>GrupeProizvodaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\TipSkladistaPregled.resx">
+      <DependentUpon>TipSkladistaPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\TipSkladistaForm.resx">
+      <DependentUpon>TipSkladistaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\PregledStanjaSkladista.resx">
+      <DependentUpon>PregledStanjaSkladista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\OtvaranjeSkladistaPregled.resx">
+      <DependentUpon>OtvaranjeSkladistaPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\OtvaranjeSkladistaForm.resx">
+      <DependentUpon>OtvaranjeSkladistaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Skladista\OdabirSkladistaForm.resx">
+      <DependentUpon>OdabirSkladistaForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key%281%29.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\Kljuc.bmp" />
+    <Content Include="Resources\kljuc.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

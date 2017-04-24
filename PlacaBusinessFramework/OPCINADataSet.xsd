@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="OPCINADataSet" targetNamespace="http://www.tempuri.org/OPCINA" xmlns:mstns="http://www.tempuri.org/OPCINA" xmlns="http://www.tempuri.org/OPCINA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="OPCINADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="OPCINADataAdapter" msprop:Deklarit.PermissionBaseId="1011" msprop:DataSetName="OPCINADataSet" msprop:DataAdapterInterfaceName="IOPCINADataAdapter" msprop:ObjectName="OPCINA" msprop:ObjectDescription="Opaine" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="OPCINA" msprop:ParentLvl="" msprop:LevelName="OPCINA" msprop:Description="Opaine" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDOPCINE" msprop:Caption="Šifra općine" default="" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Šifra općine" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDOPCINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="NAZIVOPCINE" msprop:Caption="Naziv općine" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv općine" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVOPCINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PRIREZ" msprop:Caption="Prirez općine" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Prirez općine" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRIREZ" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="VBDIOPCINA" msprop:Caption="VBDI žiro računa općine" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="VBDI žiro računa općine" msprop:Length="7" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="VBDIOPCINA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="ZRNOPCINA" msprop:Caption="Broj žiro računa općine" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Broj žiro računa općine" msprop:Length="10" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="ZRNOPCINA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="OPCINAConstraint1" msdata:ConstraintName="OPCINAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//OPCINA"/>
+         <xs:field  xpath="IDOPCINE"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="DDRADNIK" dkdata:Description="Primatelji DD" dkdata:DataSetName="DDRADNIKDataSet" dkdata:DataAdapterName="DDRADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IDDRADNIKDataAdapter">
+                  <dkdata:attribute  name="OPCINASTANOVANJAIDOPCINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="DDRADNIK1" dkdata:Description="Primatelji DD" dkdata:DataSetName="DDRADNIKDataSet" dkdata:DataAdapterName="DDRADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IDDRADNIKDataAdapter">
+                  <dkdata:attribute  name="OPCINARADAIDOPCINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="OPCINASTANOVANJAIDOPCINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RADNIK1" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="OPCINARADAIDOPCINE"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="16">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20DC80AD-A01E-4AC7-B635-357ECF64E419}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>FinPosModule</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="FinPosModule\Controls\BaseUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Controls\TextBoxNumericInteger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\GK\frmIspisDokumenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\GK\frmIspisDokumenta.Designer.cs">
+      <DependentUpon>frmIspisDokumenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Ira\IraSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\OdabirShemaIRA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\OdabirShemaIRA.Designer.cs">
+      <DependentUpon>OdabirShemaIRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\OdabirSheme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\OdabirSheme.Designer.cs">
+      <DependentUpon>OdabirSheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\FormEditMode.cs" />
+    <Compile Include="FinPosModule\Odobrenje\FormUserControlContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\FormUserControlContainer.Designer.cs">
+      <DependentUpon>FormUserControlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeStavkeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeStavkeForm.Designer.cs">
+      <DependentUpon>OdobrenjeStavkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeFormPregled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeFormPregled.Designer.cs">
+      <DependentUpon>OdobrenjeFormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\Odobrenje.cs" />
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeFrm.Designer.cs">
+      <DependentUpon>OdobrenjeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\Odobrenje\Tools.cs" />
+    <Compile Include="FinPosModule\Parser.cs" />
+    <Compile Include="FinPosModule\Odobrenje\OdobrenjeWorkItemUser.cs" />
+    <Compile Include="FinPosModule\Resources\ImageResourcesNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\ZatvaranjeBolnice\OdabirKonta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\ZatvaranjeBolnice\OdabirKonta.Designer.cs">
+      <DependentUpon>OdabirKonta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinPosModule\ZatvaranjeBolnice\ZatvaranjeBolniceWorkItem.cs" />
+    <Compile Include="FinPosModule\ZatvaranjeBolnice\ZatvaranjeFormBolnice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\ZatvaranjeBolnice\ZatvaranjeFormBolnice.Designer.cs">
+      <DependentUpon>ZatvaranjeFormBolnice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResourcesNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FinPosModule.Ira.IraSmartPart.resources" />
+    <EmbeddedResource Include="FinPosModule.Proracun.ProracunSmartPart.resources" />
+    <EmbeddedResource Include="FinPosModule.RacuniSmartPartUser.resources" />
+    <EmbeddedResource Include="FinPosModule.Resources.resources" />
+    <EmbeddedResource Include="FinPosModule.Zatvaranje.ZatvaranjeSmartPart.resources" />
+    <EmbeddedResource Include="FinPosModule\BilancaSmartPart.resx">
+      <DependentUpon>BilancaSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\BlagajnaSmartPart.resx">
+      <DependentUpon>BlagajnaSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\frmParametriFakturiranja.resx">
+      <DependentUpon>frmParametriFakturiranja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\frmPogledUVeze.resx">
+      <DependentUpon>frmPogledUVeze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\frmPregledBilance.resx">
+      <DependentUpon>frmPregledBilance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\frmZaduzenje.resx">
+      <DependentUpon>frmZaduzenje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\GKSmartPart.resx">
+      <DependentUpon>GKSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\GK\frmIspisDokumenta.resx">
+      <DependentUpon>frmIspisDokumenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\GK\frmListaDokumenataGK.resx">
+      <DependentUpon>frmListaDokumenataGK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\GK\frmObracunPrihodaProracun.resx">
+      <DependentUpon>frmObracunPrihodaProracun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\KarticePartneraUvjeti\KarticePartneraSmartPart.resx">
+      <DependentUpon>KarticePartneraSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\KontoKarticeSmartPart.resx">
+      <DependentUpon>KontoKarticeSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\OdabirShemaIRA.resx">
+      <DependentUpon>OdabirShemaIRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\OdabirSheme.resx">
+      <DependentUpon>OdabirSheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Odobrenje\FormUserControlContainer.resx">
+      <DependentUpon>FormUserControlContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Odobrenje\OdobrenjeStavkeForm.resx">
+      <DependentUpon>OdobrenjeStavkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Odobrenje\OdobrenjeFormPregled.resx">
+      <DependentUpon>OdobrenjeFormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Odobrenje\OdobrenjeFrm.resx">
+      <DependentUpon>OdobrenjeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\OtvoreneIspis\OtvoreneIspisSmartPart.resx">
+      <DependentUpon>OtvoreneIspisSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Otvorene\frmIznosZatvaranjaForma.resx">
+      <DependentUpon>frmIznosZatvaranjaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Otvorene\frmRadSaOtvorenimStavkama.resx">
+      <DependentUpon>frmRadSaOtvorenimStavkama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Plan\PlanCustom.resx">
+      <DependentUpon>PlanCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Pregledi\frmPregledKontoKartica.resx">
+      <DependentUpon>frmPregledKontoKartica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\PrometPartneraSmartPart.resx">
+      <DependentUpon>PrometPartneraSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\Resources\ImageResourcesNew.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\UraSmartPart.resx">
+      <DependentUpon>UraSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\ZatvaranjeBolnice\OdabirKonta.resx">
+      <DependentUpon>OdabirKonta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinPosModule\ZatvaranjeBolnice\ZatvaranjeFormBolnice.resx">
+      <DependentUpon>ZatvaranjeFormBolnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageResourcesNew.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\..\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\..\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\..\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mipsed.application.framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mipsed.application.framework\bin\Debug\mipsed.application.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Mipsed7.DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Mipsed7.DataAccessLayer\bin\Debug\Mipsed7.DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Progress Dialog VS2008, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\Progress Dialog VS2008.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="Deklarit.Practices.CompositeUI" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Infragistics.Practices.CompositeUI.WinForms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder" />
+    <Reference Include="DeKlarit.Resources" />
+    <Reference Include="DeKlaritLibrary" />
+    <Reference Include="Microsoft.Office.Interop.Excel" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="FinPosModule\My\MyApplication.cs" />
+    <Compile Include="FinPosModule\My\MyComputer.cs" />
+    <Compile Include="FinPosModule\My\MyProject.cs" />
+    <Compile Include="FinPosModule\BilancaSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\BilancaWorkItem.cs" />
+    <Compile Include="FinPosModule\BlagajnaSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\NetAdvantage\WorkItems\BlagajnaWorkItemUser.cs" />
+    <Compile Include="FinPosModule\DnevnikKnjizenjaSmartpart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\DnevnikKnjizenjaWorkItem.cs" />
+    <Compile Include="FinPosModule\dsDokumenti.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\dsKonto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\dsZatvaranja.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\frmParametriFakturiranja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\frmZaduzenje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\RacuniSmartPartUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\cSendMail.cs" />
+    <Compile Include="FinPosModule\RacuniWorkItemUser.cs" />
+    <Compile Include="FinPosModule\GK\frmListaDokumenataGK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\GK\frmObracunPrihodaProracun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\frmPogledUVeze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\GKSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\GKWorkItem.cs" />
+    <Compile Include="FinPosModule\IraUserWorkItem.cs" />
+    <Compile Include="FinPosModule\KarticePartneraUvjeti\KarticePartneraSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\KarticePartneraWorkItem.cs" />
+    <Compile Include="FinPosModule\KontoKarticeSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\KontoKarticeWorkItem.cs" />
+    <Compile Include="FinPosModule\FinPosModule\MainController.cs" />
+    <Compile Include="FinPosModule\MainWorkItem.cs" />
+    <Compile Include="FinPosModule\DeklaritModuleInit.cs" />
+    <Compile Include="FinPosModule\My\Resources\Resources.cs" />
+    <Compile Include="FinPosModule\My\MySettings.cs" />
+    <Compile Include="FinPosModule\Otvorene\frmIznosZatvaranjaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Otvorene\frmRadSaOtvorenimStavkama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\OtvoreneIspis\OtvoreneIspisSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\OtvoreneIspisWorkItem.cs" />
+    <Compile Include="FinPosModule\NetAdvantage\SmartParts\IzvrsenjePlana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Plan\PlanCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Plan\PlanCustomCustomWorkItem.cs" />
+    <Compile Include="FinPosModule\Pregledi\frmPregledKontoKartica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\frmPregledBilance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\PrometPartneraSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\PrometPartneraWorkItem.cs" />
+    <Compile Include="FinPosModule\PrometPoKontimaSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\PrometPoKontimaWorkItem.cs" />
+    <Compile Include="FinPosModule\Proracun\ProracunSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Fin\WorkItems\ProracunWorkItem.cs" />
+    <Compile Include="FinPosModule\UraSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\UraUserWorkItem.cs" />
+    <Compile Include="FinPosModule\Zatvaranje\ZatvaranjeSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinPosModule\Zatvaranje\ZatvaranjeStavakaWorkItem.cs" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hlp\Hlp.csproj">
+      <Project>{1bea20b8-346d-49db-9b71-d204c27ad8dd}</Project>
+      <Name>Hlp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Core\Mipsed7.Core.csproj">
+      <Project>{1393FE8B-B9B3-43D3-A08A-200B40C885BA}</Project>
+      <Name>Mipsed7.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Emailing\Mipsed7.Emailing.csproj">
+      <Project>{D7E0F54B-610D-450C-99EB-4BF6E9EB6DC3}</Project>
+      <Name>Mipsed7.Emailing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaBusinessFramework\PlacaBusinessFramework.csproj">
+      <Project>{9445B689-F39F-448F-89C5-B6DD7CE8B88E}</Project>
+      <Name>PlacaBusinessFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaExeModule\PlacaExeModule.csproj">
+      <Project>{479b17fc-61d0-4420-9988-e959170d200f}</Project>
+      <Name>PlacaExeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FinPosModule\Resources\mbs.ico" />
+    <None Include="Resources\mbs.ico" />
+  </ItemGroup>
+</Project>

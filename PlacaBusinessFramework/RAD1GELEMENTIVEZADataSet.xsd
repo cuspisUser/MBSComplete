@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="RAD1GELEMENTIVEZADataSet" targetNamespace="http://www.tempuri.org/RAD1GELEMENTIVEZA" xmlns:mstns="http://www.tempuri.org/RAD1GELEMENTIVEZA" xmlns="http://www.tempuri.org/RAD1GELEMENTIVEZA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="RAD1GELEMENTIVEZADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="RAD1GELEMENTIVEZADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2177" msprop:DataSetName="RAD1GELEMENTIVEZADataSet" msprop:DataAdapterInterfaceName="IRAD1GELEMENTIVEZADataAdapter" msprop:ObjectName="RAD1GELEMENTIVEZA" msprop:ObjectDescription="Veza elementi RAD1G i elementi" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\VezeRAD1" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="RAD1GELEMENTIID" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RAD1GELEMENTIVEZA" msprop:ParentLvl="" msprop:LevelName="RAD1GELEMENTIVEZA" msprop:Description="Veza elementi RAD1G i elementi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="RAD1GELEMENTIID" msprop:Caption="Element iz RAD1-G Obrasca" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Element iz RAD1-G Obrasca" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1GELEMENTIID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDELEMENT" msprop:Caption="Element u programu plaća" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Element u programu plaća" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="RAD1GELEMENTIVEZAConstraint1" msdata:ConstraintName="RAD1GELEMENTIVEZAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//RAD1GELEMENTIVEZA"/>
+         <xs:field  xpath="RAD1GELEMENTIID"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="ELEMENTIDELEMENT" dkdata:BusinessComponent="ELEMENT" dkdata:Description="Elementi" dkdata:DataSetName="ELEMENTDataSet" dkdata:DataAdapterName="ELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDELEMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="RAD1GELEMENTIRAD1GELEMENTIID" dkdata:BusinessComponent="RAD1GELEMENTI" dkdata:Description="RAD1GELEMENTI" dkdata:DataSetName="RAD1GELEMENTIDataSet" dkdata:DataAdapterName="RAD1GELEMENTIDataAdapter" dkdata:DataAdapterInterfaceName="IRAD1GELEMENTIDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="RAD1GELEMENTIID" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="286">
+            <dkdata:FillMethod  dkdata:FillString="IDELEMENT" dkdata:IndexName="IRAD1GELEMENTIVEZA1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="RAD1GELEMENTIID">
+               <dkdata:Attribute  dkdata:AttributeName="RAD1GELEMENTIID"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

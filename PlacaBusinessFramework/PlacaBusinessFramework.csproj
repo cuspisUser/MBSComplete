@@ -1,0 +1,1748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9445B689-F39F-448F-89C5-B6DD7CE8B88E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>PlacaBusinessFramework</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="IBANDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IBANDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PregledObracunaDataSet.cs">
+      <DependentUpon>PregledObracunaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="sp_maticni_kartonDataSet.cs">
+      <DependentUpon>sp_maticni_kartonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="S_DD_IP1DataSet.cs">
+      <DependentUpon>S_DD_IP1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="S_FIN_IRA_PLACANJEDataSet.cs">
+      <DependentUpon>S_FIN_IRA_PLACANJEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="S_FIN_IRA_PLACANJEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>S_FIN_IRA_PLACANJEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VIRMANIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VIRMANIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mipsed.application.framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\mipsed.application.framework\bin\Debug\mipsed.application.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="DeKlaritLibrary" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Deklarit.EnterpriseLibrary.Security" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="Placa\AKTIVNOSTDataAdapter.cs" />
+    <Compile Include="Placa\AKTIVNOSTDataReader.cs" />
+    <Compile Include="Placa\AKTIVNOSTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\AMSKUPINEDataAdapter.cs" />
+    <Compile Include="Placa\AMSKUPINEDataReader.cs" />
+    <Compile Include="Placa\AMSKUPINEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BANKEDataAdapter.cs" />
+    <Compile Include="Placa\BANKEDataReader.cs" />
+    <Compile Include="Placa\BANKEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BENEFICIRANIDataAdapter.cs" />
+    <Compile Include="Placa\BENEFICIRANIDataReader.cs" />
+    <Compile Include="Placa\BENEFICIRANIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BLAGAJNADataAdapter.cs" />
+    <Compile Include="Placa\BLAGAJNADataReader.cs" />
+    <Compile Include="Placa\BLAGAJNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BLGVRSTEDOKDataAdapter.cs" />
+    <Compile Include="Placa\BLGVRSTEDOKDataReader.cs" />
+    <Compile Include="Placa\BLGVRSTEDOKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BOLOVANJEFONDDataAdapter.cs" />
+    <Compile Include="Placa\BOLOVANJEFONDDataReader.cs" />
+    <Compile Include="Placa\BOLOVANJEFONDDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BRACNOSTANJEDataAdapter.cs" />
+    <Compile Include="Placa\BRACNOSTANJEDataReader.cs" />
+    <Compile Include="Placa\BRACNOSTANJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\BusinessFrameworkContext.cs" />
+    <Compile Include="Placa\IConfigurationProvider.cs" />
+    <Compile Include="Placa\Configuration.cs" />
+    <Compile Include="Placa\DeklaritConfiguration.cs" />
+    <Compile Include="Placa\DefaultConfigurationProvider.cs" />
+    <Compile Include="Placa\DataAdapterFactory.cs" />
+    <Compile Include="Placa\DDIZDATAKDataAdapter.cs" />
+    <Compile Include="Placa\DDIZDATAKDataReader.cs" />
+    <Compile Include="Placa\DDIZDATAKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ddizdatakupdateredundancy.cs" />
+    <Compile Include="Placa\DDKATEGORIJADataAdapter.cs" />
+    <Compile Include="Placa\DDKATEGORIJADataReader.cs" />
+    <Compile Include="Placa\DDKATEGORIJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ddkategorijaupdateredundancy.cs" />
+    <Compile Include="Placa\DDKOLONAIDDDataAdapter.cs" />
+    <Compile Include="Placa\DDKOLONAIDDDataReader.cs" />
+    <Compile Include="Placa\DDKOLONAIDDDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\DDOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\DDOBRACUNDataReader.cs" />
+    <Compile Include="Placa\DDOBRACUNDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\DDRADNIKDataAdapter.cs" />
+    <Compile Include="Placa\DDRADNIKDataReader.cs" />
+    <Compile Include="Placa\DDRADNIKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ddradnikupdateredundancy.cs" />
+    <Compile Include="Placa\DDVRSTEIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\DDVRSTEIZNOSADataReader.cs" />
+    <Compile Include="Placa\DDVRSTEIZNOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\DDVRSTEPOSLADataAdapter.cs" />
+    <Compile Include="Placa\DDVRSTEPOSLADataReader.cs" />
+    <Compile Include="Placa\DDVRSTEPOSLADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ddvrsteposlaupdateredundancy.cs" />
+    <Compile Include="Placa\DeklaritTransaction.cs" />
+    <Compile Include="Placa\DOKUMENTDataAdapter.cs" />
+    <Compile Include="Placa\DOKUMENTDataReader.cs" />
+    <Compile Include="Placa\DOKUMENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\DOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\DOPRINOSDataReader.cs" />
+    <Compile Include="Placa\DOPRINOSDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\doprinosupdateredundancy.cs" />
+    <Compile Include="Placa\DOSIPZAGLAVLJEDataAdapter.cs" />
+    <Compile Include="Placa\DOSIPZAGLAVLJEDataReader.cs" />
+    <Compile Include="Placa\DOSIPZAGLAVLJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\DRZAVLJANSTVODataAdapter.cs" />
+    <Compile Include="Placa\DRZAVLJANSTVODataReader.cs" />
+    <Compile Include="Placa\DRZAVLJANSTVODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ELEMENTDataAdapter.cs" />
+    <Compile Include="Placa\ELEMENTDataReader.cs" />
+    <Compile Include="Placa\ELEMENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\elementupdateredundancy.cs" />
+    <Compile Include="Placa\EnterpriseLibrary.cs" />
+    <Compile Include="Placa\EVIDENCIJADataAdapter.cs" />
+    <Compile Include="Placa\EVIDENCIJADataReader.cs" />
+    <Compile Include="Placa\EVIDENCIJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\FINPOREZDataAdapter.cs" />
+    <Compile Include="Placa\FINPOREZDataReader.cs" />
+    <Compile Include="Placa\FINPOREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GKSTAVKADataAdapter.cs" />
+    <Compile Include="Placa\GKSTAVKADataReader.cs" />
+    <Compile Include="Placa\GKSTAVKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GODINA_I_MJESEC_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\GODINA_I_MJESEC_OBRACUNADataReader.cs" />
+    <Compile Include="Placa\GODINA_I_MJESEC_OBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GODINEDataAdapter.cs" />
+    <Compile Include="Placa\GODINEDataReader.cs" />
+    <Compile Include="Placa\GODINEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GOOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\GOOBRACUNDataReader.cs" />
+    <Compile Include="Placa\GOOBRACUNDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GRUPEKOEFDataAdapter.cs" />
+    <Compile Include="Placa\GRUPEKOEFDataReader.cs" />
+    <Compile Include="Placa\GRUPEKOEFDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\GRUPEOLAKSICADataAdapter.cs" />
+    <Compile Include="Placa\GRUPEOLAKSICADataReader.cs" />
+    <Compile Include="Placa\GRUPEOLAKSICADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\grupeolaksicaupdateredundancy.cs" />
+    <Compile Include="Placa\IAKTIVNOSTDataAdapter.cs" />
+    <Compile Include="Placa\IAMSKUPINEDataAdapter.cs" />
+    <Compile Include="Placa\IBANKEDataAdapter.cs" />
+    <Compile Include="Placa\IBENEFICIRANIDataAdapter.cs" />
+    <Compile Include="Placa\IBLAGAJNADataAdapter.cs" />
+    <Compile Include="Placa\IBLGVRSTEDOKDataAdapter.cs" />
+    <Compile Include="Placa\IBOLOVANJEFONDDataAdapter.cs" />
+    <Compile Include="Placa\IBRACNOSTANJEDataAdapter.cs" />
+    <Compile Include="Placa\IDataAdapterFactory.cs" />
+    <Compile Include="Placa\IDDIZDATAKDataAdapter.cs" />
+    <Compile Include="Placa\IDDKATEGORIJADataAdapter.cs" />
+    <Compile Include="Placa\IDDKOLONAIDDDataAdapter.cs" />
+    <Compile Include="Placa\IDDOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\IDDRADNIKDataAdapter.cs" />
+    <Compile Include="Placa\IDDVRSTEIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\IDDVRSTEPOSLADataAdapter.cs" />
+    <Compile Include="Placa\IDOKUMENTDataAdapter.cs" />
+    <Compile Include="Placa\IDOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\IDOSIPZAGLAVLJEDataAdapter.cs" />
+    <Compile Include="Placa\IDRZAVLJANSTVODataAdapter.cs" />
+    <Compile Include="Placa\IELEMENTDataAdapter.cs" />
+    <Compile Include="Placa\IEVIDENCIJADataAdapter.cs" />
+    <Compile Include="Placa\IFINPOREZDataAdapter.cs" />
+    <Compile Include="Placa\IGKSTAVKADataAdapter.cs" />
+    <Compile Include="Placa\IGODINA_I_MJESEC_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\IGODINEDataAdapter.cs" />
+    <Compile Include="Placa\IGOOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\IGRUPEKOEFDataAdapter.cs" />
+    <Compile Include="Placa\IGRUPEOLAKSICADataAdapter.cs" />
+    <Compile Include="Placa\IIPIDENTDataAdapter.cs" />
+    <Compile Include="Placa\IIRADataAdapter.cs" />
+    <Compile Include="Placa\IIRAVRSTAIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\IIZVORDOKUMENTADataAdapter.cs" />
+    <Compile Include="Placa\IJEDINICAMJEREDataAdapter.cs" />
+    <Compile Include="Placa\IKONTODataAdapter.cs" />
+    <Compile Include="Placa\IKORISNIKDataAdapter.cs" />
+    <Compile Include="Placa\IKREDITORDataAdapter.cs" />
+    <Compile Include="Placa\IKRIZNIPOREZDataAdapter.cs" />
+    <Compile Include="Placa\ILOKACIJEDataAdapter.cs" />
+    <Compile Include="Placa\IMJESTOTROSKADataAdapter.cs" />
+    <Compile Include="Placa\IMZOSTABLICEDataAdapter.cs" />
+    <Compile Include="Placa\IOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\IOBUSTAVADataAdapter.cs" />
+    <Compile Include="Placa\IOLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\IOPCINADataAdapter.cs" />
+    <Compile Include="Placa\IORGDIODataAdapter.cs" />
+    <Compile Include="Placa\IORGJEDDataAdapter.cs" />
+    <Compile Include="Placa\IOSDataAdapter.cs" />
+    <Compile Include="Placa\IOSDOKUMENTDataAdapter.cs" />
+    <Compile Include="Placa\IOSNOVAOSIGURANJADataAdapter.cs" />
+    <Compile Include="Placa\IOSOBNIODBITAKDataAdapter.cs" />
+    <Compile Include="Placa\IOSRAZMJESTAJDataAdapter.cs" />
+    <Compile Include="Placa\IOSVRSTADataAdapter.cs" />
+    <Compile Include="Placa\IOTISLIDataAdapter.cs" />
+    <Compile Include="Placa\IpartnerabecedaDataAdapter.cs" />
+    <Compile Include="Placa\IPARTNERDataAdapter.cs" />
+    <Compile Include="Placa\IPIDENTDataAdapter.cs" />
+    <Compile Include="Placa\IPIDENTDataReader.cs" />
+    <Compile Include="Placa\IPIDENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\IPLANDataAdapter.cs" />
+    <Compile Include="Placa\IPLVRSTEIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\IPOREZDataAdapter.cs" />
+    <Compile Include="Placa\IPOSTANSKIBROJEVIDataAdapter.cs" />
+    <Compile Include="Placa\IPregledObracunaDataAdapter.cs" />
+    <Compile Include="Placa\IPregledRadnikaDataAdapter.cs" />
+    <Compile Include="Placa\IPregledRadnikaSvihDataAdapter.cs" />
+    <Compile Include="Placa\IPREGLEDZADUZENJADataAdapter.cs" />
+    <Compile Include="Placa\IPROIZVODDataAdapter.cs" />
+    <Compile Include="Placa\IPROVIDER_BRUTODataAdapter.cs" />
+    <Compile Include="Placa\IPROVIDER_NETODataAdapter.cs" />
+    <Compile Include="Placa\IPRPLACEDataAdapter.cs" />
+    <Compile Include="Placa\IRACUNDataAdapter.cs" />
+    <Compile Include="Placa\IRAD1GELEMENTIDataAdapter.cs" />
+    <Compile Include="Placa\IRAD1GELEMENTIVEZADataAdapter.cs" />
+    <Compile Include="Placa\IRAD1MELEMENTIDataAdapter.cs" />
+    <Compile Include="Placa\IRAD1MELEMENTIVEZADataAdapter.cs" />
+    <Compile Include="Placa\IRAD1SPOLDataAdapter.cs" />
+    <Compile Include="Placa\IRAD1SPREMEDataAdapter.cs" />
+    <Compile Include="Placa\IRAD1SPREMEVEZADataAdapter.cs" />
+    <Compile Include="Placa\IRAD1VEZASPOLDataAdapter.cs" />
+    <Compile Include="Placa\IRADataAdapter.cs" />
+    <Compile Include="Placa\IRADataReader.cs" />
+    <Compile Include="Placa\IRADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\IRADNIKDataAdapter.cs" />
+    <Compile Include="Placa\IRadnikPripremaDataAdapter.cs" />
+    <Compile Include="Placa\IRadnikZaObracunDataAdapter.cs" />
+    <Compile Include="Placa\IRADNOMJESTODataAdapter.cs" />
+    <Compile Include="Placa\IRADNOVRIJEMEDataAdapter.cs" />
+    <Compile Include="Placa\IRAVRSTAIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\IRAVRSTAIZNOSADataReader.cs" />
+    <Compile Include="Placa\IRAVRSTAIZNOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\IRSMADataAdapter.cs" />
+    <Compile Include="Placa\IRSVRSTEOBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\IRSVRSTEOBVEZNIKADataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_IP1DataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_IPPDataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_KRIZNI_POREZDataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_LISTA_IZNOSA_RADNIKADataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_POTVRDADataAdapter.cs" />
+    <Compile Include="Placa\IS_DD_REKAP_DOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_BILANCADataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_BLAGAJNA_U_GKDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_DNEVNIKBLAGAJNEDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_DNEVNIKBLAGAJNEODDODataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_DNEVNIKDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_FINANCIJSKO_UPRAVLJANJEDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_IRA_PLACANJEDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_IZVRSENJE_PLANADataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_KARTICEPARTNERADataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_KONTO_KARTICEDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_OTVORENE_STAVKEDataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_PARTNERI_SA_OTVORENIMADataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_PROMET_PO_KONTIMADataAdapter.cs" />
+    <Compile Include="Placa\IS_FIN_PROMET_PO_PARTNERIMADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_BOLOVANJE_FONDDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_BOLOVANJE_POSLODAVACDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_IP_ZBIRNIDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_IPPDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_KONACNI_POREZ_PO_OPCINAMADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_KONACNIDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_KREDIT_OBRACUNATDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_KRIZNI_POREZDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_OBUSTAVA_OBRACUNATADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_OO_MJESECNODataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_POREZ_MJESECNODataAdapter.cs" />
+    <Compile Include="Placa\Is_od_pripremaDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_PROSJEK_PLACEDataAdapter.cs" />
+    <Compile Include="Placa\Is_od_rekap_brutoDataAdapter.cs" />
+    <Compile Include="Placa\Is_od_rekap_doprinosDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_FIKSNEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_ISPLATADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_KREDITNEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_NETODataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_OLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_POREZDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_REKAP_POSTOTNEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_STANJE_KREDITADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_STANJE_OBUSTAVADataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_STAT_KREDITDataAdapter.cs" />
+    <Compile Include="Placa\IS_OD_TABLICA01DataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_BILANCA_STANJA_NA_DAN_PO_LOKACIJIDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_BILANCA_STANJA_NA_DANDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_BROJ_I_DATUMDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_POSTOJECI_DOKUMENTIDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_PREGLED_AMORTIZACIJEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_REKAP_TEMELJNICEDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_STANJE_FINANCIJSKODataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_STANJE_LOKACIJA_ISPIS_NALJEPNICADataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_STANJE_LOKACIJA_SVI_BROJEVIDataAdapter.cs" />
+    <Compile Include="Placa\IS_OS_STANJE_LOKACIJADataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_KONACNI_POREZ_REKAPITULACIJA_PO_RADNICIMADataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_KONACNI_REKAPOPCINEDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_KREDITI_KARTICEDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_ODBICI_GODINADataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1G_IIIDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1G_IVDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1G_SATIDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1GDataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1M_DIO1DataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1M_DIO2DataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_RAD1M_DIO3DataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_SIFREOBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\IS_PLACA_TABLICA018DataAdapter.cs" />
+    <Compile Include="Placa\ISHEMADDDataAdapter.cs" />
+    <Compile Include="Placa\ISHEMAIRADataAdapter.cs" />
+    <Compile Include="Placa\ISHEMAPLACADataAdapter.cs" />
+    <Compile Include="Placa\ISHEMAURADataAdapter.cs" />
+    <Compile Include="Placa\ISKUPPOREZAIDOPRINOSADataAdapter.cs" />
+    <Compile Include="Placa\ISMJENEDataAdapter.cs" />
+    <Compile Include="Placa\Isp_diskete_za_bankuDataAdapter.cs" />
+    <Compile Include="Placa\ISP_FIN_URAPLACANJEDataAdapter.cs" />
+    <Compile Include="Placa\Isp_id_detaljiDataAdapter.cs" />
+    <Compile Include="Placa\Isp_id_zaglavljeDataAdapter.cs" />
+    <Compile Include="Placa\Isp_ip_detaljiDataAdapter.cs" />
+    <Compile Include="Placa\Isp_ip_zaglavljeDataAdapter.cs" />
+    <Compile Include="Placa\ISP_LISTA_IZNOSA_RADNIKADataAdapter.cs" />
+    <Compile Include="Placa\Isp_maticni_kartonDataAdapter.cs" />
+    <Compile Include="Placa\Isp_REKAP_ISPLATADataAdapter.cs" />
+    <Compile Include="Placa\Isp_RSOBRAZACDataAdapter.cs" />
+    <Compile Include="Placa\Isp_VIRMANIDataAdapter.cs" />
+    <Compile Include="Placa\Isp_zap1DataAdapter.cs" />
+    <Compile Include="Placa\ISPOLDataAdapter.cs" />
+    <Compile Include="Placa\ISTRANAKNJIZENJADataAdapter.cs" />
+    <Compile Include="Placa\ISTRANEKNJIZENJADataAdapter.cs" />
+    <Compile Include="Placa\ISTRUCNASPREMADataAdapter.cs" />
+    <Compile Include="Placa\ISTRUKADataAdapter.cs" />
+    <Compile Include="Placa\ItestDataAdapter.cs" />
+    <Compile Include="Placa\ITIPDOKUMENTADataAdapter.cs" />
+    <Compile Include="Placa\ITIPIRADataAdapter.cs" />
+    <Compile Include="Placa\ITIPIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\ITIPOLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\ITIPPARTNERADataAdapter.cs" />
+    <Compile Include="Placa\ITIPURADataAdapter.cs" />
+    <Compile Include="Placa\ITITULADataAdapter.cs" />
+    <Compile Include="Placa\Itrazi_partneraDataAdapter.cs" />
+    <Compile Include="Placa\Itrazi_proizvodDataAdapter.cs" />
+    <Compile Include="Placa\IUCENIKDataAdapter.cs" />
+    <Compile Include="Placa\IUCENIKOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\IUCENIKRSMIDENTDataAdapter.cs" />
+    <Compile Include="Placa\IUGOVORORADUDataAdapter.cs" />
+    <Compile Include="Placa\IURADataAdapter.cs" />
+    <Compile Include="Placa\IuraDocsDataAdapter.cs" />
+    <Compile Include="Placa\IURAVRSTAIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\IV_DD_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\IV_DD_PREGLED_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\IVALUTEDataAdapter.cs" />
+    <Compile Include="Placa\IVERZIJADataAdapter.cs" />
+    <Compile Include="Placa\IVIRMANIDataAdapter.cs" />
+    <Compile Include="Placa\IVRSTADOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\IVRSTAELEMENTDataAdapter.cs" />
+    <Compile Include="Placa\IVRSTAOBUSTAVEDataAdapter.cs" />
+    <Compile Include="Placa\Ivw_DD_MJESECI_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\IVW_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\IVW_GODINE_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\Ivw_mjeseci_godine_isplateDataAdapter.cs" />
+    <Compile Include="Placa\IVW_MJESECI_GODINE_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\IVW_ZADUZENI_PARTNERIDataAdapter.cs" />
+    <Compile Include="Placa\IZAPOSLENIDataAdapter.cs" />
+    <Compile Include="Placa\IZATVARANJADataAdapter.cs" />
+    <Compile Include="Placa\IZVORDOKUMENTADataAdapter.cs" />
+    <Compile Include="Placa\IZVORDOKUMENTADataReader.cs" />
+    <Compile Include="Placa\IZVORDOKUMENTADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\JEDINICAMJEREDataAdapter.cs" />
+    <Compile Include="Placa\JEDINICAMJEREDataReader.cs" />
+    <Compile Include="Placa\JEDINICAMJEREDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\KONTODataAdapter.cs" />
+    <Compile Include="Placa\KONTODataReader.cs" />
+    <Compile Include="Placa\KONTODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\KORISNIKDataAdapter.cs" />
+    <Compile Include="Placa\KORISNIKDataReader.cs" />
+    <Compile Include="Placa\KORISNIKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\KREDITORDataAdapter.cs" />
+    <Compile Include="Placa\KREDITORDataReader.cs" />
+    <Compile Include="Placa\KREDITORDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\kreditorupdateredundancy.cs" />
+    <Compile Include="Placa\KRIZNIPOREZDataAdapter.cs" />
+    <Compile Include="Placa\KRIZNIPOREZDataReader.cs" />
+    <Compile Include="Placa\KRIZNIPOREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\krizniporezupdateredundancy.cs" />
+    <Compile Include="Placa\LOKACIJEDataAdapter.cs" />
+    <Compile Include="Placa\LOKACIJEDataReader.cs" />
+    <Compile Include="Placa\LOKACIJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\MJESTOTROSKADataAdapter.cs" />
+    <Compile Include="Placa\MJESTOTROSKADataReader.cs" />
+    <Compile Include="Placa\MJESTOTROSKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Placa\MZOSTABLICEDataAdapter.cs" />
+    <Compile Include="Placa\MZOSTABLICEDataReader.cs" />
+    <Compile Include="Placa\MZOSTABLICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\OBRACUNDataReader.cs" />
+    <Compile Include="Placa\OBRACUNDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OBUSTAVADataAdapter.cs" />
+    <Compile Include="Placa\OBUSTAVADataReader.cs" />
+    <Compile Include="Placa\OBUSTAVADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\obustavaupdateredundancy.cs" />
+    <Compile Include="Placa\OLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\OLAKSICEDataReader.cs" />
+    <Compile Include="Placa\OLAKSICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\olaksiceupdateredundancy.cs" />
+    <Compile Include="Placa\OPCINADataAdapter.cs" />
+    <Compile Include="Placa\OPCINADataReader.cs" />
+    <Compile Include="Placa\OPCINADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ORGDIODataAdapter.cs" />
+    <Compile Include="Placa\ORGDIODataReader.cs" />
+    <Compile Include="Placa\ORGDIODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ORGJEDDataAdapter.cs" />
+    <Compile Include="Placa\ORGJEDDataReader.cs" />
+    <Compile Include="Placa\ORGJEDDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSDataAdapter.cs" />
+    <Compile Include="Placa\OSDataReader.cs" />
+    <Compile Include="Placa\OSDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSDOKUMENTDataAdapter.cs" />
+    <Compile Include="Placa\OSDOKUMENTDataReader.cs" />
+    <Compile Include="Placa\OSDOKUMENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSNOVAOSIGURANJADataAdapter.cs" />
+    <Compile Include="Placa\OSNOVAOSIGURANJADataReader.cs" />
+    <Compile Include="Placa\OSNOVAOSIGURANJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSOBNIODBITAKDataAdapter.cs" />
+    <Compile Include="Placa\OSOBNIODBITAKDataReader.cs" />
+    <Compile Include="Placa\OSOBNIODBITAKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSRAZMJESTAJDataAdapter.cs" />
+    <Compile Include="Placa\OSRAZMJESTAJDataReader.cs" />
+    <Compile Include="Placa\OSRAZMJESTAJDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OSVRSTADataAdapter.cs" />
+    <Compile Include="Placa\OSVRSTADataReader.cs" />
+    <Compile Include="Placa\OSVRSTADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\OTISLIDataAdapter.cs" />
+    <Compile Include="Placa\OTISLIDataReader.cs" />
+    <Compile Include="Placa\OTISLIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\partnerabecedaDataAdapter.cs" />
+    <Compile Include="Placa\partnerabecedaDataReader.cs" />
+    <Compile Include="Placa\partnerabecedaDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PARTNERDataAdapter.cs" />
+    <Compile Include="Placa\PARTNERDataReader.cs" />
+    <Compile Include="Placa\PARTNERDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PLANDataAdapter.cs" />
+    <Compile Include="Placa\PLANDataReader.cs" />
+    <Compile Include="Placa\PLANDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PLVRSTEIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\PLVRSTEIZNOSADataReader.cs" />
+    <Compile Include="Placa\PLVRSTEIZNOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\POREZDataAdapter.cs" />
+    <Compile Include="Placa\POREZDataReader.cs" />
+    <Compile Include="Placa\POREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\porezupdateredundancy.cs" />
+    <Compile Include="Placa\POSTANSKIBROJEVIDataAdapter.cs" />
+    <Compile Include="Placa\POSTANSKIBROJEVIDataReader.cs" />
+    <Compile Include="Placa\POSTANSKIBROJEVIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PregledObracunaDataAdapter.cs" />
+    <Compile Include="Placa\PregledObracunaDataReader.cs" />
+    <Compile Include="Placa\PregledObracunaDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PregledRadnikaDataAdapter.cs" />
+    <Compile Include="Placa\PregledRadnikaDataReader.cs" />
+    <Compile Include="Placa\PregledRadnikaDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PregledRadnikaSvihDataAdapter.cs" />
+    <Compile Include="Placa\PregledRadnikaSvihDataReader.cs" />
+    <Compile Include="Placa\PregledRadnikaSvihDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PREGLEDZADUZENJADataAdapter.cs" />
+    <Compile Include="Placa\PREGLEDZADUZENJADataReader.cs" />
+    <Compile Include="Placa\PREGLEDZADUZENJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PROIZVODDataAdapter.cs" />
+    <Compile Include="Placa\PROIZVODDataReader.cs" />
+    <Compile Include="Placa\PROIZVODDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PROVIDER_BRUTODataAdapter.cs" />
+    <Compile Include="Placa\PROVIDER_BRUTODataReader.cs" />
+    <Compile Include="Placa\PROVIDER_BRUTODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PROVIDER_NETODataAdapter.cs" />
+    <Compile Include="Placa\PROVIDER_NETODataReader.cs" />
+    <Compile Include="Placa\PROVIDER_NETODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\PRPLACEDataAdapter.cs" />
+    <Compile Include="Placa\PRPLACEDataReader.cs" />
+    <Compile Include="Placa\PRPLACEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RACUNDataAdapter.cs" />
+    <Compile Include="Placa\RACUNDataReader.cs" />
+    <Compile Include="Placa\RACUNDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1GELEMENTIDataAdapter.cs" />
+    <Compile Include="Placa\RAD1GELEMENTIDataReader.cs" />
+    <Compile Include="Placa\RAD1GELEMENTIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1GELEMENTIVEZADataAdapter.cs" />
+    <Compile Include="Placa\RAD1GELEMENTIVEZADataReader.cs" />
+    <Compile Include="Placa\RAD1GELEMENTIVEZADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1MELEMENTIDataAdapter.cs" />
+    <Compile Include="Placa\RAD1MELEMENTIDataReader.cs" />
+    <Compile Include="Placa\RAD1MELEMENTIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1MELEMENTIVEZADataAdapter.cs" />
+    <Compile Include="Placa\RAD1MELEMENTIVEZADataReader.cs" />
+    <Compile Include="Placa\RAD1MELEMENTIVEZADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1SPOLDataAdapter.cs" />
+    <Compile Include="Placa\RAD1SPOLDataReader.cs" />
+    <Compile Include="Placa\RAD1SPOLDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1SPREMEDataAdapter.cs" />
+    <Compile Include="Placa\RAD1SPREMEDataReader.cs" />
+    <Compile Include="Placa\RAD1SPREMEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1SPREMEVEZADataAdapter.cs" />
+    <Compile Include="Placa\RAD1SPREMEVEZADataReader.cs" />
+    <Compile Include="Placa\RAD1SPREMEVEZADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RAD1VEZASPOLDataAdapter.cs" />
+    <Compile Include="Placa\RAD1VEZASPOLDataReader.cs" />
+    <Compile Include="Placa\RAD1VEZASPOLDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RADNIKDataAdapter.cs" />
+    <Compile Include="Placa\RADNIKDataReader.cs" />
+    <Compile Include="Placa\RADNIKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RadnikPripremaDataAdapter.cs" />
+    <Compile Include="Placa\RadnikPripremaDataReader.cs" />
+    <Compile Include="Placa\RadnikPripremaDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\radnikupdateredundancy.cs" />
+    <Compile Include="Placa\RadnikZaObracunDataAdapter.cs" />
+    <Compile Include="Placa\RadnikZaObracunDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RADNOMJESTODataAdapter.cs" />
+    <Compile Include="Placa\RADNOMJESTODataReader.cs" />
+    <Compile Include="Placa\RADNOMJESTODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RADNOVRIJEMEDataAdapter.cs" />
+    <Compile Include="Placa\RADNOVRIJEMEDataReader.cs" />
+    <Compile Include="Placa\RADNOVRIJEMEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RSMADataAdapter.cs" />
+    <Compile Include="Placa\RSMADataReader.cs" />
+    <Compile Include="Placa\RSMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RSVRSTEOBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\RSVRSTEOBRACUNADataReader.cs" />
+    <Compile Include="Placa\RSVRSTEOBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\RSVRSTEOBVEZNIKADataAdapter.cs" />
+    <Compile Include="Placa\RSVRSTEOBVEZNIKADataReader.cs" />
+    <Compile Include="Placa\RSVRSTEOBVEZNIKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_IP1DataAdapter.cs" />
+    <Compile Include="Placa\S_DD_IP1DataReader.cs" />
+    <Compile Include="Placa\S_DD_IP1DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_IPPDataAdapter.cs" />
+    <Compile Include="Placa\S_DD_IPPDataReader.cs" />
+    <Compile Include="Placa\S_DD_IPPDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_KRIZNI_POREZDataAdapter.cs" />
+    <Compile Include="Placa\S_DD_KRIZNI_POREZDataReader.cs" />
+    <Compile Include="Placa\S_DD_KRIZNI_POREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_LISTA_IZNOSA_RADNIKADataAdapter.cs" />
+    <Compile Include="Placa\S_DD_LISTA_IZNOSA_RADNIKADataReader.cs" />
+    <Compile Include="Placa\S_DD_LISTA_IZNOSA_RADNIKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_POTVRDADataAdapter.cs" />
+    <Compile Include="Placa\S_DD_POTVRDADataReader.cs" />
+    <Compile Include="Placa\S_DD_POTVRDADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_DD_REKAP_DOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\S_DD_REKAP_DOPRINOSDataReader.cs" />
+    <Compile Include="Placa\S_DD_REKAP_DOPRINOSDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_BILANCADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_BILANCADataReader.cs" />
+    <Compile Include="Placa\S_FIN_BILANCADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_BLAGAJNA_U_GKDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_BLAGAJNA_U_GKDataReader.cs" />
+    <Compile Include="Placa\S_FIN_BLAGAJNA_U_GKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEDataReader.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEODDODataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEODDODataReader.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKBLAGAJNEODDODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_DNEVNIKDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKDataReader.cs" />
+    <Compile Include="Placa\S_FIN_DNEVNIKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_FINANCIJSKO_UPRAVLJANJEDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_FINANCIJSKO_UPRAVLJANJEDataReader.cs" />
+    <Compile Include="Placa\S_FIN_FINANCIJSKO_UPRAVLJANJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_IRA_PLACANJEDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_IRA_PLACANJEDataReader.cs" />
+    <Compile Include="Placa\S_FIN_IRA_PLACANJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_IZVRSENJE_PLANADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_IZVRSENJE_PLANADataReader.cs" />
+    <Compile Include="Placa\S_FIN_IZVRSENJE_PLANADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_KARTICEPARTNERADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_KARTICEPARTNERADataReader.cs" />
+    <Compile Include="Placa\S_FIN_KARTICEPARTNERADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_KONTO_KARTICEDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_KONTO_KARTICEDataReader.cs" />
+    <Compile Include="Placa\S_FIN_KONTO_KARTICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_OTVORENE_STAVKEDataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_OTVORENE_STAVKEDataReader.cs" />
+    <Compile Include="Placa\S_FIN_OTVORENE_STAVKEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_PARTNERI_SA_OTVORENIMADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_PARTNERI_SA_OTVORENIMADataReader.cs" />
+    <Compile Include="Placa\S_FIN_PARTNERI_SA_OTVORENIMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_PROMET_PO_KONTIMADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_PROMET_PO_KONTIMADataReader.cs" />
+    <Compile Include="Placa\S_FIN_PROMET_PO_KONTIMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_FIN_PROMET_PO_PARTNERIMADataAdapter.cs" />
+    <Compile Include="Placa\S_FIN_PROMET_PO_PARTNERIMADataReader.cs" />
+    <Compile Include="Placa\S_FIN_PROMET_PO_PARTNERIMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_BOLOVANJE_FONDDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_BOLOVANJE_FONDDataReader.cs" />
+    <Compile Include="Placa\S_OD_BOLOVANJE_FONDDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_BOLOVANJE_POSLODAVACDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_BOLOVANJE_POSLODAVACDataReader.cs" />
+    <Compile Include="Placa\S_OD_BOLOVANJE_POSLODAVACDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_IP_ZBIRNIDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_IP_ZBIRNIDataReader.cs" />
+    <Compile Include="Placa\S_OD_IP_ZBIRNIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_IPPDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_IPPDataReader.cs" />
+    <Compile Include="Placa\S_OD_IPPDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_KONACNI_POREZ_PO_OPCINAMADataAdapter.cs" />
+    <Compile Include="Placa\S_OD_KONACNI_POREZ_PO_OPCINAMADataReader.cs" />
+    <Compile Include="Placa\S_OD_KONACNI_POREZ_PO_OPCINAMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_KONACNIDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_KONACNIDataReader.cs" />
+    <Compile Include="Placa\S_OD_KONACNIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_KREDIT_OBRACUNATDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_KREDIT_OBRACUNATDataReader.cs" />
+    <Compile Include="Placa\S_OD_KREDIT_OBRACUNATDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_KRIZNI_POREZDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_KRIZNI_POREZDataReader.cs" />
+    <Compile Include="Placa\S_OD_KRIZNI_POREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_OBUSTAVA_OBRACUNATADataAdapter.cs" />
+    <Compile Include="Placa\S_OD_OBUSTAVA_OBRACUNATADataReader.cs" />
+    <Compile Include="Placa\S_OD_OBUSTAVA_OBRACUNATADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_OO_MJESECNODataAdapter.cs" />
+    <Compile Include="Placa\S_OD_OO_MJESECNODataReader.cs" />
+    <Compile Include="Placa\S_OD_OO_MJESECNODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_POREZ_MJESECNODataAdapter.cs" />
+    <Compile Include="Placa\S_OD_POREZ_MJESECNODataReader.cs" />
+    <Compile Include="Placa\S_OD_POREZ_MJESECNODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\s_od_pripremaDataAdapter.cs" />
+    <Compile Include="Placa\s_od_pripremaDataReader.cs" />
+    <Compile Include="Placa\s_od_pripremaDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_PROSJEK_PLACEDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_PROSJEK_PLACEDataReader.cs" />
+    <Compile Include="Placa\S_OD_PROSJEK_PLACEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\s_od_rekap_brutoDataAdapter.cs" />
+    <Compile Include="Placa\s_od_rekap_brutoDataReader.cs" />
+    <Compile Include="Placa\s_od_rekap_brutoDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\s_od_rekap_doprinosDataAdapter.cs" />
+    <Compile Include="Placa\s_od_rekap_doprinosDataReader.cs" />
+    <Compile Include="Placa\s_od_rekap_doprinosDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_FIKSNEDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_FIKSNEDataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_FIKSNEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_ISPLATADataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_ISPLATADataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_ISPLATADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_KREDITNEDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_KREDITNEDataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_KREDITNEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_NETODataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_NETODataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_NETODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_OLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_OLAKSICEDataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_OLAKSICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_POREZDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_POREZDataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_POREZDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_REKAP_POSTOTNEDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_REKAP_POSTOTNEDataReader.cs" />
+    <Compile Include="Placa\S_OD_REKAP_POSTOTNEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_STANJE_KREDITADataAdapter.cs" />
+    <Compile Include="Placa\S_OD_STANJE_KREDITADataReader.cs" />
+    <Compile Include="Placa\S_OD_STANJE_KREDITADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_STANJE_OBUSTAVADataAdapter.cs" />
+    <Compile Include="Placa\S_OD_STANJE_OBUSTAVADataReader.cs" />
+    <Compile Include="Placa\S_OD_STANJE_OBUSTAVADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_STAT_KREDITDataAdapter.cs" />
+    <Compile Include="Placa\S_OD_STAT_KREDITDataReader.cs" />
+    <Compile Include="Placa\S_OD_STAT_KREDITDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OD_TABLICA01DataAdapter.cs" />
+    <Compile Include="Placa\S_OD_TABLICA01DataReader.cs" />
+    <Compile Include="Placa\S_OD_TABLICA01DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DAN_PO_LOKACIJIDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DAN_PO_LOKACIJIDataReader.cs" />
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DAN_PO_LOKACIJIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DANDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DANDataReader.cs" />
+    <Compile Include="Placa\S_OS_BILANCA_STANJA_NA_DANDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_BROJ_I_DATUMDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_BROJ_I_DATUMDataReader.cs" />
+    <Compile Include="Placa\S_OS_BROJ_I_DATUMDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_POSTOJECI_DOKUMENTIDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_POSTOJECI_DOKUMENTIDataReader.cs" />
+    <Compile Include="Placa\S_OS_POSTOJECI_DOKUMENTIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataAdapter.cs" />
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataReader.cs" />
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJEDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJEDataReader.cs" />
+    <Compile Include="Placa\S_OS_PREGLED_AMORTIZACIJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_REKAP_TEMELJNICEDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_REKAP_TEMELJNICEDataReader.cs" />
+    <Compile Include="Placa\S_OS_REKAP_TEMELJNICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_STANJE_FINANCIJSKODataAdapter.cs" />
+    <Compile Include="Placa\S_OS_STANJE_FINANCIJSKODataReader.cs" />
+    <Compile Include="Placa\S_OS_STANJE_FINANCIJSKODataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_ISPIS_NALJEPNICADataAdapter.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_ISPIS_NALJEPNICADataReader.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_ISPIS_NALJEPNICADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_SVI_BROJEVIDataAdapter.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_SVI_BROJEVIDataReader.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJA_SVI_BROJEVIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJADataAdapter.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJADataReader.cs" />
+    <Compile Include="Placa\S_OS_STANJE_LOKACIJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_KONACNI_POREZ_REKAPITULACIJA_PO_RADNICIMADataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_KONACNI_POREZ_REKAPITULACIJA_PO_RADNICIMADataReader.cs" />
+    <Compile Include="Placa\S_PLACA_KONACNI_POREZ_REKAPITULACIJA_PO_RADNICIMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_KONACNI_REKAPOPCINEDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_KONACNI_REKAPOPCINEDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_KONACNI_REKAPOPCINEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_KREDITI_KARTICEDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_KREDITI_KARTICEDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_KREDITI_KARTICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_ODBICI_GODINADataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_ODBICI_GODINADataReader.cs" />
+    <Compile Include="Placa\S_PLACA_ODBICI_GODINADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1G_IIIDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_IIIDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_IIIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1G_IVDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_IVDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_IVDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1G_SATIDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_SATIDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1G_SATIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1GDataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1GDataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1GDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO1DataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO1DataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO1DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO2DataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO2DataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO2DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO3DataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO3DataReader.cs" />
+    <Compile Include="Placa\S_PLACA_RAD1M_DIO3DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_SIFREOBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_SIFREOBRACUNADataReader.cs" />
+    <Compile Include="Placa\S_PLACA_SIFREOBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\S_PLACA_TABLICA018DataAdapter.cs" />
+    <Compile Include="Placa\S_PLACA_TABLICA018DataReader.cs" />
+    <Compile Include="Placa\S_PLACA_TABLICA018DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SHEMADDDataAdapter.cs" />
+    <Compile Include="Placa\SHEMADDDataReader.cs" />
+    <Compile Include="Placa\SHEMADDDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SHEMAIRADataAdapter.cs" />
+    <Compile Include="Placa\SHEMAIRADataReader.cs" />
+    <Compile Include="Placa\SHEMAIRADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SHEMAPLACADataAdapter.cs" />
+    <Compile Include="Placa\SHEMAPLACADataReader.cs" />
+    <Compile Include="Placa\SHEMAPLACADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SHEMAURADataAdapter.cs" />
+    <Compile Include="Placa\SHEMAURADataReader.cs" />
+    <Compile Include="Placa\SHEMAURADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SimpleDataAdapterFactory.cs" />
+    <Compile Include="Placa\SKUPPOREZAIDOPRINOSADataAdapter.cs" />
+    <Compile Include="Placa\SKUPPOREZAIDOPRINOSADataReader.cs" />
+    <Compile Include="Placa\SKUPPOREZAIDOPRINOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SMJENEDataAdapter.cs" />
+    <Compile Include="Placa\SMJENEDataReader.cs" />
+    <Compile Include="Placa\SMJENEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_diskete_za_bankuDataAdapter.cs" />
+    <Compile Include="Placa\sp_diskete_za_bankuDataReader.cs" />
+    <Compile Include="Placa\sp_diskete_za_bankuDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SP_FIN_URAPLACANJEDataAdapter.cs" />
+    <Compile Include="Placa\SP_FIN_URAPLACANJEDataReader.cs" />
+    <Compile Include="Placa\SP_FIN_URAPLACANJEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_id_detaljiDataAdapter.cs" />
+    <Compile Include="Placa\sp_id_detaljiDataReader.cs" />
+    <Compile Include="Placa\sp_id_detaljiDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_id_zaglavljeDataAdapter.cs" />
+    <Compile Include="Placa\sp_id_zaglavljeDataReader.cs" />
+    <Compile Include="Placa\sp_id_zaglavljeDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_ip_detaljiDataAdapter.cs" />
+    <Compile Include="Placa\sp_ip_detaljiDataReader.cs" />
+    <Compile Include="Placa\sp_ip_detaljiDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_ip_zaglavljeDataAdapter.cs" />
+    <Compile Include="Placa\sp_ip_zaglavljeDataReader.cs" />
+    <Compile Include="Placa\sp_ip_zaglavljeDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SP_LISTA_IZNOSA_RADNIKADataAdapter.cs" />
+    <Compile Include="Placa\SP_LISTA_IZNOSA_RADNIKADataReader.cs" />
+    <Compile Include="Placa\SP_LISTA_IZNOSA_RADNIKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_maticni_kartonDataAdapter.cs" />
+    <Compile Include="Placa\sp_maticni_kartonDataReader.cs" />
+    <Compile Include="Placa\sp_maticni_kartonDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_REKAP_ISPLATADataAdapter.cs" />
+    <Compile Include="Placa\sp_REKAP_ISPLATADataReader.cs" />
+    <Compile Include="Placa\sp_REKAP_ISPLATADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_RSOBRAZACDataAdapter.cs" />
+    <Compile Include="Placa\sp_RSOBRAZACDataReader.cs" />
+    <Compile Include="Placa\sp_RSOBRAZACDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_VIRMANIDataAdapter.cs" />
+    <Compile Include="Placa\sp_VIRMANIDataReader.cs" />
+    <Compile Include="Placa\sp_VIRMANIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\sp_zap1DataAdapter.cs" />
+    <Compile Include="Placa\sp_zap1DataReader.cs" />
+    <Compile Include="Placa\sp_zap1DataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\SPOLDataAdapter.cs" />
+    <Compile Include="Placa\SPOLDataReader.cs" />
+    <Compile Include="Placa\SPOLDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\STRANAKNJIZENJADataAdapter.cs" />
+    <Compile Include="Placa\STRANAKNJIZENJADataReader.cs" />
+    <Compile Include="Placa\STRANAKNJIZENJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\STRANEKNJIZENJADataAdapter.cs" />
+    <Compile Include="Placa\STRANEKNJIZENJADataReader.cs" />
+    <Compile Include="Placa\STRANEKNJIZENJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\STRUCNASPREMADataAdapter.cs" />
+    <Compile Include="Placa\STRUCNASPREMADataReader.cs" />
+    <Compile Include="Placa\STRUCNASPREMADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\STRUKADataAdapter.cs" />
+    <Compile Include="Placa\STRUKADataReader.cs" />
+    <Compile Include="Placa\STRUKADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\testDataAdapter.cs" />
+    <Compile Include="Placa\testDataReader.cs" />
+    <Compile Include="Placa\testDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TIPDOKUMENTADataAdapter.cs" />
+    <Compile Include="Placa\TIPDOKUMENTADataReader.cs" />
+    <Compile Include="Placa\TIPDOKUMENTADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TIPIRADataAdapter.cs" />
+    <Compile Include="Placa\TIPIRADataReader.cs" />
+    <Compile Include="Placa\TIPIRADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TIPIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\TIPIZNOSADataReader.cs" />
+    <Compile Include="Placa\TIPIZNOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TIPOLAKSICEDataAdapter.cs" />
+    <Compile Include="Placa\TIPOLAKSICEDataReader.cs" />
+    <Compile Include="Placa\TIPOLAKSICEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\tipolaksiceupdateredundancy.cs" />
+    <Compile Include="Placa\TIPPARTNERADataAdapter.cs" />
+    <Compile Include="Placa\TIPPARTNERADataReader.cs" />
+    <Compile Include="Placa\TIPPARTNERADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TIPURADataAdapter.cs" />
+    <Compile Include="Placa\TIPURADataReader.cs" />
+    <Compile Include="Placa\TIPURADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\TITULADataAdapter.cs" />
+    <Compile Include="Placa\TITULADataReader.cs" />
+    <Compile Include="Placa\TITULADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\trazi_partneraDataAdapter.cs" />
+    <Compile Include="Placa\trazi_partneraDataReader.cs" />
+    <Compile Include="Placa\trazi_partneraDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\trazi_proizvodDataAdapter.cs" />
+    <Compile Include="Placa\trazi_proizvodDataReader.cs" />
+    <Compile Include="Placa\trazi_proizvodDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\UCENIKDataAdapter.cs" />
+    <Compile Include="Placa\UCENIKDataReader.cs" />
+    <Compile Include="Placa\UCENIKDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\UCENIKOBRACUNDataAdapter.cs" />
+    <Compile Include="Placa\UCENIKOBRACUNDataReader.cs" />
+    <Compile Include="Placa\UCENIKOBRACUNDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\UCENIKRSMIDENTDataAdapter.cs" />
+    <Compile Include="Placa\UCENIKRSMIDENTDataReader.cs" />
+    <Compile Include="Placa\UCENIKRSMIDENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\UGOVORORADUDataAdapter.cs" />
+    <Compile Include="Placa\UGOVORORADUDataReader.cs" />
+    <Compile Include="Placa\UGOVORORADUDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\URADataAdapter.cs" />
+    <Compile Include="Placa\URADataReader.cs" />
+    <Compile Include="Placa\URADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\uraDocsDataAdapter.cs" />
+    <Compile Include="Placa\uraDocsDataReader.cs" />
+    <Compile Include="Placa\uraDocsDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\URAVRSTAIZNOSADataAdapter.cs" />
+    <Compile Include="Placa\URAVRSTAIZNOSADataReader.cs" />
+    <Compile Include="Placa\URAVRSTAIZNOSADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\V_DD_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\V_DD_GODINE_ISPLATEDataReader.cs" />
+    <Compile Include="Placa\V_DD_GODINE_ISPLATEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\V_DD_PREGLED_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\V_DD_PREGLED_OBRACUNADataReader.cs" />
+    <Compile Include="Placa\V_DD_PREGLED_OBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VALUTEDataAdapter.cs" />
+    <Compile Include="Placa\VALUTEDataReader.cs" />
+    <Compile Include="Placa\VALUTEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\valuteupdateredundancy.cs" />
+    <Compile Include="Placa\VERZIJADataAdapter.cs" />
+    <Compile Include="Placa\VERZIJADataReader.cs" />
+    <Compile Include="Placa\VERZIJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VIRMANIDataAdapter.cs" />
+    <Compile Include="Placa\VIRMANIDataReader.cs" />
+    <Compile Include="Placa\VIRMANIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VRSTADOPRINOSDataAdapter.cs" />
+    <Compile Include="Placa\VRSTADOPRINOSDataReader.cs" />
+    <Compile Include="Placa\VRSTADOPRINOSDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\vrstadoprinosupdateredundancy.cs" />
+    <Compile Include="Placa\VRSTAELEMENTDataAdapter.cs" />
+    <Compile Include="Placa\VRSTAELEMENTDataReader.cs" />
+    <Compile Include="Placa\VRSTAELEMENTDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\vrstaelementupdateredundancy.cs" />
+    <Compile Include="Placa\VRSTAOBUSTAVEDataAdapter.cs" />
+    <Compile Include="Placa\VRSTAOBUSTAVEDataReader.cs" />
+    <Compile Include="Placa\VRSTAOBUSTAVEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\vrsteobustavaupdateredundancy.cs" />
+    <Compile Include="Placa\vw_DD_MJESECI_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\vw_DD_MJESECI_GODINE_ISPLATEDataReader.cs" />
+    <Compile Include="Placa\vw_DD_MJESECI_GODINE_ISPLATEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VW_GODINE_ISPLATEDataAdapter.cs" />
+    <Compile Include="Placa\VW_GODINE_ISPLATEDataReader.cs" />
+    <Compile Include="Placa\VW_GODINE_ISPLATEDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VW_GODINE_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\VW_GODINE_OBRACUNADataReader.cs" />
+    <Compile Include="Placa\VW_GODINE_OBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\vw_mjeseci_godine_isplateDataAdapter.cs" />
+    <Compile Include="Placa\vw_mjeseci_godine_isplateDataReader.cs" />
+    <Compile Include="Placa\vw_mjeseci_godine_isplateDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VW_MJESECI_GODINE_OBRACUNADataAdapter.cs" />
+    <Compile Include="Placa\VW_MJESECI_GODINE_OBRACUNADataReader.cs" />
+    <Compile Include="Placa\VW_MJESECI_GODINE_OBRACUNADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\VW_ZADUZENI_PARTNERIDataAdapter.cs" />
+    <Compile Include="Placa\VW_ZADUZENI_PARTNERIDataReader.cs" />
+    <Compile Include="Placa\VW_ZADUZENI_PARTNERIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ZAPOSLENIDataAdapter.cs" />
+    <Compile Include="Placa\ZAPOSLENIDataReader.cs" />
+    <Compile Include="Placa\ZAPOSLENIDataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Placa\ZATVARANJADataAdapter.cs" />
+    <Compile Include="Placa\ZATVARANJADataReader.cs" />
+    <Compile Include="Placa\ZATVARANJADataSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Placa\S_FIN_OTVORENE_STAVKEDataSet.resx">
+      <DependentUpon>S_FIN_OTVORENE_STAVKEDataSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSVRSTEOBVEZNIKADataSet.xsd" />
+    <EmbeddedResource Include="vw_mjeseci_godine_isplateDataSet.xsd" />
+    <EmbeddedResource Include="VW_GODINE_OBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="VW_ZADUZENI_PARTNERIDataSet.xsd" />
+    <EmbeddedResource Include="S_DD_IPPDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_STANJE_OBUSTAVADataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_POSTOTNEDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_NETODataSet.xsd" />
+    <EmbeddedResource Include="sp_diskete_za_bankuDataSet.xsd" />
+    <EmbeddedResource Include="sp_VIRMANIDataSet.xsd" />
+    <EmbeddedResource Include="DDKOLONAIDDDataSet.xsd" />
+    <EmbeddedResource Include="AKTIVNOSTDataSet.xsd" />
+    <EmbeddedResource Include="RADNOMJESTODataSet.xsd" />
+    <EmbeddedResource Include="KREDITORDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_IP_ZBIRNIDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_BILANCADataSet.xsd" />
+    <EmbeddedResource Include="sp_ip_zaglavljeDataSet.xsd" />
+    <EmbeddedResource Include="OTISLIDataSet.xsd" />
+    <EmbeddedResource Include="MZOSTABLICEDataSet.xsd" />
+    <EmbeddedResource Include="LOKACIJEDataSet.xsd" />
+    <EmbeddedResource Include="VRSTAOBUSTAVEDataSet.xsd" />
+    <EmbeddedResource Include="VRSTADOPRINOSDataSet.xsd" />
+    <EmbeddedResource Include="TITULADataSet.xsd" />
+    <EmbeddedResource Include="OPCINADataSet.xsd" />
+    <EmbeddedResource Include="KORISNIKDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1G_IVDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_IZVRSENJE_PLANADataSet.xsd" />
+    <EmbeddedResource Include="S_DD_KRIZNI_POREZDataSet.xsd" />
+    <EmbeddedResource Include="S_DD_LISTA_IZNOSA_RADNIKADataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_OLAKSICEDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_ISPLATADataSet.xsd" />
+    <EmbeddedResource Include="s_od_rekap_doprinosDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_OBUSTAVA_OBRACUNATADataSet.xsd" />
+    <EmbeddedResource Include="S_OD_KREDIT_OBRACUNATDataSet.xsd" />
+    <EmbeddedResource Include="PLANDataSet.xsd" />
+    <EmbeddedResource Include="IRAVRSTAIZNOSADataSet.xsd" />
+    <EmbeddedResource Include="IRADataSet.xsd" />
+    <EmbeddedResource Include="EVIDENCIJADataSet.xsd" />
+    <EmbeddedResource Include="DRZAVLJANSTVODataSet.xsd" />
+    <EmbeddedResource Include="GKSTAVKADataSet.xsd" />
+    <EmbeddedResource Include="TIPURADataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1M_DIO1DataSet.xsd" />
+    <EmbeddedResource Include="S_OS_STANJE_LOKACIJADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_PROMET_PO_PARTNERIMADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_KONTO_KARTICEDataSet.xsd" />
+    <EmbeddedResource Include="S_DD_IP1DataSet.xsd" />
+    <EmbeddedResource Include="RADNOVRIJEMEDataSet.xsd" />
+    <EmbeddedResource Include="RAD1SPREMEDataSet.xsd" />
+    <EmbeddedResource Include="PLVRSTEIZNOSADataSet.xsd" />
+    <EmbeddedResource Include="GODINEDataSet.xsd" />
+    <EmbeddedResource Include="DDRADNIKDataSet.xsd" />
+    <EmbeddedResource Include="Tables.resources" />
+    <EmbeddedResource Include="PROVIDER_BRUTODataSet.xsd" />
+    <EmbeddedResource Include="ZATVARANJADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_FINANCIJSKO_UPRAVLJANJEDataSet.xsd" />
+    <EmbeddedResource Include="S_DD_REKAP_DOPRINOSDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_STANJE_KREDITADataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_FIKSNEDataSet.xsd" />
+    <EmbeddedResource Include="RAD1MELEMENTIVEZADataSet.xsd" />
+    <EmbeddedResource Include="RAD1SPOLDataSet.xsd" />
+    <EmbeddedResource Include="PROIZVODDataSet.xsd" />
+    <EmbeddedResource Include="BOLOVANJEFONDDataSet.xsd" />
+    <EmbeddedResource Include="vw_DD_MJESECI_GODINE_ISPLATEDataSet.xsd" />
+    <EmbeddedResource Include="ZAPOSLENIDataSet.xsd" />
+    <EmbeddedResource Include="URAVRSTAIZNOSADataSet.xsd" />
+    <EmbeddedResource Include="S_OS_REKAP_TEMELJNICEDataSet.xsd" />
+    <EmbeddedResource Include="S_OS_BROJ_I_DATUMDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_DNEVNIKDataSet.xsd" />
+    <EmbeddedResource Include="S_DD_POTVRDADataSet.xsd" />
+    <EmbeddedResource Include="sp_ip_detaljiDataSet.xsd" />
+    <EmbeddedResource Include="PregledObracunaDataSet.xsd" />
+    <EmbeddedResource Include="GOOBRACUNDataSet.xsd" />
+    <EmbeddedResource Include="FINPOREZDataSet.xsd" />
+    <EmbeddedResource Include="SKUPPOREZAIDOPRINOSADataSet.xsd" />
+    <EmbeddedResource Include="OBUSTAVADataSet.xsd" />
+    <EmbeddedResource Include="PROVIDER_NETODataSet.xsd" />
+    <EmbeddedResource Include="VW_MJESECI_GODINE_OBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="S_OS_BILANCA_STANJA_NA_DAN_PO_LOKACIJIDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_ODBICI_GODINADataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_KONACNI_REKAPOPCINEDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_PROMET_PO_KONTIMADataSet.xsd" />
+    <EmbeddedResource Include="SHEMAURADataSet.xsd" />
+    <EmbeddedResource Include="RadnikZaObracunDataSet.xsd" />
+    <EmbeddedResource Include="POSTANSKIBROJEVIDataSet.xsd" />
+    <EmbeddedResource Include="partnerabecedaDataSet.xsd" />
+    <EmbeddedResource Include="PregledRadnikaDataSet.xsd" />
+    <EmbeddedResource Include="DOKUMENTDataSet.xsd" />
+    <EmbeddedResource Include="DDVRSTEPOSLADataSet.xsd" />
+    <EmbeddedResource Include="VRSTAELEMENTDataSet.xsd" />
+    <EmbeddedResource Include="VW_GODINE_ISPLATEDataSet.xsd" />
+    <EmbeddedResource Include="UCENIKRSMIDENTDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_TABLICA01DataSet.xsd" />
+    <EmbeddedResource Include="TIPPARTNERADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_DNEVNIKBLAGAJNEDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_IPPDataSet.xsd" />
+    <EmbeddedResource Include="sp_id_detaljiDataSet.xsd" />
+    <EmbeddedResource Include="RAD1MELEMENTIDataSet.xsd" />
+    <EmbeddedResource Include="OSDataSet.xsd" />
+    <EmbeddedResource Include="BLGVRSTEDOKDataSet.xsd" />
+    <EmbeddedResource Include="VIRMANIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VIRMANIDataSet.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VALUTEDataSet.xsd" />
+    <EmbeddedResource Include="TIPIZNOSADataSet.xsd" />
+    <EmbeddedResource Include="OBRACUNDataSet.xsd" />
+    <EmbeddedResource Include="DOPRINOSDataSet.xsd" />
+    <EmbeddedResource Include="UCENIKOBRACUNDataSet.xsd" />
+    <EmbeddedResource Include="trazi_proizvodDataSet.xsd" />
+    <EmbeddedResource Include="trazi_partneraDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1M_DIO2DataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_KONACNI_POREZ_REKAPITULACIJA_PO_RADNICIMADataSet.xsd" />
+    <EmbeddedResource Include="testDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_KONACNI_POREZ_PO_OPCINAMADataSet.xsd" />
+    <EmbeddedResource Include="sp_zap1DataSet.xsd" />
+    <EmbeddedResource Include="s_od_pripremaDataSet.xsd" />
+    <EmbeddedResource Include="SHEMADDDataSet.xsd" />
+    <EmbeddedResource Include="RAD1GELEMENTIDataSet.xsd" />
+    <EmbeddedResource Include="ORGJEDDataSet.xsd" />
+    <EmbeddedResource Include="KONTODataSet.xsd" />
+    <EmbeddedResource Include="GODINA_I_MJESEC_OBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="STRUCNASPREMADataSet.xsd" />
+    <EmbeddedResource Include="RADNIKDataSet.xsd" />
+    <EmbeddedResource Include="OLAKSICEDataSet.xsd" />
+    <EmbeddedResource Include="BRACNOSTANJEDataSet.xsd" />
+    <EmbeddedResource Include="UCENIKDataSet.xsd" />
+    <EmbeddedResource Include="S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_KARTICEPARTNERADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_PARTNERI_SA_OTVORENIMADataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_DNEVNIKBLAGAJNEODDODataSet.xsd" />
+    <EmbeddedResource Include="S_OD_PROSJEK_PLACEDataSet.xsd" />
+    <EmbeddedResource Include="SMJENEDataSet.xsd" />
+    <EmbeddedResource Include="RAD1GELEMENTIVEZADataSet.xsd" />
+    <EmbeddedResource Include="GRUPEKOEFDataSet.xsd" />
+    <EmbeddedResource Include="Resources.resources" />
+    <EmbeddedResource Include="OSNOVAOSIGURANJADataSet.xsd" />
+    <EmbeddedResource Include="GRUPEOLAKSICADataSet.xsd" />
+    <EmbeddedResource Include="TIPIRADataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_SIFREOBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="S_OS_STANJE_LOKACIJA_ISPIS_NALJEPNICADataSet.xsd" />
+    <EmbeddedResource Include="TIPDOKUMENTADataSet.xsd" />
+    <EmbeddedResource Include="S_OD_KRIZNI_POREZDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_BOLOVANJE_FONDDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_POREZDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_STAT_KREDITDataSet.xsd" />
+    <EmbeddedResource Include="sp_maticni_kartonDataSet.xsd" />
+    <EmbeddedResource Include="SHEMAPLACADataSet.xsd" />
+    <EmbeddedResource Include="sp_id_zaglavljeDataSet.xsd" />
+    <EmbeddedResource Include="PARTNERDataSet.xsd" />
+    <EmbeddedResource Include="IZVORDOKUMENTADataSet.xsd" />
+    <EmbeddedResource Include="TIPOLAKSICEDataSet.xsd" />
+    <EmbeddedResource Include="ORGDIODataSet.xsd" />
+    <EmbeddedResource Include="BENEFICIRANIDataSet.xsd" />
+    <EmbeddedResource Include="BANKEDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1G_SATIDataSet.xsd" />
+    <EmbeddedResource Include="URADataSet.xsd" />
+    <EmbeddedResource Include="sp_REKAP_ISPLATADataSet.xsd" />
+    <EmbeddedResource Include="RAD1SPREMEVEZADataSet.xsd" />
+    <EmbeddedResource Include="MJESTOTROSKADataSet.xsd" />
+    <EmbeddedResource Include="AMSKUPINEDataSet.xsd" />
+    <EmbeddedResource Include="DDKATEGORIJADataSet.xsd" />
+    <EmbeddedResource Include="KRIZNIPOREZDataSet.xsd" />
+    <EmbeddedResource Include="IPIDENTDataSet.xsd" />
+    <EmbeddedResource Include="STRUKADataSet.xsd" />
+    <EmbeddedResource Include="RSMADataSet.xsd" />
+    <EmbeddedResource Include="V_DD_GODINE_ISPLATEDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1M_DIO3DataSet.xsd" />
+    <EmbeddedResource Include="S_OD_REKAP_KREDITNEDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_OO_MJESECNODataSet.xsd" />
+    <EmbeddedResource Include="S_OD_POREZ_MJESECNODataSet.xsd" />
+    <EmbeddedResource Include="RadnikPripremaDataSet.xsd" />
+    <EmbeddedResource Include="PRPLACEDataSet.xsd" />
+    <EmbeddedResource Include="ELEMENTDataSet.xsd" />
+    <EmbeddedResource Include="uraDocsDataSet.xsd" />
+    <EmbeddedResource Include="UGOVORORADUDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1GDataSet.xsd" />
+    <EmbeddedResource Include="STRANEKNJIZENJADataSet.xsd" />
+    <EmbeddedResource Include="STRANAKNJIZENJADataSet.xsd" />
+    <EmbeddedResource Include="RAD1VEZASPOLDataSet.xsd" />
+    <EmbeddedResource Include="RACUNDataSet.xsd" />
+    <EmbeddedResource Include="sp_RSOBRAZACDataSet.xsd" />
+    <EmbeddedResource Include="DDOBRACUNDataSet.xsd" />
+    <EmbeddedResource Include="V_DD_PREGLED_OBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_TABLICA018DataSet.xsd" />
+    <EmbeddedResource Include="S_OD_KONACNIDataSet.xsd" />
+    <EmbeddedResource Include="S_OD_BOLOVANJE_POSLODAVACDataSet.xsd" />
+    <EmbeddedResource Include="s_od_rekap_brutoDataSet.xsd" />
+    <EmbeddedResource Include="SP_FIN_URAPLACANJEDataSet.xsd" />
+    <EmbeddedResource Include="SHEMAIRADataSet.xsd" />
+    <EmbeddedResource Include="PregledRadnikaSvihDataSet.xsd" />
+    <EmbeddedResource Include="BLAGAJNADataSet.xsd" />
+    <EmbeddedResource Include="DDIZDATAKDataSet.xsd" />
+    <EmbeddedResource Include="DOSIPZAGLAVLJEDataSet.xsd" />
+    <EmbeddedResource Include="Framework.xml" />
+    <EmbeddedResource Include="RSVRSTEOBRACUNADataSet.xsd" />
+    <EmbeddedResource Include="POREZDataSet.xsd" />
+    <EmbeddedResource Include="OSOBNIODBITAKDataSet.xsd" />
+    <EmbeddedResource Include="SPOLDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_RAD1G_IIIDataSet.xsd" />
+    <EmbeddedResource Include="S_PLACA_KREDITI_KARTICEDataSet.xsd" />
+    <EmbeddedResource Include="SP_LISTA_IZNOSA_RADNIKADataSet.xsd" />
+    <EmbeddedResource Include="OSVRSTADataSet.xsd" />
+    <EmbeddedResource Include="OSDOKUMENTDataSet.xsd" />
+    <EmbeddedResource Include="DDVRSTEIZNOSADataSet.xsd" />
+    <EmbeddedResource Include="S_OS_POSTOJECI_DOKUMENTIDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_OTVORENE_STAVKEDataSet.xsd" />
+    <EmbeddedResource Include="S_FIN_BLAGAJNA_U_GKDataSet.xsd" />
+    <EmbeddedResource Include="VERZIJADataSet.xsd" />
+    <EmbeddedResource Include="PREGLEDZADUZENJADataSet.xsd" />
+    <EmbeddedResource Include="OSRAZMJESTAJDataSet.xsd" />
+    <EmbeddedResource Include="JEDINICAMJEREDataSet.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hlp\Hlp.csproj">
+      <Project>{1BEA20B8-346D-49DB-9B71-D204C27AD8DD}</Project>
+      <Name>Hlp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Emailing\Mipsed7.Emailing.csproj">
+      <Project>{D7E0F54B-610D-450C-99EB-4BF6E9EB6DC3}</Project>
+      <Name>Mipsed7.Emailing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DDKATEGORIJADataSet.xsc">
+      <DependentUpon>DDKATEGORIJADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DDKATEGORIJADataSet.xss">
+      <DependentUpon>DDKATEGORIJADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DDOBRACUNDataSet.xsc">
+      <DependentUpon>DDOBRACUNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DDOBRACUNDataSet.xss">
+      <DependentUpon>DDOBRACUNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FINPOREZDataSet.xsc">
+      <DependentUpon>FINPOREZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FINPOREZDataSet.xss">
+      <DependentUpon>FINPOREZDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GKSTAVKADataSet.xsc">
+      <DependentUpon>GKSTAVKADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GKSTAVKADataSet.xss">
+      <DependentUpon>GKSTAVKADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IBANDataSet.xsc">
+      <DependentUpon>IBANDataSet.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="IBANDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IBANDataSet.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="IBANDataSet.xss">
+      <DependentUpon>IBANDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IRADataSet.xsc">
+      <DependentUpon>IRADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IRADataSet.xss">
+      <DependentUpon>IRADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KORISNIKDataSet.xsc">
+      <DependentUpon>KORISNIKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KORISNIKDataSet.xss">
+      <DependentUpon>KORISNIKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OBRACUNDataSet.xsc">
+      <DependentUpon>OBRACUNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OBRACUNDataSet.xss">
+      <DependentUpon>OBRACUNDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PregledObracunaDataSet.xsc">
+      <DependentUpon>PregledObracunaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PregledObracunaDataSet.xss">
+      <DependentUpon>PregledObracunaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PregledRadnikaSvihDataSet.xsc">
+      <DependentUpon>PregledRadnikaSvihDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PregledRadnikaSvihDataSet.xss">
+      <DependentUpon>PregledRadnikaSvihDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SP_FIN_URAPLACANJEDataSet.xsc">
+      <DependentUpon>SP_FIN_URAPLACANJEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SP_FIN_URAPLACANJEDataSet.xss">
+      <DependentUpon>SP_FIN_URAPLACANJEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sp_maticni_kartonDataSet.xsc">
+      <DependentUpon>sp_maticni_kartonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sp_maticni_kartonDataSet.xss">
+      <DependentUpon>sp_maticni_kartonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_DD_IP1DataSet.xsc">
+      <DependentUpon>S_DD_IP1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_DD_IP1DataSet.xss">
+      <DependentUpon>S_DD_IP1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_FIN_IRA_PLACANJEDataSet.xsc">
+      <DependentUpon>S_FIN_IRA_PLACANJEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_FIN_IRA_PLACANJEDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>S_FIN_IRA_PLACANJEDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="S_FIN_IRA_PLACANJEDataSet.xss">
+      <DependentUpon>S_FIN_IRA_PLACANJEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OD_BOLOVANJE_FONDDataSet.xsc">
+      <DependentUpon>S_OD_BOLOVANJE_FONDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OD_BOLOVANJE_FONDDataSet.xss">
+      <DependentUpon>S_OD_BOLOVANJE_FONDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OD_BOLOVANJE_POSLODAVACDataSet.xsc">
+      <DependentUpon>S_OD_BOLOVANJE_POSLODAVACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OD_BOLOVANJE_POSLODAVACDataSet.xss">
+      <DependentUpon>S_OD_BOLOVANJE_POSLODAVACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.xsc">
+      <DependentUpon>S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.xss">
+      <DependentUpon>S_OS_PREGLED_AMORTIZACIJE_REKAPITULACIJADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VIRMANIDataSet.xsc">
+      <DependentUpon>VIRMANIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VIRMANIDataSet.xss">
+      <DependentUpon>VIRMANIDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

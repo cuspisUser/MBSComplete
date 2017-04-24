@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="VERZIJADataSet" targetNamespace="http://www.tempuri.org/VERZIJA" xmlns:mstns="http://www.tempuri.org/VERZIJA" xmlns="http://www.tempuri.org/VERZIJA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="VERZIJADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="VERZIJADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2055" msprop:DataSetName="VERZIJADataSet" msprop:DataAdapterInterfaceName="IVERZIJADataAdapter" msprop:ObjectName="VERZIJA" msprop:ObjectDescription="VERZIJA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Common" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="VERZIJA" msprop:ParentLvl="" msprop:LevelName="VERZIJA" msprop:Description="VERZIJA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDVERZIJA" msprop:Caption="IDVERZIJA" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="IDVERZIJA" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDVERZIJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="VERZIJA" msprop:Caption="VERZIJA" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="VERZIJA" msprop:Length="20" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="VERZIJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="VERZIJAConstraint1" msdata:ConstraintName="VERZIJAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//VERZIJA"/>
+         <xs:field  xpath="IDVERZIJA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="79">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

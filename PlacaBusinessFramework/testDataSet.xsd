@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="testDataSet" targetNamespace="http://www.tempuri.org/test" xmlns:mstns="http://www.tempuri.org/test" xmlns="http://www.tempuri.org/test" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="testDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="testDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2085" msprop:DataSetName="testDataSet" msprop:DataAdapterInterfaceName="ItestDataAdapter" msprop:ObjectName="test" msprop:ObjectDescription="test" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Common" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="test" msprop:ParentLvl="" msprop:LevelName="test" msprop:Description="test" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="idtest" msprop:Caption="idtest" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="idtest" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="idtest" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="nazivtest" msprop:Caption="nazivtest" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="nazivtest" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="nazivtest" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="oj" msprop:Caption="oj" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="oj" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="oj" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="mt" msprop:Caption="mt" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="mt" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="mt" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="testLevel1" msprop:ParentLvl="test" msprop:LevelName="Level1" msprop:Description="Level1" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="idtest" msprop:Caption="idtest" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="idtest" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="idtest" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDDOPRINOS" msprop:Caption="Šifra doprinosa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra doprinosa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDDOPRINOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="kontodop" msprop:Caption="konto" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="konto" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="kontodop" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="stranadop" msprop:Caption="stranadop" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="stranadop" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="stranadop" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="testLevel2" msprop:ParentLvl="test" msprop:LevelName="Level2" msprop:Description="Level2" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="idtest" msprop:Caption="idtest" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="idtest" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="idtest" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="kontoelement" msprop:Caption="kontoelement" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="kontoelement" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="kontoelement" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="stranaelement" msprop:Caption="stranaelement" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="stranaelement" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="stranaelement" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="testLevel3" msprop:ParentLvl="test" msprop:LevelName="Level3" msprop:Description="Level3" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="idtest" msprop:Caption="idtest" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="idtest" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="idtest" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="idostalo" msprop:Caption="idostalo" default="" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="idostalo" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="idostalo" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="kontoostalo" msprop:Caption="kontoostalo" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="kontoostalo" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="kontoostalo" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="stranaostalo" msprop:Caption="stranaostalo" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="stranaostalo" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="stranaostalo" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="testConstraint1" msdata:ConstraintName="testConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//test"/>
+         <xs:field  xpath="idtest"/>
+      </xs:unique>
+      <xs:unique  name="testLevel1Constraint1" msdata:ConstraintName="testLevel1Constraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//testLevel1"/>
+         <xs:field  xpath="idtest"/>
+         <xs:field  xpath="IDDOPRINOS"/>
+      </xs:unique>
+      <xs:unique  name="testLevel2Constraint1" msdata:ConstraintName="testLevel2Constraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//testLevel2"/>
+         <xs:field  xpath="idtest"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:unique>
+      <xs:unique  name="testLevel3Constraint1" msdata:ConstraintName="testLevel3Constraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//testLevel3"/>
+         <xs:field  xpath="idtest"/>
+         <xs:field  xpath="idostalo"/>
+      </xs:unique>
+      <xs:keyref  name="test_testLevel3" refer="testConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="test_testLevel3" msprop:rel_Generator_RelationVarName="relationtest_testLevel3" msprop:rel_Generator_UserChildTable="testLevel3" msprop:rel_Generator_UserParentTable="test" msprop:rel_Generator_ParentPropName="testRow" msprop:rel_Generator_ChildPropName="GettestLevel3Rows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//testLevel3"/>
+         <xs:field  xpath="idtest"/>
+      </xs:keyref>
+      <xs:keyref  name="test_testLevel2" refer="testConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="test_testLevel2" msprop:rel_Generator_RelationVarName="relationtest_testLevel2" msprop:rel_Generator_UserChildTable="testLevel2" msprop:rel_Generator_UserParentTable="test" msprop:rel_Generator_ParentPropName="testRow" msprop:rel_Generator_ChildPropName="GettestLevel2Rows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//testLevel2"/>
+         <xs:field  xpath="idtest"/>
+      </xs:keyref>
+      <xs:keyref  name="test_testLevel1" refer="testConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="test_testLevel1" msprop:rel_Generator_RelationVarName="relationtest_testLevel1" msprop:rel_Generator_UserChildTable="testLevel1" msprop:rel_Generator_UserParentTable="test" msprop:rel_Generator_ParentPropName="testRow" msprop:rel_Generator_ChildPropName="GettestLevel1Rows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//testLevel1"/>
+         <xs:field  xpath="idtest"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="test_testLevel1" msdata:parent="test" msdata:child="testLevel1" msdata:parentkey="idtest" msdata:childkey="idtest" msprop:Generator_UserRelationName="test_testLevel1" msprop:Generator_RelationVarName="relationtest_testLevel1" msprop:Generator_UserChildTable="testLevel1" msprop:Generator_UserParentTable="test" msprop:Generator_ParentPropName="testRow" msprop:Generator_ChildPropName="GettestLevel1Rows"/>
+         <msdata:Relationship  name="test_testLevel2" msdata:parent="test" msdata:child="testLevel2" msdata:parentkey="idtest" msdata:childkey="idtest" msprop:Generator_UserRelationName="test_testLevel2" msprop:Generator_RelationVarName="relationtest_testLevel2" msprop:Generator_UserChildTable="testLevel2" msprop:Generator_UserParentTable="test" msprop:Generator_ParentPropName="testRow" msprop:Generator_ChildPropName="GettestLevel2Rows"/>
+         <msdata:Relationship  name="test_testLevel3" msdata:parent="test" msdata:child="testLevel3" msdata:parentkey="idtest" msdata:childkey="idtest" msprop:Generator_UserRelationName="test_testLevel3" msprop:Generator_RelationVarName="relationtest_testLevel3" msprop:Generator_UserChildTable="testLevel3" msprop:Generator_UserParentTable="test" msprop:Generator_ParentPropName="testRow" msprop:Generator_ChildPropName="GettestLevel3Rows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="ELEMENTIDELEMENT" dkdata:BusinessComponent="ELEMENT" dkdata:Description="Elementi" dkdata:DataSetName="ELEMENTDataSet" dkdata:DataAdapterName="ELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDELEMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="DOPRINOSIDDOPRINOS" dkdata:BusinessComponent="DOPRINOS" dkdata:Description="Doprinosi" dkdata:DataSetName="DOPRINOSDataSet" dkdata:DataAdapterName="DOPRINOSDataAdapter" dkdata:DataAdapterInterfaceName="IDOPRINOSDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDDOPRINOS" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="145">
+            <dkdata:FillMethod  dkdata:FillString="idtest">
+               <dkdata:Attribute  dkdata:AttributeName="idtest"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="144">
+            <dkdata:FillMethod  dkdata:FillString="IDELEMENT" dkdata:IndexName="ItestLevel21" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="idtest">
+               <dkdata:Attribute  dkdata:AttributeName="idtest"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="143">
+            <dkdata:FillMethod  dkdata:FillString="IDDOPRINOS" dkdata:IndexName="ItestLevel11" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDDOPRINOS"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="idtest">
+               <dkdata:Attribute  dkdata:AttributeName="idtest"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="142">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

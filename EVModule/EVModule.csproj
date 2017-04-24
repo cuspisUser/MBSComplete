@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52D91AB8-FBB2-49EB-A7A1-133453057602}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EVModule</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="ImageResourcesNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+    </Compile>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\..\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.ExcelExport.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="Deklarit.Practices.CompositeUI" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EVModule\My\MyApplication.cs" />
+    <Compile Include="EVModule\My\MyComputer.cs" />
+    <Compile Include="EVModule\My\MyProject.cs" />
+    <Compile Include="EVModule\EvModule\EvidencijaCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EVModule\EvModule\EvidencijaCustomWorkItem.cs" />
+    <Compile Include="EVModule\EvModule\MainController.cs" />
+    <Compile Include="EVModule\EvModule\MainWorkItem.cs" />
+    <Compile Include="EVModule\EvModule\DeklaritModuleInit.cs" />
+    <Compile Include="EVModule\My\Resources\Resources.cs" />
+    <Compile Include="EVModule\My\MySettings.cs" />
+    <Compile Include="EVModule\Ev\OdabirUvjetaEvidencija.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hlp\Hlp.csproj">
+      <Project>{1BEA20B8-346D-49DB-9B71-D204C27AD8DD}</Project>
+      <Name>Hlp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mipsed.application.framework\mipsed.application.framework.csproj">
+      <Project>{2626A562-FC57-4CB1-9E50-EDE083A5C558}</Project>
+      <Name>mipsed.application.framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Core\Mipsed7.Core.csproj">
+      <Project>{1393FE8B-B9B3-43D3-A08A-200B40C885BA}</Project>
+      <Name>Mipsed7.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Emailing\Mipsed7.Emailing.csproj">
+      <Project>{D7E0F54B-610D-450C-99EB-4BF6E9EB6DC3}</Project>
+      <Name>Mipsed7.Emailing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaBusinessFramework\PlacaBusinessFramework.csproj">
+      <Project>{9445B689-F39F-448F-89C5-B6DD7CE8B88E}</Project>
+      <Name>PlacaBusinessFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaExeModule\PlacaExeModule.csproj">
+      <Project>{479B17FC-61D0-4420-9988-E959170D200F}</Project>
+      <Name>PlacaExeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EVModule.Ev.OdabirUvjetaEvidencija.resources" />
+    <EmbeddedResource Include="EVModule.EvModule.EvidencijaCustom.resources" />
+    <EmbeddedResource Include="EVModule.Resources.resources" />
+    <EmbeddedResource Include="ImageResourcesNew.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbs.ico" />
+  </ItemGroup>
+</Project>

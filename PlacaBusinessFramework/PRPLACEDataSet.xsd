@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="PRPLACEDataSet" targetNamespace="http://www.tempuri.org/PRPLACE" xmlns:mstns="http://www.tempuri.org/PRPLACE" xmlns="http://www.tempuri.org/PRPLACE" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="PRPLACEDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="PRPLACEDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2068" msprop:DataSetName="PRPLACEDataSet" msprop:DataAdapterInterfaceName="IPRPLACEDataAdapter" msprop:ObjectName="PRPLACE" msprop:ObjectDescription="Priprema plaae" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="PRPLACE" msprop:ParentLvl="" msprop:LevelName="PRPLACE" msprop:Description="Priprema plaae" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="PRPLACEZAMJESEC" msprop:Caption="Za mjesec" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Za mjesec" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAMJESEC" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PRPLACEID" msprop:Caption="Broj pripreme unutar mjeseca" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Broj pripreme unutar mjeseca" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PRPLACEZAGODINU" msprop:Caption="Za godinu" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Za godinu" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAGODINU" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PRPLACEOPIS" msprop:Caption="Opis" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Opis" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEOPIS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PRPLACEOSNOVICA" msprop:Caption="Osnovica" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Osnovica" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEOSNOVICA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="PRPLACEPROSJECNISATI" msprop:Caption="Prosječan broj sati" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Prosječan broj sati" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEPROSJECNISATI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="PRPLACEPRPLACEELEMENTI" msprop:ParentLvl="PRPLACE" msprop:LevelName="PRPLACEELEMENTI" msprop:Description="Elementi u pripremi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="PRPLACEZAMJESEC" msprop:Caption="Za mjesec" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Za mjesec" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAMJESEC" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PRPLACEID" msprop:Caption="Broj pripreme unutar mjeseca" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Broj pripreme unutar mjeseca" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PRPLACEZAGODINU" msprop:Caption="Za godinu" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Za godinu" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAGODINU" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="IDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVELEMENT" msprop:Caption="Naziv elementa" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv elementa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="POSTOTAK" msprop:Caption="Postotak" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Postotak" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="POSTOTAK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="PRPLACEPRPLACEELEMENTIRADNIK" msprop:ParentLvl="PRPLACEPRPLACEELEMENTI" msprop:LevelName="RADNIK" msprop:Description="Radnici u pripremi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="PRPLACEZAMJESEC" msprop:Caption="Za mjesec" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Za mjesec" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAMJESEC" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PRPLACEID" msprop:Caption="Broj pripreme unutar mjeseca" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Broj pripreme unutar mjeseca" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PRPLACEZAGODINU" msprop:Caption="Za godinu" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Za godinu" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEZAGODINU" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="IDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDRADNIK" msprop:Caption="Zaposlenik" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Zaposlenik" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDRADNIK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PREZIME" msprop:Caption="Prezime" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Prezime" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PREZIME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IME" msprop:Caption="Ime" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Ime" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PRPLACESATI" msprop:Caption="Sati" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Sati" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACESATI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="PRPLACESATNICA" msprop:Caption="Satnica" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Satnica" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACESATNICA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="PRPLACEPOSTOTAK" msprop:Caption="Postotak" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Postotak" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEPOSTOTAK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="PRPLACEIZNOS" msprop:Caption="Iznos" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Iznos" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PRPLACEIZNOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="SPOJENOPREZIME" msprop:Caption="SPOJENOPREZIME" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="SPOJENOPREZIME" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SPOJENOPREZIME" msprop:Deklarit.IsFormula="true" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="PRPLACEConstraint1" msdata:ConstraintName="PRPLACEConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PRPLACE"/>
+         <xs:field  xpath="PRPLACEZAMJESEC"/>
+         <xs:field  xpath="PRPLACEID"/>
+         <xs:field  xpath="PRPLACEZAGODINU"/>
+      </xs:unique>
+      <xs:unique  name="PRPLACEPRPLACEELEMENTIConstraint1" msdata:ConstraintName="PRPLACEPRPLACEELEMENTIConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PRPLACEPRPLACEELEMENTI"/>
+         <xs:field  xpath="PRPLACEZAMJESEC"/>
+         <xs:field  xpath="PRPLACEID"/>
+         <xs:field  xpath="PRPLACEZAGODINU"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:unique>
+      <xs:unique  name="PRPLACEPRPLACEELEMENTIRADNIKConstraint1" msdata:ConstraintName="PRPLACEPRPLACEELEMENTIRADNIKConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PRPLACEPRPLACEELEMENTIRADNIK"/>
+         <xs:field  xpath="PRPLACEZAMJESEC"/>
+         <xs:field  xpath="PRPLACEID"/>
+         <xs:field  xpath="PRPLACEZAGODINU"/>
+         <xs:field  xpath="IDELEMENT"/>
+         <xs:field  xpath="IDRADNIK"/>
+      </xs:unique>
+      <xs:keyref  name="PRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" refer="PRPLACEPRPLACEELEMENTIConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="PRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" msprop:rel_Generator_RelationVarName="relationPRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" msprop:rel_Generator_UserChildTable="PRPLACEPRPLACEELEMENTIRADNIK" msprop:rel_Generator_UserParentTable="PRPLACEPRPLACEELEMENTI" msprop:rel_Generator_ParentPropName="PRPLACEPRPLACEELEMENTIRow" msprop:rel_Generator_ChildPropName="GetPRPLACEPRPLACEELEMENTIRADNIKRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//PRPLACEPRPLACEELEMENTIRADNIK"/>
+         <xs:field  xpath="PRPLACEZAMJESEC"/>
+         <xs:field  xpath="PRPLACEID"/>
+         <xs:field  xpath="PRPLACEZAGODINU"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:keyref>
+      <xs:keyref  name="PRPLACE_PRPLACEPRPLACEELEMENTI" refer="PRPLACEConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="PRPLACE_PRPLACEPRPLACEELEMENTI" msprop:rel_Generator_RelationVarName="relationPRPLACE_PRPLACEPRPLACEELEMENTI" msprop:rel_Generator_UserChildTable="PRPLACEPRPLACEELEMENTI" msprop:rel_Generator_UserParentTable="PRPLACE" msprop:rel_Generator_ParentPropName="PRPLACERow" msprop:rel_Generator_ChildPropName="GetPRPLACEPRPLACEELEMENTIRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//PRPLACEPRPLACEELEMENTI"/>
+         <xs:field  xpath="PRPLACEZAMJESEC"/>
+         <xs:field  xpath="PRPLACEID"/>
+         <xs:field  xpath="PRPLACEZAGODINU"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="PRPLACE_PRPLACEPRPLACEELEMENTI" msdata:parent="PRPLACE" msdata:child="PRPLACEPRPLACEELEMENTI" msdata:parentkey="PRPLACEZAMJESEC PRPLACEID PRPLACEZAGODINU" msdata:childkey="PRPLACEZAMJESEC PRPLACEID PRPLACEZAGODINU" msprop:Generator_UserRelationName="PRPLACE_PRPLACEPRPLACEELEMENTI" msprop:Generator_RelationVarName="relationPRPLACE_PRPLACEPRPLACEELEMENTI" msprop:Generator_UserChildTable="PRPLACEPRPLACEELEMENTI" msprop:Generator_UserParentTable="PRPLACE" msprop:Generator_ParentPropName="PRPLACERow" msprop:Generator_ChildPropName="GetPRPLACEPRPLACEELEMENTIRows"/>
+         <msdata:Relationship  name="PRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" msdata:parent="PRPLACEPRPLACEELEMENTI" msdata:child="PRPLACEPRPLACEELEMENTIRADNIK" msdata:parentkey="PRPLACEZAMJESEC PRPLACEID PRPLACEZAGODINU IDELEMENT" msdata:childkey="PRPLACEZAMJESEC PRPLACEID PRPLACEZAGODINU IDELEMENT" msprop:Generator_UserRelationName="PRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" msprop:Generator_RelationVarName="relationPRPLACEPRPLACEELEMENTI_PRPLACEPRPLACEELEMENTIRADNIK" msprop:Generator_UserChildTable="PRPLACEPRPLACEELEMENTIRADNIK" msprop:Generator_UserParentTable="PRPLACEPRPLACEELEMENTI" msprop:Generator_ParentPropName="PRPLACEPRPLACEELEMENTIRow" msprop:Generator_ChildPropName="GetPRPLACEPRPLACEELEMENTIRADNIKRows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="RADNIKIDRADNIK" dkdata:BusinessComponent="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDRADNIK" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="PREZIME" type="String"/>
+                     <dkdata:attribute  name="IME" type="String"/>
+                     <dkdata:attribute  name="SPOJENOPREZIME" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ELEMENTIDELEMENT" dkdata:BusinessComponent="ELEMENT" dkdata:Description="Elementi" dkdata:DataSetName="ELEMENTDataSet" dkdata:DataAdapterName="ELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDELEMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVELEMENT" type="String"/>
+                     <dkdata:attribute  name="POSTOTAK" type="Decimal"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+            <dkdata:Dependency  name="SPOJENOPREZIME">
+               <dkdata:attribute  name="PREZIME"/>
+               <dkdata:attribute  name="IME"/>
+            </dkdata:Dependency>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+            <dkdata:Lookup  dkdata:DataProvider="PROVIDER_BRUTO">
+               <dkdata:LookupKey>
+                  <dkdata:Attribute  name="IDELEMENT"/>
+               </dkdata:LookupKey>
+               <dkdata:LookupParameters>
+               </dkdata:LookupParameters>
+            </dkdata:Lookup>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="133">
+            <dkdata:FillMethod  dkdata:FillString="IDRADNIK" dkdata:IndexName="IPRPLACEPRPLACEELEMENTIRADNIK1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDRADNIK"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEID">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESEC">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESECPRPLACEZAGODINU">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAGODINU"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESECPRPLACEZAGODINUIDELEMENT">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAGODINU"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDELEMENT"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="132">
+            <dkdata:FillMethod  dkdata:FillString="IDELEMENT" dkdata:IndexName="IPRPLACEPRPLACEELEMENTI1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEID">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESEC">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESECPRPLACEZAGODINU">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAGODINU"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="131">
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEID">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="PRPLACEIDPRPLACEZAMJESEC">
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEID"/>
+               <dkdata:Attribute  dkdata:AttributeName="PRPLACEZAMJESEC"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

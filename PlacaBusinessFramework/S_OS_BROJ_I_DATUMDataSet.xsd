@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="S_OS_BROJ_I_DATUMDataSet" targetNamespace="http://www.tempuri.org/S_OS_BROJ_I_DATUM" xmlns:mstns="http://www.tempuri.org/S_OS_BROJ_I_DATUM" xmlns="http://www.tempuri.org/S_OS_BROJ_I_DATUM" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="S_OS_BROJ_I_DATUMDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="S_OS_BROJ_I_DATUMDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2158" msprop:DataSetName="S_OS_BROJ_I_DATUMDataSet" msprop:DataAdapterInterfaceName="IS_OS_BROJ_I_DATUMDataAdapter" msprop:ObjectName="S_OS_BROJ_I_DATUM" msprop:ObjectDescription="S_OS_BROJ_I_DATUM" msprop:ObjectType="DataProvider" msprop:ObjectPath="\BusinessComponents\OSNOVNA" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.StoredProcedure="S_OS_BROJ_I_DATUM" msprop:Deklarit.GroupByAttributes="" msprop:Deklarit.GenerateCRUDForDP="false" msprop:Deklarit.ExtendedView="false" msprop:Deklarit.ShowGroupByDP="True" msprop:Deklarit.UseSuggestInFK="False" msprop:Deklarit.BCForNewOption="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="S_OS_BROJ_I_DATUM" msprop:ParentLvl="" msprop:LevelName="S_OS_BROJ_I_DATUM" msprop:Description="S_OS_BROJ_I_DATUM" msprop:HasOrder="false" msprop:OrderAttributes="" msprop:Deklarit.NumberOfRows="0">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="BROJDOK" msprop:Caption="BROJDOK" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="BROJDOK" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BROJDOK" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="ZADNJIDATUM" msprop:Caption="ZADNJIDATUM" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="date" msprop:Description="ZADNJIDATUM" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="ZADNJIDATUM" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:dateTime"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:parameters>
+         </dkdata:parameters>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="2">
+         </dkdata:FillMethods>
+         <dkdata:objectLinks>
+         </dkdata:objectLinks>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

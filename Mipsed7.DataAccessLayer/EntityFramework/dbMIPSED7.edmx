@@ -1,0 +1,2290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MIPSED7EntityFramework.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MIPSED7EntityFrameworkStoreContainer">
+          <EntitySet Name="FINPOREZ" EntityType="MIPSED7EntityFramework.Store.FINPOREZ" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="JEDINICAMJERE" EntityType="MIPSED7EntityFramework.Store.JEDINICAMJERE" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="JN_Narudzbenica" EntityType="MIPSED7EntityFramework.Store.JN_Narudzbenica" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="JN_NarudzbenicaProizvod" EntityType="MIPSED7EntityFramework.Store.JN_NarudzbenicaProizvod" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="PARTNER" EntityType="MIPSED7EntityFramework.Store.PARTNER" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="POSTANSKIBROJEVI" EntityType="MIPSED7EntityFramework.Store.POSTANSKIBROJEVI" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="PROIZVOD" EntityType="MIPSED7EntityFramework.Store.PROIZVOD" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RADNOMJESTO" EntityType="MIPSED7EntityFramework.Store.RADNOMJESTO" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SPOL" EntityType="MIPSED7EntityFramework.Store.SPOL" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Cjenik" EntityType="MIPSED7EntityFramework.Store.UF_Cjenik" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_CjenikStavka" EntityType="MIPSED7EntityFramework.Store.UF_CjenikStavka" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Obracun" EntityType="MIPSED7EntityFramework.Store.UF_Obracun" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_ObracunStavka" EntityType="MIPSED7EntityFramework.Store.UF_ObracunStavka" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Odjeljenje" EntityType="MIPSED7EntityFramework.Store.UF_Odjeljenje" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Olaksica" EntityType="MIPSED7EntityFramework.Store.UF_Olaksica" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Proizvod" EntityType="MIPSED7EntityFramework.Store.UF_Proizvod" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_ProizvodStavka" EntityType="MIPSED7EntityFramework.Store.UF_ProizvodStavka" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_ProizvodTipKolicine" EntityType="MIPSED7EntityFramework.Store.UF_ProizvodTipKolicine" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Razred" EntityType="MIPSED7EntityFramework.Store.UF_Razred" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_SkolskaGodina" EntityType="MIPSED7EntityFramework.Store.UF_SkolskaGodina" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Ucenik" EntityType="MIPSED7EntityFramework.Store.UF_Ucenik" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Ustanova" EntityType="MIPSED7EntityFramework.Store.UF_Ustanova" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_UstanovaSkolskaGodina" EntityType="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodina" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntityType="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntityType="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="UF_Voditelj" EntityType="MIPSED7EntityFramework.Store.UF_Voditelj" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="V_UF_CJENIK_STAVKE" EntityType="MIPSED7EntityFramework.Store.V_UF_CJENIK_STAVKE" store:Type="Views" store:Schema="dbo" store:Name="V_UF_CJENIK_STAVKE" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+            <DefiningQuery>SELECT 
+      [V_UF_CJENIK_STAVKE].[ID] AS [ID], 
+      [V_UF_CJENIK_STAVKE].[CjenikID] AS [CjenikID], 
+      [V_UF_CJENIK_STAVKE].[ProizvodID] AS [ProizvodID], 
+      [V_UF_CJENIK_STAVKE].[Naziv] AS [Naziv], 
+      [V_UF_CJENIK_STAVKE].[FINPOREZSTOPA] AS [FINPOREZSTOPA], 
+      [V_UF_CJENIK_STAVKE].[FINPOREZNAZIVPOREZ] AS [FINPOREZNAZIVPOREZ], 
+      [V_UF_CJENIK_STAVKE].[Cijena] AS [Cijena], 
+      [V_UF_CJENIK_STAVKE].[Olaksica] AS [Olaksica], 
+      [V_UF_CJENIK_STAVKE].[OlaksicaPostotak] AS [OlaksicaPostotak], 
+      [V_UF_CJENIK_STAVKE].[OlaksicaIznos] AS [OlaksicaIznos], 
+      [V_UF_CJENIK_STAVKE].[Iznos] AS [Iznos], 
+      [V_UF_CJENIK_STAVKE].[FINPOREZIDPOREZ] AS [FINPOREZIDPOREZ], 
+      [V_UF_CJENIK_STAVKE].[OlaksicaID] AS [OlaksicaID], 
+      [V_UF_CJENIK_STAVKE].[Proizvod_cjena] AS [Proizvod_cjena]
+      FROM [dbo].[V_UF_CJENIK_STAVKE] AS [V_UF_CJENIK_STAVKE]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_JN_Narudzbenica_PARTNER" Association="MIPSED7EntityFramework.Store.FK_JN_Narudzbenica_PARTNER">
+            <End Role="PARTNER" EntitySet="PARTNER" />
+            <End Role="JN_Narudzbenica" EntitySet="JN_Narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_JEDINICAMJERE" Association="MIPSED7EntityFramework.Store.FK_JN_NarudzbenicaProizvod_JEDINICAMJERE">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_JN_Narudzbenica" Association="MIPSED7EntityFramework.Store.FK_JN_NarudzbenicaProizvod_JN_Narudzbenica">
+            <End Role="JN_Narudzbenica" EntitySet="JN_Narudzbenica" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_PROIZVOD" Association="MIPSED7EntityFramework.Store.FK_JN_NarudzbenicaProizvod_PROIZVOD">
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_CjenikStavka_UF_Olaksica" Association="MIPSED7EntityFramework.Store.FK_UF_CjenikStavka_UF_Olaksica">
+            <End Role="UF_Olaksica" EntitySet="UF_Olaksica" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_CjenikStavka_UF_Proizvod" Association="MIPSED7EntityFramework.Store.FK_UF_CjenikStavka_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_CjenikStavkaUF_Cjenik" Association="MIPSED7EntityFramework.Store.FK_UF_CjenikStavkaUF_Cjenik">
+            <End Role="UF_Cjenik" EntitySet="UF_Cjenik" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_Obracun" Association="MIPSED7EntityFramework.Store.FK_UF_ObracunStavka_UF_Obracun">
+            <End Role="UF_Obracun" EntitySet="UF_Obracun" />
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_ObracunStavka" Association="MIPSED7EntityFramework.Store.FK_UF_ObracunStavka_UF_ObracunStavka">
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+            <End Role="UF_ObracunStavka1" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_Ucenik" Association="MIPSED7EntityFramework.Store.FK_UF_ObracunStavka_UF_Ucenik">
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_FINPOREZ" Association="MIPSED7EntityFramework.Store.FK_UF_Proizvod_FINPOREZ">
+            <End Role="FINPOREZ" EntitySet="FINPOREZ" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_JEDINICAMJERE" Association="MIPSED7EntityFramework.Store.FK_UF_Proizvod_JEDINICAMJERE">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_Proizvod" Association="MIPSED7EntityFramework.Store.FK_UF_Proizvod_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_Proizvod1" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_Proizvod1" Association="MIPSED7EntityFramework.Store.FK_UF_Proizvod_UF_Proizvod1">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_Proizvod1" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_ProizvodTipKolicine" Association="MIPSED7EntityFramework.Store.FK_UF_Proizvod_UF_ProizvodTipKolicine">
+            <End Role="UF_ProizvodTipKolicine" EntitySet="UF_ProizvodTipKolicine" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ProizvodStavka_UF_Proizvod" Association="MIPSED7EntityFramework.Store.FK_UF_ProizvodStavka_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_ProizvodStavka" EntitySet="UF_ProizvodStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ProizvodStavka_UF_Proizvod1" Association="MIPSED7EntityFramework.Store.FK_UF_ProizvodStavka_UF_Proizvod1">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_ProizvodStavka" EntitySet="UF_ProizvodStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Ucenik_SPOL" Association="MIPSED7EntityFramework.Store.FK_UF_Ucenik_SPOL">
+            <End Role="SPOL" EntitySet="SPOL" />
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Ustanova_POSTANSKIBROJEVI" Association="MIPSED7EntityFramework.Store.FK_UF_Ustanova_POSTANSKIBROJEVI">
+            <End Role="POSTANSKIBROJEVI" EntitySet="POSTANSKIBROJEVI" />
+            <End Role="UF_Ustanova" EntitySet="UF_Ustanova" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina">
+            <End Role="UF_SkolskaGodina" EntitySet="UF_SkolskaGodina" />
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodina_UF_Ustanova" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodina_UF_Ustanova">
+            <End Role="UF_Ustanova" EntitySet="UF_Ustanova" />
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje">
+            <End Role="UF_Odjeljenje" EntitySet="UF_Odjeljenje" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred">
+            <End Role="UF_Razred" EntitySet="UF_Razred" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina">
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj">
+            <End Role="UF_Voditelj" EntitySet="UF_Voditelj" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI">
+            <End Role="POSTANSKIBROJEVI" EntitySet="POSTANSKIBROJEVI" />
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik">
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje" Association="MIPSED7EntityFramework.Store.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Voditelj_RADNOMJESTO" Association="MIPSED7EntityFramework.Store.FK_UF_Voditelj_RADNOMJESTO">
+            <End Role="RADNOMJESTO" EntitySet="RADNOMJESTO" />
+            <End Role="UF_Voditelj" EntitySet="UF_Voditelj" />
+          </AssociationSet>
+          <AssociationSet Name="IPROIZVOD1" Association="MIPSED7EntityFramework.Store.IPROIZVOD1">
+            <End Role="FINPOREZ" EntitySet="FINPOREZ" />
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+          </AssociationSet>
+          <AssociationSet Name="IPROIZVOD2" Association="MIPSED7EntityFramework.Store.IPROIZVOD2">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="FINPOREZ">
+          <Key>
+            <PropertyRef Name="FINPOREZIDPOREZ" />
+          </Key>
+          <Property Name="FINPOREZIDPOREZ" Type="int" Nullable="false" />
+          <Property Name="FINPOREZNAZIVPOREZ" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="FINPOREZSTOPA" Type="smallmoney" Nullable="false" />
+          <Property Name="OSNOVICAUKNIZIIRA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JEDINICAMJERE">
+          <Key>
+            <PropertyRef Name="IDJEDINICAMJERE" />
+          </Key>
+          <Property Name="IDJEDINICAMJERE" Type="int" Nullable="false" />
+          <Property Name="NAZIVJEDINICAMJERE" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="JN_Narudzbenica">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Partner" Type="int" Nullable="false" />
+          <Property Name="ID_NacinIsporuke" Type="int" Nullable="false" />
+          <Property Name="ID_NacinPlacanja" Type="int" Nullable="false" />
+          <Property Name="BrojNarudzbe" Type="nvarchar" Nullable="false" MaxLength="12" />
+          <Property Name="DatumNarudzbe" Type="datetime" Nullable="false" />
+          <Property Name="Napomena" Type="nvarchar" MaxLength="250" />
+          <Property Name="TS" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JN_NarudzbenicaProizvod">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Narudzbenica" Type="int" Nullable="false" />
+          <Property Name="ID_Proizvod" Type="int" Nullable="false" />
+          <Property Name="ID_JedinicaMjere" Type="int" Nullable="false" />
+          <Property Name="Kolicina" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PARTNER">
+          <Key>
+            <PropertyRef Name="IDPARTNER" />
+          </Key>
+          <Property Name="IDPARTNER" Type="int" Nullable="false" />
+          <Property Name="NAZIVPARTNER" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="MB" Type="nvarchar" MaxLength="13" />
+          <Property Name="PARTNERMJESTO" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PARTNERULICA" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="PARTNEREMAIL" Type="nvarchar" MaxLength="100" />
+          <Property Name="PARTNEROIB" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="PARTNERFAX" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="PARTNERTELEFON" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PARTNERZIRO1" Type="nvarchar" Nullable="false" MaxLength="18" />
+          <Property Name="PARTNERZIRO2" Type="nvarchar" MaxLength="18" />
+          <Property Name="Ucenik" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="POSTANSKIBROJEVI">
+          <Key>
+            <PropertyRef Name="POSTANSKIBROJ" />
+          </Key>
+          <Property Name="POSTANSKIBROJ" Type="nvarchar" Nullable="false" MaxLength="5" />
+          <Property Name="NAZIVPOSTE" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PROIZVOD">
+          <Key>
+            <PropertyRef Name="IDPROIZVOD" />
+          </Key>
+          <Property Name="IDPROIZVOD" Type="int" Nullable="false" />
+          <Property Name="NAZIVPROIZVOD" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="FINPOREZIDPOREZ" Type="int" Nullable="false" />
+          <Property Name="CIJENA" Type="decimal" Nullable="false" Precision="9" Scale="4" />
+          <Property Name="IDJEDINICAMJERE" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RADNOMJESTO">
+          <Key>
+            <PropertyRef Name="IDRADNOMJESTO" />
+          </Key>
+          <Property Name="IDRADNOMJESTO" Type="int" Nullable="false" />
+          <Property Name="NAZIVRADNOMJESTO" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SPOL">
+          <Key>
+            <PropertyRef Name="IDSPOL" />
+          </Key>
+          <Property Name="IDSPOL" Type="int" Nullable="false" />
+          <Property Name="NAZIVSPOL" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="UF_Cjenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="VrijediOd" Type="date" Nullable="false" />
+          <Property Name="VrijediDo" Type="date" />
+        </EntityType>
+        <EntityType Name="UF_CjenikStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="CjenikID" Type="int" Nullable="false" />
+          <Property Name="ProizvodID" Type="int" Nullable="false" />
+          <Property Name="OlaksicaID" Type="int" />
+          <Property Name="OlaksicaPostotak" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OlaksicaIznos" Type="decimal" Scale="2" />
+          <Property Name="PorezID" Type="int" />
+          <Property Name="Cijena" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="UF_Obracun">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="GodinaObracuna" Type="int" Nullable="false" />
+          <Property Name="MjesecObracuna" Type="int" Nullable="false" />
+          <Property Name="KolicinaZaObracun" Type="int" Nullable="false" />
+          <Property Name="ValutaPlacanja" Type="date" Nullable="false" />
+          <Property Name="Zakljucaj" Type="bit" Nullable="false" />
+          <Property Name="Zaduzi" Type="bit" Nullable="false" />
+          <Property Name="Virmani" Type="bit" Nullable="false" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+        </EntityType>
+        <EntityType Name="UF_ObracunStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ObracunID" Type="int" Nullable="false" />
+          <Property Name="UcenikID" Type="int" Nullable="false" />
+          <Property Name="RazrednoOdjeljenjeID" Type="int" Nullable="false" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+        </EntityType>
+        <EntityType Name="UF_Odjeljenje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="UF_Olaksica">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="OlaksicaPostotak" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OlaksicaIznos" Type="decimal" Scale="2" />
+        </EntityType>
+        <EntityType Name="UF_Proizvod">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="JedinicaMjereID" Type="int" />
+          <Property Name="TipKolicineID" Type="tinyint" Nullable="false" />
+          <Property Name="IsGrupa" Type="bit" Nullable="false" />
+          <Property Name="PorezID" Type="int" />
+          <Property Name="Cijena" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <EntityType Name="UF_ProizvodStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="ProizvodID" Type="int" Nullable="false" />
+          <Property Name="ProizvodStavkaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UF_ProizvodTipKolicine">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" Nullable="false" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="UF_Razred">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="UF_SkolskaGodina">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DatumPocetka" Type="date" Nullable="false" />
+          <Property Name="DatumZavrsetka" Type="date" Nullable="false" />
+          <Property Name="Aktivnost" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UF_Ucenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Ime" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Prezime" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OIB" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="ImeRoditelj" Type="nvarchar" Nullable="true" MaxLength="50" />
+          <Property Name="PrezimeRoditelj" Type="nvarchar" Nullable="true" MaxLength="50" />
+          <Property Name="OIBRoditelj" Type="nvarchar" Nullable="true" MaxLength="11" />
+          <Property Name="IBANRoditelj" Type="nvarchar" Nullable="true" MaxLength="30" />
+          <Property Name="JMBG" Type="nvarchar" MaxLength="13" />
+          <Property Name="SpolID" Type="int" />
+          <Property Name="UlicaKucniBroj" Type="nvarchar" MaxLength="200" />
+          <Property Name="Naselje" Type="nvarchar" MaxLength="250" />
+          <Property Name="PostanskiBrojID" Type="nvarchar" MaxLength="5" />
+          <Property Name="DatumRodjenja" Type="date" />
+          <Property Name="Preneseno" Type="bit" Nullable="false" />
+          <Property Name="ID_Opcina" Type="nvarchar" MaxLength="4" />
+          <Property Name="ID_VrstaObiteljskeVeze" Type="int" Nullable="false" />
+          <Property Name="Aktivan" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UF_Ustanova">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="SkraceniNaziv" Type="nvarchar" Nullable="false" MaxLength="75" />
+          <Property Name="OIB" Type="nvarchar" Nullable="false" MaxLength="11" />
+          <Property Name="UlicaKucniBroj" Type="nvarchar" MaxLength="200" />
+          <Property Name="PostanskiBrojID" Type="nvarchar" MaxLength="5" />
+          <Property Name="KontaktPodaci" Type="nvarchar" MaxLength="100" />
+          <Property Name="Logo" Type="varbinary(max)" />
+          <Property Name="Maticna" Type="bit" />
+          <Property Name="KorisnikID" Type="int" Nullable="false" />
+          <Property Name="ModelOdobrenja" Type="nvarchar" MaxLength="2" />
+          <Property Name="PozivNaBrojOdobrenja" Type="nvarchar" MaxLength="39" />
+          <Property Name="SifraUstanove" Type="nvarchar" Nullable="false" MaxLength="3" />
+          <Property Name="Model" Type="nvarchar" MaxLength="2" />
+          <Property Name="PozivNaBroj01" Type="nvarchar" MaxLength="13" />
+          <Property Name="ModelOdobrenja2" Type="nvarchar" MaxLength="2" />
+          <Property Name="Broj" Type="tinyint" />
+          <Property Name="PDVNapomena" Type="bit" />
+          <Property Name="OtvoreneStavke" Type="bit" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodina">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="UstanovaID" Type="int" Nullable="false" />
+          <Property Name="SkolskaGodinaID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="UstanovaSkolskaGodinaID" Type="int" Nullable="false" />
+          <Property Name="RazredID" Type="int" Nullable="false" />
+          <Property Name="OdjeljenjeID" Type="int" Nullable="false" />
+          <Property Name="VoditeljID" Type="int" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="UstanovaSkolskaGodinaRazredOdjeljenjeID" Type="int" Nullable="false" />
+          <Property Name="UcenikID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UF_Voditelj">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TS" Type="datetime2" Nullable="false" Precision="2" />
+          <Property Name="Ime" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Prezime" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OIB" Type="nvarchar" MaxLength="11" />
+          <Property Name="RadnoMjestoID" Type="int" />
+          <Property Name="Aktivnost" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'MIPSED7_gundulic.dbo.V_UF_CJENIK_STAVKE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_UF_CJENIK_STAVKE">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="CjenikID" />
+            <PropertyRef Name="ProizvodID" />
+            <PropertyRef Name="Naziv" />
+            <PropertyRef Name="Proizvod_cjena" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="CjenikID" Type="int" Nullable="false" />
+          <Property Name="ProizvodID" Type="int" Nullable="false" />
+          <Property Name="Naziv" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="FINPOREZSTOPA" Type="smallmoney" />
+          <Property Name="FINPOREZNAZIVPOREZ" Type="nvarchar" MaxLength="30" />
+          <Property Name="Cijena" Type="decimal" Scale="2" />
+          <Property Name="Olaksica" Type="nvarchar" MaxLength="300" />
+          <Property Name="OlaksicaPostotak" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="OlaksicaIznos" Type="decimal" Scale="2" />
+          <Property Name="Iznos" Type="int" />
+          <Property Name="FINPOREZIDPOREZ" Type="int" />
+          <Property Name="OlaksicaID" Type="int" />
+          <Property Name="Proizvod_cjena" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <Association Name="FK_JN_Narudzbenica_PARTNER">
+          <End Role="PARTNER" Type="MIPSED7EntityFramework.Store.PARTNER" Multiplicity="1" />
+          <End Role="JN_Narudzbenica" Type="MIPSED7EntityFramework.Store.JN_Narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PARTNER">
+              <PropertyRef Name="IDPARTNER" />
+            </Principal>
+            <Dependent Role="JN_Narudzbenica">
+              <PropertyRef Name="ID_Partner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_JEDINICAMJERE">
+          <End Role="JEDINICAMJERE" Type="MIPSED7EntityFramework.Store.JEDINICAMJERE" Multiplicity="1" />
+          <End Role="JN_NarudzbenicaProizvod" Type="MIPSED7EntityFramework.Store.JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_JedinicaMjere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_JN_Narudzbenica">
+          <End Role="JN_Narudzbenica" Type="MIPSED7EntityFramework.Store.JN_Narudzbenica" Multiplicity="1" />
+          <End Role="JN_NarudzbenicaProizvod" Type="MIPSED7EntityFramework.Store.JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JN_Narudzbenica">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_Narudzbenica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_PROIZVOD">
+          <End Role="PROIZVOD" Type="MIPSED7EntityFramework.Store.PROIZVOD" Multiplicity="1" />
+          <End Role="JN_NarudzbenicaProizvod" Type="MIPSED7EntityFramework.Store.JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PROIZVOD">
+              <PropertyRef Name="IDPROIZVOD" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_Proizvod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_CjenikStavka_UF_Olaksica">
+          <End Role="UF_Olaksica" Type="MIPSED7EntityFramework.Store.UF_Olaksica" Multiplicity="0..1" />
+          <End Role="UF_CjenikStavka" Type="MIPSED7EntityFramework.Store.UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Olaksica">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="OlaksicaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_CjenikStavka_UF_Proizvod">
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="1" />
+          <End Role="UF_CjenikStavka" Type="MIPSED7EntityFramework.Store.UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="ProizvodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_CjenikStavkaUF_Cjenik">
+          <End Role="UF_Cjenik" Type="MIPSED7EntityFramework.Store.UF_Cjenik" Multiplicity="1" />
+          <End Role="UF_CjenikStavka" Type="MIPSED7EntityFramework.Store.UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Cjenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="CjenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ObracunStavka_UF_Obracun">
+          <End Role="UF_Obracun" Type="MIPSED7EntityFramework.Store.UF_Obracun" Multiplicity="1" />
+          <End Role="UF_ObracunStavka" Type="MIPSED7EntityFramework.Store.UF_ObracunStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Obracun">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka">
+              <PropertyRef Name="ObracunID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ObracunStavka_UF_ObracunStavka">
+          <End Role="UF_ObracunStavka" Type="MIPSED7EntityFramework.Store.UF_ObracunStavka" Multiplicity="1" />
+          <End Role="UF_ObracunStavka1" Type="MIPSED7EntityFramework.Store.UF_ObracunStavka" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_ObracunStavka">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ObracunStavka_UF_Ucenik">
+          <End Role="UF_Ucenik" Type="MIPSED7EntityFramework.Store.UF_Ucenik" Multiplicity="1" />
+          <End Role="UF_ObracunStavka" Type="MIPSED7EntityFramework.Store.UF_ObracunStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ucenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka">
+              <PropertyRef Name="UcenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_FINPOREZ">
+          <End Role="FINPOREZ" Type="MIPSED7EntityFramework.Store.FINPOREZ" Multiplicity="0..1" />
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FINPOREZ">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="PorezID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_JEDINICAMJERE">
+          <End Role="JEDINICAMJERE" Type="MIPSED7EntityFramework.Store.JEDINICAMJERE" Multiplicity="0..1" />
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="JedinicaMjereID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_Proizvod">
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="1" />
+          <End Role="UF_Proizvod1" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_Proizvod1">
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="1" />
+          <End Role="UF_Proizvod1" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_ProizvodTipKolicine">
+          <End Role="UF_ProizvodTipKolicine" Type="MIPSED7EntityFramework.Store.UF_ProizvodTipKolicine" Multiplicity="1" />
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_ProizvodTipKolicine">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="TipKolicineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ProizvodStavka_UF_Proizvod">
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="1" />
+          <End Role="UF_ProizvodStavka" Type="MIPSED7EntityFramework.Store.UF_ProizvodStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ProizvodStavka">
+              <PropertyRef Name="ProizvodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ProizvodStavka_UF_Proizvod1">
+          <End Role="UF_Proizvod" Type="MIPSED7EntityFramework.Store.UF_Proizvod" Multiplicity="1" />
+          <End Role="UF_ProizvodStavka" Type="MIPSED7EntityFramework.Store.UF_ProizvodStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ProizvodStavka">
+              <PropertyRef Name="ProizvodStavkaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Ucenik_SPOL">
+          <End Role="SPOL" Type="MIPSED7EntityFramework.Store.SPOL" Multiplicity="0..1" />
+          <End Role="UF_Ucenik" Type="MIPSED7EntityFramework.Store.UF_Ucenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SPOL">
+              <PropertyRef Name="IDSPOL" />
+            </Principal>
+            <Dependent Role="UF_Ucenik">
+              <PropertyRef Name="SpolID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Ustanova_POSTANSKIBROJEVI">
+          <End Role="POSTANSKIBROJEVI" Type="MIPSED7EntityFramework.Store.POSTANSKIBROJEVI" Multiplicity="0..1" />
+          <End Role="UF_Ustanova" Type="MIPSED7EntityFramework.Store.UF_Ustanova" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="POSTANSKIBROJEVI">
+              <PropertyRef Name="POSTANSKIBROJ" />
+            </Principal>
+            <Dependent Role="UF_Ustanova">
+              <PropertyRef Name="PostanskiBrojID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina">
+          <End Role="UF_SkolskaGodina" Type="MIPSED7EntityFramework.Store.UF_SkolskaGodina" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodina" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodina" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_SkolskaGodina">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="SkolskaGodinaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodina_UF_Ustanova">
+          <End Role="UF_Ustanova" Type="MIPSED7EntityFramework.Store.UF_Ustanova" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodina" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodina" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ustanova">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="UstanovaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje">
+          <End Role="UF_Odjeljenje" Type="MIPSED7EntityFramework.Store.UF_Odjeljenje" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Odjeljenje">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="OdjeljenjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred">
+          <End Role="UF_Razred" Type="MIPSED7EntityFramework.Store.UF_Razred" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Razred">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="RazredID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina">
+          <End Role="UF_UstanovaSkolskaGodina" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodina" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="UstanovaSkolskaGodinaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj">
+          <End Role="UF_Voditelj" Type="MIPSED7EntityFramework.Store.UF_Voditelj" Multiplicity="0..1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Voditelj">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="VoditeljID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI">
+          <End Role="POSTANSKIBROJEVI" Type="MIPSED7EntityFramework.Store.POSTANSKIBROJEVI" Multiplicity="0..1" />
+          <End Role="UF_Ucenik" Type="MIPSED7EntityFramework.Store.UF_Ucenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="POSTANSKIBROJEVI">
+              <PropertyRef Name="POSTANSKIBROJ" />
+            </Principal>
+            <Dependent Role="UF_Ucenik">
+              <PropertyRef Name="PostanskiBrojID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik">
+          <End Role="UF_Ucenik" Type="MIPSED7EntityFramework.Store.UF_Ucenik" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ucenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+              <PropertyRef Name="UcenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Type="MIPSED7EntityFramework.Store.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+              <PropertyRef Name="UstanovaSkolskaGodinaRazredOdjeljenjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Voditelj_RADNOMJESTO">
+          <End Role="RADNOMJESTO" Type="MIPSED7EntityFramework.Store.RADNOMJESTO" Multiplicity="0..1" />
+          <End Role="UF_Voditelj" Type="MIPSED7EntityFramework.Store.UF_Voditelj" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RADNOMJESTO">
+              <PropertyRef Name="IDRADNOMJESTO" />
+            </Principal>
+            <Dependent Role="UF_Voditelj">
+              <PropertyRef Name="RadnoMjestoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="IPROIZVOD1">
+          <End Role="FINPOREZ" Type="MIPSED7EntityFramework.Store.FINPOREZ" Multiplicity="1" />
+          <End Role="PROIZVOD" Type="MIPSED7EntityFramework.Store.PROIZVOD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FINPOREZ">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Principal>
+            <Dependent Role="PROIZVOD">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="IPROIZVOD2">
+          <End Role="JEDINICAMJERE" Type="MIPSED7EntityFramework.Store.JEDINICAMJERE" Multiplicity="1" />
+          <End Role="PROIZVOD" Type="MIPSED7EntityFramework.Store.PROIZVOD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="PROIZVOD">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_OtvoreneStavkePoRazredima" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RazdobljeDo" Type="datetime" Mode="In" />
+          <Parameter Name="IDRazredOdjeljenje" Type="int" Mode="In" />
+          <Parameter Name="IDUstanova" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MIPSED7EntityFramework" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="FINPOREZ" EntityType="MIPSED7EntityFramework.FINPOREZ" />
+          <EntitySet Name="JEDINICAMJERE" EntityType="MIPSED7EntityFramework.JEDINICAMJERE" />
+          <EntitySet Name="POSTANSKIBROJEVI" EntityType="MIPSED7EntityFramework.POSTANSKIBROJEVI" />
+          <EntitySet Name="RADNOMJESTO" EntityType="MIPSED7EntityFramework.RADNOMJESTO" />
+          <EntitySet Name="SPOL" EntityType="MIPSED7EntityFramework.SPOL" />
+          <EntitySet Name="UF_Cjenik" EntityType="MIPSED7EntityFramework.UF_Cjenik" />
+          <EntitySet Name="UF_Odjeljenje" EntityType="MIPSED7EntityFramework.UF_Odjeljenje" />
+          <EntitySet Name="UF_Olaksica" EntityType="MIPSED7EntityFramework.UF_Olaksica" />
+          <EntitySet Name="UF_ProizvodTipKolicine" EntityType="MIPSED7EntityFramework.UF_ProizvodTipKolicine" />
+          <EntitySet Name="UF_Razred" EntityType="MIPSED7EntityFramework.UF_Razred" />
+          <EntitySet Name="UF_SkolskaGodina" EntityType="MIPSED7EntityFramework.UF_SkolskaGodina" />
+          <EntitySet Name="UF_UstanovaSkolskaGodina" EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina" />
+          <EntitySet Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          <EntitySet Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+          <EntitySet Name="UF_Voditelj" EntityType="MIPSED7EntityFramework.UF_Voditelj" />
+          <AssociationSet Name="FK_UF_Voditelj_RADNOMJESTO" Association="MIPSED7EntityFramework.FK_UF_Voditelj_RADNOMJESTO">
+            <End Role="RADNOMJESTO" EntitySet="RADNOMJESTO" />
+            <End Role="UF_Voditelj" EntitySet="UF_Voditelj" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje">
+            <End Role="UF_Odjeljenje" EntitySet="UF_Odjeljenje" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred">
+            <End Role="UF_Razred" EntitySet="UF_Razred" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina">
+            <End Role="UF_SkolskaGodina" EntitySet="UF_SkolskaGodina" />
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina">
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj">
+            <End Role="UF_Voditelj" EntitySet="UF_Voditelj" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+          </AssociationSet>
+          <EntitySet Name="UF_CjenikStavka" EntityType="MIPSED7EntityFramework.UF_CjenikStavka" />
+          <AssociationSet Name="FK_UF_CjenikStavkaUF_Cjenik" Association="MIPSED7EntityFramework.FK_UF_CjenikStavkaUF_Cjenik">
+            <End Role="UF_Cjenik" EntitySet="UF_Cjenik" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_CjenikStavka_UF_Olaksica" Association="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Olaksica">
+            <End Role="UF_Olaksica" EntitySet="UF_Olaksica" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <EntitySet Name="UF_ProizvodStavka" EntityType="MIPSED7EntityFramework.UF_ProizvodStavka" />
+          <EntitySet Name="UF_ObracunStavka" EntityType="MIPSED7EntityFramework.UF_ObracunStavka" />
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_ObracunStavka" Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_ObracunStavka">
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+            <End Role="UF_ObracunStavka1" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <EntitySet Name="UF_Obracun" EntityType="MIPSED7EntityFramework.UF_Obracun" />
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_Obracun" Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Obracun">
+            <End Role="UF_Obracun" EntitySet="UF_Obracun" />
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <EntitySet Name="V_UF_CJENIK_STAVKE" EntityType="MIPSED7EntityFramework.V_UF_CJENIK_STAVKE" />
+          <EntitySet Name="UF_Proizvod" EntityType="MIPSED7EntityFramework.UF_Proizvod" />
+          <AssociationSet Name="FK_UF_Proizvod_FINPOREZ" Association="MIPSED7EntityFramework.FK_UF_Proizvod_FINPOREZ">
+            <End Role="FINPOREZ" EntitySet="FINPOREZ" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_JEDINICAMJERE" Association="MIPSED7EntityFramework.FK_UF_Proizvod_JEDINICAMJERE">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_CjenikStavka_UF_Proizvod" Association="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_CjenikStavka" EntitySet="UF_CjenikStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_Proizvod" Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_Proizvod1" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_Proizvod1" Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod1">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_Proizvod1" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Proizvod_UF_ProizvodTipKolicine" Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_ProizvodTipKolicine">
+            <End Role="UF_ProizvodTipKolicine" EntitySet="UF_ProizvodTipKolicine" />
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ProizvodStavka_UF_Proizvod" Association="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_ProizvodStavka" EntitySet="UF_ProizvodStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ProizvodStavka_UF_Proizvod1" Association="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod1">
+            <End Role="UF_Proizvod" EntitySet="UF_Proizvod" />
+            <End Role="UF_ProizvodStavka" EntitySet="UF_ProizvodStavka" />
+          </AssociationSet>
+          <FunctionImport Name="sp_OtvoreneStavkePoRazredima" ReturnType="Collection(MIPSED7EntityFramework.sp_OtvoreneStavkePoRazredima_Result)">
+            <Parameter Name="RazdobljeDo" Mode="In" Type="DateTime" />
+            <Parameter Name="IDRazredOdjeljenje" Mode="In" Type="Int32" />
+            <Parameter Name="IDUstanova" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="JN_Narudzbenica" EntityType="MIPSED7EntityFramework.JN_Narudzbenica" />
+          <EntitySet Name="JN_NarudzbenicaProizvod" EntityType="MIPSED7EntityFramework.JN_NarudzbenicaProizvod" />
+          <EntitySet Name="PARTNER" EntityType="MIPSED7EntityFramework.PARTNER" />
+          <EntitySet Name="PROIZVOD" EntityType="MIPSED7EntityFramework.PROIZVOD" />
+          <AssociationSet Name="IPROIZVOD1" Association="MIPSED7EntityFramework.IPROIZVOD1">
+            <End Role="FINPOREZ" EntitySet="FINPOREZ" />
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+          </AssociationSet>
+          <AssociationSet Name="IPROIZVOD2" Association="MIPSED7EntityFramework.IPROIZVOD2">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_Narudzbenica_PARTNER" Association="MIPSED7EntityFramework.FK_JN_Narudzbenica_PARTNER">
+            <End Role="PARTNER" EntitySet="PARTNER" />
+            <End Role="JN_Narudzbenica" EntitySet="JN_Narudzbenica" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_JN_Narudzbenica" Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JN_Narudzbenica">
+            <End Role="JN_Narudzbenica" EntitySet="JN_Narudzbenica" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_PROIZVOD" Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_PROIZVOD">
+            <End Role="PROIZVOD" EntitySet="PROIZVOD" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JN_NarudzbenicaProizvod_JEDINICAMJERE" Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JEDINICAMJERE">
+            <End Role="JEDINICAMJERE" EntitySet="JEDINICAMJERE" />
+            <End Role="JN_NarudzbenicaProizvod" EntitySet="JN_NarudzbenicaProizvod" />
+          </AssociationSet>
+          <EntitySet Name="UF_Ucenik" EntityType="MIPSED7EntityFramework.UF_Ucenik" />
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI">
+            <End Role="POSTANSKIBROJEVI" EntitySet="POSTANSKIBROJEVI" />
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_Ucenik_SPOL" Association="MIPSED7EntityFramework.FK_UF_Ucenik_SPOL">
+            <End Role="SPOL" EntitySet="SPOL" />
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_ObracunStavka_UF_Ucenik" Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Ucenik">
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+            <End Role="UF_ObracunStavka" EntitySet="UF_ObracunStavka" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik">
+            <End Role="UF_Ucenik" EntitySet="UF_Ucenik" />
+            <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" EntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+          </AssociationSet>
+          <EntitySet Name="UF_Ustanova" EntityType="MIPSED7EntityFramework.UF_Ustanova" />
+          <AssociationSet Name="FK_UF_Ustanova_POSTANSKIBROJEVI" Association="MIPSED7EntityFramework.FK_UF_Ustanova_POSTANSKIBROJEVI">
+            <End Role="POSTANSKIBROJEVI" EntitySet="POSTANSKIBROJEVI" />
+            <End Role="UF_Ustanova" EntitySet="UF_Ustanova" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UF_UstanovaSkolskaGodina_UF_Ustanova" Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_Ustanova">
+            <End Role="UF_Ustanova" EntitySet="UF_Ustanova" />
+            <End Role="UF_UstanovaSkolskaGodina" EntitySet="UF_UstanovaSkolskaGodina" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="FINPOREZ">
+          <Key>
+            <PropertyRef Name="FINPOREZIDPOREZ" />
+          </Key>
+          <Property Name="FINPOREZIDPOREZ" Type="Int32" Nullable="false" />
+          <Property Name="FINPOREZNAZIVPOREZ" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="FINPOREZSTOPA" Type="Decimal" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="OSNOVICAUKNIZIIRA" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UF_Proizvod" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_FINPOREZ" FromRole="FINPOREZ" ToRole="UF_Proizvod" />
+          <NavigationProperty Name="PROIZVOD" Relationship="MIPSED7EntityFramework.IPROIZVOD1" FromRole="FINPOREZ" ToRole="PROIZVOD" />
+        </EntityType>
+        <EntityType Name="JEDINICAMJERE">
+          <Key>
+            <PropertyRef Name="IDJEDINICAMJERE" />
+          </Key>
+          <Property Name="IDJEDINICAMJERE" Type="Int32" Nullable="false" />
+          <Property Name="NAZIVJEDINICAMJERE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_Proizvod" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_JEDINICAMJERE" FromRole="JEDINICAMJERE" ToRole="UF_Proizvod" />
+          <NavigationProperty Name="PROIZVOD" Relationship="MIPSED7EntityFramework.IPROIZVOD2" FromRole="JEDINICAMJERE" ToRole="PROIZVOD" />
+          <NavigationProperty Name="JN_NarudzbenicaProizvod" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JEDINICAMJERE" FromRole="JEDINICAMJERE" ToRole="JN_NarudzbenicaProizvod" />
+        </EntityType>
+        <EntityType Name="POSTANSKIBROJEVI">
+          <Key>
+            <PropertyRef Name="POSTANSKIBROJ" />
+          </Key>
+          <Property Name="POSTANSKIBROJ" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="NAZIVPOSTE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_Ucenik" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI" FromRole="POSTANSKIBROJEVI" ToRole="UF_Ucenik" />
+          <NavigationProperty Name="UF_Ustanova" Relationship="MIPSED7EntityFramework.FK_UF_Ustanova_POSTANSKIBROJEVI" FromRole="POSTANSKIBROJEVI" ToRole="UF_Ustanova" />
+        </EntityType>
+        <EntityType Name="RADNOMJESTO">
+          <Key>
+            <PropertyRef Name="IDRADNOMJESTO" />
+          </Key>
+          <Property Name="IDRADNOMJESTO" Type="Int32" Nullable="false" />
+          <Property Name="NAZIVRADNOMJESTO" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_Voditelj" Relationship="MIPSED7EntityFramework.FK_UF_Voditelj_RADNOMJESTO" FromRole="RADNOMJESTO" ToRole="UF_Voditelj" />
+        </EntityType>
+        <EntityType Name="SPOL">
+          <Key>
+            <PropertyRef Name="IDSPOL" />
+          </Key>
+          <Property Name="IDSPOL" Type="Int32" Nullable="false" />
+          <Property Name="NAZIVSPOL" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_Ucenik" Relationship="MIPSED7EntityFramework.FK_UF_Ucenik_SPOL" FromRole="SPOL" ToRole="UF_Ucenik" />
+        </EntityType>
+        <EntityType Name="UF_Cjenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="VrijediOd" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="VrijediDo" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="UF_CjenikStavka" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavkaUF_Cjenik" FromRole="UF_Cjenik" ToRole="UF_CjenikStavka" />
+        </EntityType>
+        <EntityType Name="UF_Odjeljenje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje" FromRole="UF_Odjeljenje" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+        </EntityType>
+        <EntityType Name="UF_Olaksica">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="OlaksicaPostotak" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="OlaksicaIznos" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="UF_CjenikStavka" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Olaksica" FromRole="UF_Olaksica" ToRole="UF_CjenikStavka" />
+        </EntityType>
+        <EntityType Name="UF_ProizvodTipKolicine">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_Proizvod" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_ProizvodTipKolicine" FromRole="UF_ProizvodTipKolicine" ToRole="UF_Proizvod" />
+        </EntityType>
+        <EntityType Name="UF_Razred">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred" FromRole="UF_Razred" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+        </EntityType>
+        <EntityType Name="UF_SkolskaGodina">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Naziv" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DatumPocetka" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DatumZavrsetka" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Aktivnost" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodina" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina" FromRole="UF_SkolskaGodina" ToRole="UF_UstanovaSkolskaGodina" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodina">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="UstanovaID" Type="Int32" Nullable="false" />
+          <Property Name="SkolskaGodinaID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UF_SkolskaGodina" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina" FromRole="UF_UstanovaSkolskaGodina" ToRole="UF_SkolskaGodina" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina" FromRole="UF_UstanovaSkolskaGodina" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          <NavigationProperty Name="UF_Ustanova" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_Ustanova" FromRole="UF_UstanovaSkolskaGodina" ToRole="UF_Ustanova" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="UstanovaSkolskaGodinaID" Type="Int32" Nullable="false" />
+          <Property Name="RazredID" Type="Int32" Nullable="false" />
+          <Property Name="OdjeljenjeID" Type="Int32" Nullable="false" />
+          <Property Name="VoditeljID" Type="Int32" />
+          <NavigationProperty Name="UF_Odjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" ToRole="UF_Odjeljenje" />
+          <NavigationProperty Name="UF_Razred" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" ToRole="UF_Razred" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodina" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" ToRole="UF_UstanovaSkolskaGodina" />
+          <NavigationProperty Name="UF_Voditelj" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" ToRole="UF_Voditelj" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+        </EntityType>
+        <EntityType Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="UstanovaSkolskaGodinaRazredOdjeljenjeID" Type="Int32" Nullable="false" />
+          <Property Name="UcenikID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+          <NavigationProperty Name="UF_Ucenik" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik" FromRole="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" ToRole="UF_Ucenik" />
+        </EntityType>
+        <EntityType Name="UF_Voditelj">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TS" Type="DateTime" Nullable="false" Precision="2" />
+          <Property Name="Ime" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Prezime" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OIB" Type="String" MaxLength="11" Unicode="true" FixedLength="false" />
+          <Property Name="RadnoMjestoID" Type="Int32" />
+          <Property Name="Aktivnost" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="RADNOMJESTO" Relationship="MIPSED7EntityFramework.FK_UF_Voditelj_RADNOMJESTO" FromRole="UF_Voditelj" ToRole="RADNOMJESTO" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj" FromRole="UF_Voditelj" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenje" />
+        </EntityType>
+        <Association Name="FK_UF_Voditelj_RADNOMJESTO">
+          <End Role="RADNOMJESTO" Type="MIPSED7EntityFramework.RADNOMJESTO" Multiplicity="0..1" />
+          <End Role="UF_Voditelj" Type="MIPSED7EntityFramework.UF_Voditelj" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RADNOMJESTO">
+              <PropertyRef Name="IDRADNOMJESTO" />
+            </Principal>
+            <Dependent Role="UF_Voditelj">
+              <PropertyRef Name="RadnoMjestoID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje">
+          <End Role="UF_Odjeljenje" Type="MIPSED7EntityFramework.UF_Odjeljenje" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Odjeljenje">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="OdjeljenjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred">
+          <End Role="UF_Razred" Type="MIPSED7EntityFramework.UF_Razred" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Razred">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="RazredID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina">
+          <End Role="UF_SkolskaGodina" Type="MIPSED7EntityFramework.UF_SkolskaGodina" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodina" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_SkolskaGodina">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="SkolskaGodinaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina">
+          <End Role="UF_UstanovaSkolskaGodina" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="UstanovaSkolskaGodinaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj">
+          <End Role="UF_Voditelj" Type="MIPSED7EntityFramework.UF_Voditelj" Multiplicity="0..1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Voditelj">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="VoditeljID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Multiplicity="1" />
+          <End Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+              <PropertyRef Name="UstanovaSkolskaGodinaRazredOdjeljenjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UF_CjenikStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="Int32" Name="CjenikID" Nullable="false" />
+          <Property Type="Int32" Name="ProizvodID" Nullable="false" />
+          <Property Type="Int32" Name="OlaksicaID" />
+          <Property Type="Decimal" Name="OlaksicaPostotak" Precision="5" Scale="2" />
+          <Property Type="Decimal" Name="OlaksicaIznos" Precision="18" Scale="2" />
+          <NavigationProperty Name="UF_Cjenik" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavkaUF_Cjenik" FromRole="UF_CjenikStavka" ToRole="UF_Cjenik" />
+          <NavigationProperty Name="UF_Olaksica" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Olaksica" FromRole="UF_CjenikStavka" ToRole="UF_Olaksica" />
+          <Property Type="Int32" Name="PorezID" />
+          <Property Type="Decimal" Name="Cijena" Precision="18" Scale="2" />
+          <NavigationProperty Name="UF_Proizvod" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Proizvod" FromRole="UF_CjenikStavka" ToRole="UF_Proizvod" />
+        </EntityType>
+        <Association Name="FK_UF_CjenikStavkaUF_Cjenik">
+          <End Type="MIPSED7EntityFramework.UF_Cjenik" Role="UF_Cjenik" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_CjenikStavka" Role="UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Cjenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="CjenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_CjenikStavka_UF_Olaksica">
+          <End Type="MIPSED7EntityFramework.UF_Olaksica" Role="UF_Olaksica" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_CjenikStavka" Role="UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Olaksica">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="OlaksicaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UF_ProizvodStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="Int32" Name="ProizvodID" Nullable="false" />
+          <Property Type="Int32" Name="ProizvodStavkaID" Nullable="false" />
+          <NavigationProperty Name="UF_Proizvod" Relationship="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod" FromRole="UF_ProizvodStavka" ToRole="UF_Proizvod" />
+          <NavigationProperty Name="UF_Proizvod1" Relationship="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod1" FromRole="UF_ProizvodStavka" ToRole="UF_Proizvod" />
+          </EntityType>
+        <EntityType Name="UF_ObracunStavka">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="ObracunID" Nullable="false" />
+          <Property Type="Int32" Name="UcenikID" Nullable="false" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="Int32" Name="RazrednoOdjeljenjeID" Nullable="false" />
+          <NavigationProperty Name="UF_ObracunStavka1" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_ObracunStavka" FromRole="UF_ObracunStavka" ToRole="UF_ObracunStavka1" />
+          <NavigationProperty Name="UF_ObracunStavka2" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_ObracunStavka" FromRole="UF_ObracunStavka1" ToRole="UF_ObracunStavka" />
+          <NavigationProperty Name="UF_Obracun" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Obracun" FromRole="UF_ObracunStavka" ToRole="UF_Obracun" />
+          <NavigationProperty Name="UF_Ucenik" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Ucenik" FromRole="UF_ObracunStavka" ToRole="UF_Ucenik" />
+        </EntityType>
+        <Association Name="FK_UF_ObracunStavka_UF_ObracunStavka">
+          <End Type="MIPSED7EntityFramework.UF_ObracunStavka" Role="UF_ObracunStavka" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_ObracunStavka" Role="UF_ObracunStavka1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_ObracunStavka">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UF_Obracun">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Naziv" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="GodinaObracuna" Nullable="false" />
+          <Property Type="Int32" Name="MjesecObracuna" Nullable="false" />
+          <Property Type="Int32" Name="KolicinaZaObracun" Nullable="false" />
+          <Property Type="DateTime" Name="ValutaPlacanja" Nullable="false" Precision="0" />
+          <Property Type="Boolean" Name="Zakljucaj" Nullable="false" />
+          <Property Type="Boolean" Name="Zaduzi" Nullable="false" />
+          <Property Type="Boolean" Name="Virmani" Nullable="false" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <NavigationProperty Name="UF_ObracunStavka" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Obracun" FromRole="UF_Obracun" ToRole="UF_ObracunStavka" />
+        </EntityType>
+        <Association Name="FK_UF_ObracunStavka_UF_Obracun">
+          <End Type="MIPSED7EntityFramework.UF_Obracun" Role="UF_Obracun" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_ObracunStavka" Role="UF_ObracunStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Obracun">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka">
+              <PropertyRef Name="ObracunID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="V_UF_CJENIK_STAVKE">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="CjenikID" />
+            <PropertyRef Name="ProizvodID" />
+            <PropertyRef Name="Naziv" />
+            <PropertyRef Name="Proizvod_cjena" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="CjenikID" Nullable="false" />
+          <Property Type="Int32" Name="ProizvodID" Nullable="false" />
+          <Property Type="String" Name="Naziv" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="FINPOREZSTOPA" Precision="10" Scale="4" />
+          <Property Type="String" Name="FINPOREZNAZIVPOREZ" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Cijena" Precision="18" Scale="2" />
+          <Property Type="String" Name="Olaksica" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="OlaksicaPostotak" Precision="5" Scale="2" />
+          <Property Type="Decimal" Name="OlaksicaIznos" Precision="18" Scale="2" />
+          <Property Type="Int32" Name="Iznos" />
+          <Property Type="Int32" Name="FINPOREZIDPOREZ" />
+          <Property Type="Int32" Name="OlaksicaID" />
+          <Property Type="Decimal" Name="Proizvod_cjena" Nullable="false" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="UF_Proizvod">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="String" Name="Naziv" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="JedinicaMjereID" />
+          <Property Type="Byte" Name="TipKolicineID" Nullable="false" />
+          <Property Type="Boolean" Name="IsGrupa" Nullable="false" />
+          <Property Type="Int32" Name="PorezID" />
+          <Property Type="Decimal" Name="Cijena" Nullable="false" Precision="18" Scale="2" />
+          <NavigationProperty Name="FINPOREZ" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_FINPOREZ" FromRole="UF_Proizvod" ToRole="FINPOREZ" />
+          <NavigationProperty Name="JEDINICAMJERE" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_JEDINICAMJERE" FromRole="UF_Proizvod" ToRole="JEDINICAMJERE" />
+          <NavigationProperty Name="UF_CjenikStavka" Relationship="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Proizvod" FromRole="UF_Proizvod" ToRole="UF_CjenikStavka" />
+          <NavigationProperty Name="UF_Proizvod1" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod" FromRole="UF_Proizvod" ToRole="UF_Proizvod1" />
+          <NavigationProperty Name="UF_Proizvod2" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod" FromRole="UF_Proizvod1" ToRole="UF_Proizvod" />
+          <NavigationProperty Name="UF_Proizvod11" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod1" FromRole="UF_Proizvod" ToRole="UF_Proizvod1" />
+          <NavigationProperty Name="UF_Proizvod3" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod1" FromRole="UF_Proizvod1" ToRole="UF_Proizvod" />
+          <NavigationProperty Name="UF_ProizvodTipKolicine" Relationship="MIPSED7EntityFramework.FK_UF_Proizvod_UF_ProizvodTipKolicine" FromRole="UF_Proizvod" ToRole="UF_ProizvodTipKolicine" />
+          <NavigationProperty Name="UF_ProizvodStavka" Relationship="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod" FromRole="UF_Proizvod" ToRole="UF_ProizvodStavka" />
+          <NavigationProperty Name="UF_ProizvodStavka1" Relationship="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod1" FromRole="UF_Proizvod" ToRole="UF_ProizvodStavka" />
+        </EntityType>
+        <Association Name="FK_UF_Proizvod_FINPOREZ">
+          <End Type="MIPSED7EntityFramework.FINPOREZ" Role="FINPOREZ" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FINPOREZ">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="PorezID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_JEDINICAMJERE">
+          <End Type="MIPSED7EntityFramework.JEDINICAMJERE" Role="JEDINICAMJERE" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="JedinicaMjereID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_CjenikStavka_UF_Proizvod">
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_CjenikStavka" Role="UF_CjenikStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_CjenikStavka">
+              <PropertyRef Name="ProizvodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_Proizvod">
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_Proizvod1">
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Proizvod_UF_ProizvodTipKolicine">
+          <End Type="MIPSED7EntityFramework.UF_ProizvodTipKolicine" Role="UF_ProizvodTipKolicine" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_ProizvodTipKolicine">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_Proizvod">
+              <PropertyRef Name="TipKolicineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ProizvodStavka_UF_Proizvod">
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_ProizvodStavka" Role="UF_ProizvodStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ProizvodStavka">
+              <PropertyRef Name="ProizvodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ProizvodStavka_UF_Proizvod1">
+          <End Type="MIPSED7EntityFramework.UF_Proizvod" Role="UF_Proizvod" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_ProizvodStavka" Role="UF_ProizvodStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Proizvod">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ProizvodStavka">
+              <PropertyRef Name="ProizvodStavkaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_OtvoreneStavkePoRazredima_Result">
+          <Property Type="Decimal" Name="Duguje" Nullable="true" Precision="19" />
+          <Property Type="Decimal" Name="Potrazuje" Nullable="true" Precision="19" />
+          <Property Type="String" Name="Konto" Nullable="false" MaxLength="14" />
+          <Property Type="DateTime" Name="DatumValute" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="DatumDokumenta" Nullable="false" Precision="23" />
+          <Property Type="String" Name="SkraceniNaziv" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="BrojDokumenta" Nullable="false" />
+          <Property Type="Int32" Name="BrojStavke" Nullable="false" />
+          <Property Type="String" Name="OpisKnjizenja" Nullable="true" MaxLength="150" />
+          <Property Type="Int32" Name="IDPartner" Nullable="true" />
+          <Property Type="Int32" Name="IDUcenika" Nullable="false" />
+          <Property Type="Decimal" Name="Otvoreno" Nullable="true" Precision="19" />
+          <Property Type="String" Name="Naziv" Nullable="false" MaxLength="150" />
+          <Property Type="Int32" Name="IDDokument" Nullable="false" />
+          <Property Type="String" Name="NazivPartner" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="MB" Nullable="true" MaxLength="13" />
+          <Property Type="String" Name="PartnerMjesto" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PartnerUlica" Nullable="false" MaxLength="150" />
+          <Property Type="Int32" Name="IDGkStavka" Nullable="false" />
+          <Property Type="String" Name="OriginalniDokument" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Ustanova" Nullable="false" MaxLength="300" />
+          <Property Type="String" Name="Razred" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Odjeljenje" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <EntityType Name="JN_Narudzbenica">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="ID_Partner" Nullable="false" />
+          <Property Type="String" Name="BrojNarudzbe" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Napomena" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="3" />
+          <NavigationProperty Name="PARTNER" Relationship="MIPSED7EntityFramework.FK_JN_Narudzbenica_PARTNER" FromRole="JN_Narudzbenica" ToRole="PARTNER" />
+          <NavigationProperty Name="JN_NarudzbenicaProizvod" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JN_Narudzbenica" FromRole="JN_Narudzbenica" ToRole="JN_NarudzbenicaProizvod" />
+          <Property Type="Int32" Name="ID_NacinIsporuke" Nullable="false" />
+          <Property Type="Int32" Name="ID_NacinPlacanja" Nullable="false" />
+          <Property Type="DateTime" Name="DatumNarudzbe" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="JN_NarudzbenicaProizvod">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="ID_Narudzbenica" Nullable="false" />
+          <Property Type="Int32" Name="ID_Proizvod" Nullable="false" />
+          <NavigationProperty Name="JN_Narudzbenica" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JN_Narudzbenica" FromRole="JN_NarudzbenicaProizvod" ToRole="JN_Narudzbenica" />
+          <NavigationProperty Name="PROIZVOD" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_PROIZVOD" FromRole="JN_NarudzbenicaProizvod" ToRole="PROIZVOD" />
+          <Property Type="Int32" Name="ID_JedinicaMjere" Nullable="false" />
+          <Property Type="Decimal" Name="Kolicina" Nullable="false" Precision="19" Scale="4" />
+          <NavigationProperty Name="JEDINICAMJERE" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JEDINICAMJERE" FromRole="JN_NarudzbenicaProizvod" ToRole="JEDINICAMJERE" />
+        </EntityType>
+        <EntityType Name="PARTNER">
+          <Key>
+            <PropertyRef Name="IDPARTNER" />
+          </Key>
+          <Property Type="Int32" Name="IDPARTNER" Nullable="false" />
+          <Property Type="String" Name="NAZIVPARTNER" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MB" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERMJESTO" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERULICA" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNEREMAIL" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNEROIB" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERFAX" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERTELEFON" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERZIRO1" Nullable="false" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PARTNERZIRO2" MaxLength="18" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Ucenik" Nullable="false" />
+          <NavigationProperty Name="JN_Narudzbenica" Relationship="MIPSED7EntityFramework.FK_JN_Narudzbenica_PARTNER" FromRole="PARTNER" ToRole="JN_Narudzbenica" />
+        </EntityType>
+        <EntityType Name="PROIZVOD">
+          <Key>
+            <PropertyRef Name="IDPROIZVOD" />
+          </Key>
+          <Property Type="Int32" Name="IDPROIZVOD" Nullable="false" />
+          <Property Type="String" Name="NAZIVPROIZVOD" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="FINPOREZIDPOREZ" Nullable="false" />
+          <Property Type="Decimal" Name="CIJENA" Nullable="false" Precision="9" Scale="4" />
+          <Property Type="Int32" Name="IDJEDINICAMJERE" Nullable="false" />
+          <NavigationProperty Name="FINPOREZ" Relationship="MIPSED7EntityFramework.IPROIZVOD1" FromRole="PROIZVOD" ToRole="FINPOREZ" />
+          <NavigationProperty Name="JEDINICAMJERE" Relationship="MIPSED7EntityFramework.IPROIZVOD2" FromRole="PROIZVOD" ToRole="JEDINICAMJERE" />
+          <NavigationProperty Name="JN_NarudzbenicaProizvod" Relationship="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_PROIZVOD" FromRole="PROIZVOD" ToRole="JN_NarudzbenicaProizvod" />
+        </EntityType>
+        <Association Name="IPROIZVOD1">
+          <End Type="MIPSED7EntityFramework.FINPOREZ" Role="FINPOREZ" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.PROIZVOD" Role="PROIZVOD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FINPOREZ">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Principal>
+            <Dependent Role="PROIZVOD">
+              <PropertyRef Name="FINPOREZIDPOREZ" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="IPROIZVOD2">
+          <End Type="MIPSED7EntityFramework.JEDINICAMJERE" Role="JEDINICAMJERE" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.PROIZVOD" Role="PROIZVOD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="PROIZVOD">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_Narudzbenica_PARTNER">
+          <End Type="MIPSED7EntityFramework.PARTNER" Role="PARTNER" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.JN_Narudzbenica" Role="JN_Narudzbenica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PARTNER">
+              <PropertyRef Name="IDPARTNER" />
+            </Principal>
+            <Dependent Role="JN_Narudzbenica">
+              <PropertyRef Name="ID_Partner" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_JN_Narudzbenica">
+          <End Type="MIPSED7EntityFramework.JN_Narudzbenica" Role="JN_Narudzbenica" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.JN_NarudzbenicaProizvod" Role="JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JN_Narudzbenica">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_Narudzbenica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_PROIZVOD">
+          <End Type="MIPSED7EntityFramework.PROIZVOD" Role="PROIZVOD" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.JN_NarudzbenicaProizvod" Role="JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PROIZVOD">
+              <PropertyRef Name="IDPROIZVOD" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_Proizvod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JN_NarudzbenicaProizvod_JEDINICAMJERE">
+          <End Type="MIPSED7EntityFramework.JEDINICAMJERE" Role="JEDINICAMJERE" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.JN_NarudzbenicaProizvod" Role="JN_NarudzbenicaProizvod" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JEDINICAMJERE">
+              <PropertyRef Name="IDJEDINICAMJERE" />
+            </Principal>
+            <Dependent Role="JN_NarudzbenicaProizvod">
+              <PropertyRef Name="ID_JedinicaMjere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UF_Ucenik">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="String" Name="Ime" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Prezime" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OIB" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JMBG" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SpolID" />
+          <Property Type="String" Name="UlicaKucniBroj" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Naselje" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PostanskiBrojID" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="DatumRodjenja" Precision="0" />
+          <Property Type="Boolean" Name="Preneseno" Nullable="false" />
+          <Property Type="Int32" Name="ID_VrstaObiteljskeVeze" Nullable="false" />
+          <Property Type="String" Name="ID_Opcina" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Aktivan" Nullable="false" />
+          <Property Type="String" Name="ImeRoditelj" Nullable="true" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PrezimeRoditelj" Nullable="true" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OIBRoditelj" Nullable="true" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IBANRoditelj" Nullable="true" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="POSTANSKIBROJEVI" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI" FromRole="UF_Ucenik" ToRole="POSTANSKIBROJEVI" />
+          <NavigationProperty Name="SPOL" Relationship="MIPSED7EntityFramework.FK_UF_Ucenik_SPOL" FromRole="UF_Ucenik" ToRole="SPOL" />
+          <NavigationProperty Name="UF_ObracunStavka" Relationship="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Ucenik" FromRole="UF_Ucenik" ToRole="UF_ObracunStavka" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik" FromRole="UF_Ucenik" ToRole="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" />
+        </EntityType>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI">
+          <End Type="MIPSED7EntityFramework.POSTANSKIBROJEVI" Role="POSTANSKIBROJEVI" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_Ucenik" Role="UF_Ucenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="POSTANSKIBROJEVI">
+              <PropertyRef Name="POSTANSKIBROJ" />
+            </Principal>
+            <Dependent Role="UF_Ucenik">
+              <PropertyRef Name="PostanskiBrojID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_Ucenik_SPOL">
+          <End Type="MIPSED7EntityFramework.SPOL" Role="SPOL" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_Ucenik" Role="UF_Ucenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SPOL">
+              <PropertyRef Name="IDSPOL" />
+            </Principal>
+            <Dependent Role="UF_Ucenik">
+              <PropertyRef Name="SpolID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_ObracunStavka_UF_Ucenik">
+          <End Type="MIPSED7EntityFramework.UF_Ucenik" Role="UF_Ucenik" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_ObracunStavka" Role="UF_ObracunStavka" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ucenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_ObracunStavka">
+              <PropertyRef Name="UcenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik">
+          <End Type="MIPSED7EntityFramework.UF_Ucenik" Role="UF_Ucenik" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ucenik">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+              <PropertyRef Name="UcenikID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UF_Ustanova">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="TS" Nullable="false" Precision="2" />
+          <Property Type="String" Name="Naziv" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SkraceniNaziv" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OIB" Nullable="false" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UlicaKucniBroj" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PostanskiBrojID" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KontaktPodaci" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+          <Property Type="Boolean" Name="Maticna" />
+          <Property Type="Boolean" Name="PDVNapomena" Nullable="false" />
+          <Property Type="Boolean" Name="OtvoreneStavke" Nullable="false" />
+          <Property Type="Int32" Name="KorisnikID" Nullable="false" />
+          <Property Type="String" Name="ModelOdobrenja" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PozivNaBrojOdobrenja" MaxLength="39" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SifraUstanove" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Model" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PozivNaBroj01" MaxLength="13" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ModelOdobrenja2" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="Broj" />
+          <NavigationProperty Name="POSTANSKIBROJEVI" Relationship="MIPSED7EntityFramework.FK_UF_Ustanova_POSTANSKIBROJEVI" FromRole="UF_Ustanova" ToRole="POSTANSKIBROJEVI" />
+          <NavigationProperty Name="UF_UstanovaSkolskaGodina" Relationship="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_Ustanova" FromRole="UF_Ustanova" ToRole="UF_UstanovaSkolskaGodina" />
+        </EntityType>
+        <Association Name="FK_UF_Ustanova_POSTANSKIBROJEVI">
+          <End Type="MIPSED7EntityFramework.POSTANSKIBROJEVI" Role="POSTANSKIBROJEVI" Multiplicity="0..1" />
+          <End Type="MIPSED7EntityFramework.UF_Ustanova" Role="UF_Ustanova" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="POSTANSKIBROJEVI">
+              <PropertyRef Name="POSTANSKIBROJ" />
+            </Principal>
+            <Dependent Role="UF_Ustanova">
+              <PropertyRef Name="PostanskiBrojID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UF_UstanovaSkolskaGodina_UF_Ustanova">
+          <End Type="MIPSED7EntityFramework.UF_Ustanova" Role="UF_Ustanova" Multiplicity="1" />
+          <End Type="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina" Role="UF_UstanovaSkolskaGodina" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UF_Ustanova">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UF_UstanovaSkolskaGodina">
+              <PropertyRef Name="UstanovaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MIPSED7EntityFrameworkStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="FINPOREZ"><EntityTypeMapping TypeName="MIPSED7EntityFramework.FINPOREZ"><MappingFragment StoreEntitySet="FINPOREZ">
+            <ScalarProperty Name="FINPOREZIDPOREZ" ColumnName="FINPOREZIDPOREZ" />
+            <ScalarProperty Name="FINPOREZNAZIVPOREZ" ColumnName="FINPOREZNAZIVPOREZ" />
+            <ScalarProperty Name="FINPOREZSTOPA" ColumnName="FINPOREZSTOPA" />
+            <ScalarProperty Name="OSNOVICAUKNIZIIRA" ColumnName="OSNOVICAUKNIZIIRA" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="JEDINICAMJERE"><EntityTypeMapping TypeName="MIPSED7EntityFramework.JEDINICAMJERE"><MappingFragment StoreEntitySet="JEDINICAMJERE">
+            <ScalarProperty Name="IDJEDINICAMJERE" ColumnName="IDJEDINICAMJERE" />
+            <ScalarProperty Name="NAZIVJEDINICAMJERE" ColumnName="NAZIVJEDINICAMJERE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="POSTANSKIBROJEVI"><EntityTypeMapping TypeName="MIPSED7EntityFramework.POSTANSKIBROJEVI"><MappingFragment StoreEntitySet="POSTANSKIBROJEVI">
+            <ScalarProperty Name="POSTANSKIBROJ" ColumnName="POSTANSKIBROJ" />
+            <ScalarProperty Name="NAZIVPOSTE" ColumnName="NAZIVPOSTE" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RADNOMJESTO"><EntityTypeMapping TypeName="MIPSED7EntityFramework.RADNOMJESTO"><MappingFragment StoreEntitySet="RADNOMJESTO">
+            <ScalarProperty Name="IDRADNOMJESTO" ColumnName="IDRADNOMJESTO" />
+            <ScalarProperty Name="NAZIVRADNOMJESTO" ColumnName="NAZIVRADNOMJESTO" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SPOL"><EntityTypeMapping TypeName="MIPSED7EntityFramework.SPOL"><MappingFragment StoreEntitySet="SPOL">
+            <ScalarProperty Name="IDSPOL" ColumnName="IDSPOL" />
+            <ScalarProperty Name="NAZIVSPOL" ColumnName="NAZIVSPOL" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_Cjenik"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Cjenik"><MappingFragment StoreEntitySet="UF_Cjenik">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+            <ScalarProperty Name="VrijediOd" ColumnName="VrijediOd" />
+            <ScalarProperty Name="VrijediDo" ColumnName="VrijediDo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_Odjeljenje"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Odjeljenje"><MappingFragment StoreEntitySet="UF_Odjeljenje">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_Olaksica"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Olaksica"><MappingFragment StoreEntitySet="UF_Olaksica">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+            <ScalarProperty Name="OlaksicaPostotak" ColumnName="OlaksicaPostotak" />
+            <ScalarProperty Name="OlaksicaIznos" ColumnName="OlaksicaIznos" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_ProizvodTipKolicine"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_ProizvodTipKolicine"><MappingFragment StoreEntitySet="UF_ProizvodTipKolicine">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_Razred"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Razred"><MappingFragment StoreEntitySet="UF_Razred">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_SkolskaGodina"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_SkolskaGodina"><MappingFragment StoreEntitySet="UF_SkolskaGodina">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+            <ScalarProperty Name="DatumPocetka" ColumnName="DatumPocetka" />
+            <ScalarProperty Name="DatumZavrsetka" ColumnName="DatumZavrsetka" />
+            <ScalarProperty Name="Aktivnost" ColumnName="Aktivnost" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_UstanovaSkolskaGodina"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina"><MappingFragment StoreEntitySet="UF_UstanovaSkolskaGodina">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="UstanovaID" ColumnName="UstanovaID" />
+            <ScalarProperty Name="SkolskaGodinaID" ColumnName="SkolskaGodinaID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_UstanovaSkolskaGodinaRazredOdjeljenje"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje"><MappingFragment StoreEntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenje">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="UstanovaSkolskaGodinaID" ColumnName="UstanovaSkolskaGodinaID" />
+            <ScalarProperty Name="RazredID" ColumnName="RazredID" />
+            <ScalarProperty Name="OdjeljenjeID" ColumnName="OdjeljenjeID" />
+            <ScalarProperty Name="VoditeljID" ColumnName="VoditeljID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik"><MappingFragment StoreEntitySet="UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="UstanovaSkolskaGodinaRazredOdjeljenjeID" ColumnName="UstanovaSkolskaGodinaRazredOdjeljenjeID" />
+            <ScalarProperty Name="UcenikID" ColumnName="UcenikID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_Voditelj"><EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Voditelj"><MappingFragment StoreEntitySet="UF_Voditelj">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="TS" ColumnName="TS" />
+            <ScalarProperty Name="Ime" ColumnName="Ime" />
+            <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+            <ScalarProperty Name="OIB" ColumnName="OIB" />
+            <ScalarProperty Name="RadnoMjestoID" ColumnName="RadnoMjestoID" />
+            <ScalarProperty Name="Aktivnost" ColumnName="Aktivnost" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="UF_CjenikStavka">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_CjenikStavka">
+              <MappingFragment StoreEntitySet="UF_CjenikStavka">
+                <ScalarProperty Name="Cijena" ColumnName="Cijena" />
+                <ScalarProperty Name="PorezID" ColumnName="PorezID" />
+                <ScalarProperty Name="OlaksicaIznos" ColumnName="OlaksicaIznos" />
+                <ScalarProperty Name="OlaksicaPostotak" ColumnName="OlaksicaPostotak" />
+                <ScalarProperty Name="OlaksicaID" ColumnName="OlaksicaID" />
+                <ScalarProperty Name="ProizvodID" ColumnName="ProizvodID" />
+                <ScalarProperty Name="CjenikID" ColumnName="CjenikID" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_ProizvodStavka">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_ProizvodStavka">
+              <MappingFragment StoreEntitySet="UF_ProizvodStavka">
+                <ScalarProperty Name="ProizvodStavkaID" ColumnName="ProizvodStavkaID" />
+                <ScalarProperty Name="ProizvodID" ColumnName="ProizvodID" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_ObracunStavka">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_ObracunStavka">
+              <MappingFragment StoreEntitySet="UF_ObracunStavka">
+                <ScalarProperty Name="RazrednoOdjeljenjeID" ColumnName="RazrednoOdjeljenjeID" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="UcenikID" ColumnName="UcenikID" />
+                <ScalarProperty Name="ObracunID" ColumnName="ObracunID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_Obracun">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Obracun">
+              <MappingFragment StoreEntitySet="UF_Obracun">
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Virmani" ColumnName="Virmani" />
+                <ScalarProperty Name="Zaduzi" ColumnName="Zaduzi" />
+                <ScalarProperty Name="Zakljucaj" ColumnName="Zakljucaj" />
+                <ScalarProperty Name="ValutaPlacanja" ColumnName="ValutaPlacanja" />
+                <ScalarProperty Name="KolicinaZaObracun" ColumnName="KolicinaZaObracun" />
+                <ScalarProperty Name="MjesecObracuna" ColumnName="MjesecObracuna" />
+                <ScalarProperty Name="GodinaObracuna" ColumnName="GodinaObracuna" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="V_UF_CJENIK_STAVKE">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.V_UF_CJENIK_STAVKE">
+              <MappingFragment StoreEntitySet="V_UF_CJENIK_STAVKE">
+                <ScalarProperty Name="Proizvod_cjena" ColumnName="Proizvod_cjena" />
+                <ScalarProperty Name="OlaksicaID" ColumnName="OlaksicaID" />
+                <ScalarProperty Name="FINPOREZIDPOREZ" ColumnName="FINPOREZIDPOREZ" />
+                <ScalarProperty Name="Iznos" ColumnName="Iznos" />
+                <ScalarProperty Name="OlaksicaIznos" ColumnName="OlaksicaIznos" />
+                <ScalarProperty Name="OlaksicaPostotak" ColumnName="OlaksicaPostotak" />
+                <ScalarProperty Name="Olaksica" ColumnName="Olaksica" />
+                <ScalarProperty Name="Cijena" ColumnName="Cijena" />
+                <ScalarProperty Name="FINPOREZNAZIVPOREZ" ColumnName="FINPOREZNAZIVPOREZ" />
+                <ScalarProperty Name="FINPOREZSTOPA" ColumnName="FINPOREZSTOPA" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="ProizvodID" ColumnName="ProizvodID" />
+                <ScalarProperty Name="CjenikID" ColumnName="CjenikID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_Proizvod">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Proizvod">
+              <MappingFragment StoreEntitySet="UF_Proizvod">
+                <ScalarProperty Name="Cijena" ColumnName="Cijena" />
+                <ScalarProperty Name="PorezID" ColumnName="PorezID" />
+                <ScalarProperty Name="IsGrupa" ColumnName="IsGrupa" />
+                <ScalarProperty Name="TipKolicineID" ColumnName="TipKolicineID" />
+                <ScalarProperty Name="JedinicaMjereID" ColumnName="JedinicaMjereID" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_OtvoreneStavkePoRazredima" FunctionName="MIPSED7EntityFramework.Store.sp_OtvoreneStavkePoRazredima">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MIPSED7EntityFramework.sp_OtvoreneStavkePoRazredima_Result">
+                <ScalarProperty Name="Duguje" ColumnName="Duguje" />
+                <ScalarProperty Name="Potrazuje" ColumnName="Potrazuje" />
+                <ScalarProperty Name="Konto" ColumnName="Konto" />
+                <ScalarProperty Name="DatumValute" ColumnName="DatumValute" />
+                <ScalarProperty Name="DatumDokumenta" ColumnName="DatumDokumenta" />
+                <ScalarProperty Name="SkraceniNaziv" ColumnName="SkraceniNaziv" />
+                <ScalarProperty Name="BrojDokumenta" ColumnName="BrojDokumenta" />
+                <ScalarProperty Name="BrojStavke" ColumnName="BrojStavke" />
+                <ScalarProperty Name="OpisKnjizenja" ColumnName="OpisKnjizenja" />
+                <ScalarProperty Name="IDPartner" ColumnName="IDPartner" />
+                <ScalarProperty Name="IDUcenika" ColumnName="IDUcenika" />
+                <ScalarProperty Name="Otvoreno" ColumnName="Otvoreno" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="IDDokument" ColumnName="IDDokument" />
+                <ScalarProperty Name="NazivPartner" ColumnName="NazivPartner" />
+                <ScalarProperty Name="MB" ColumnName="MB" />
+                <ScalarProperty Name="PartnerMjesto" ColumnName="PartnerMjesto" />
+                <ScalarProperty Name="PartnerUlica" ColumnName="PartnerUlica" />
+                <ScalarProperty Name="IDGkStavka" ColumnName="IDGkStavka" />
+                <ScalarProperty Name="OriginalniDokument" ColumnName="OriginalniDokument" />
+                <ScalarProperty Name="Ustanova" ColumnName="Ustanova" />
+                <ScalarProperty Name="Razred" ColumnName="Razred" />
+                <ScalarProperty Name="Odjeljenje" ColumnName="Odjeljenje" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="JN_Narudzbenica">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.JN_Narudzbenica">
+              <MappingFragment StoreEntitySet="JN_Narudzbenica">
+                <ScalarProperty Name="DatumNarudzbe" ColumnName="DatumNarudzbe" />
+                <ScalarProperty Name="ID_NacinPlacanja" ColumnName="ID_NacinPlacanja" />
+                <ScalarProperty Name="ID_NacinIsporuke" ColumnName="ID_NacinIsporuke" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="Napomena" ColumnName="Napomena" />
+                <ScalarProperty Name="BrojNarudzbe" ColumnName="BrojNarudzbe" />
+                <ScalarProperty Name="ID_Partner" ColumnName="ID_Partner" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JN_NarudzbenicaProizvod">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.JN_NarudzbenicaProizvod">
+              <MappingFragment StoreEntitySet="JN_NarudzbenicaProizvod">
+                <ScalarProperty Name="Kolicina" ColumnName="Kolicina" />
+                <ScalarProperty Name="ID_JedinicaMjere" ColumnName="ID_JedinicaMjere" />
+                <ScalarProperty Name="ID_Proizvod" ColumnName="ID_Proizvod" />
+                <ScalarProperty Name="ID_Narudzbenica" ColumnName="ID_Narudzbenica" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PARTNER">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.PARTNER">
+              <MappingFragment StoreEntitySet="PARTNER">
+                <ScalarProperty Name="Ucenik" ColumnName="Ucenik" />
+                <ScalarProperty Name="PARTNERZIRO2" ColumnName="PARTNERZIRO2" />
+                <ScalarProperty Name="PARTNERZIRO1" ColumnName="PARTNERZIRO1" />
+                <ScalarProperty Name="PARTNERTELEFON" ColumnName="PARTNERTELEFON" />
+                <ScalarProperty Name="PARTNERFAX" ColumnName="PARTNERFAX" />
+                <ScalarProperty Name="PARTNEROIB" ColumnName="PARTNEROIB" />
+                <ScalarProperty Name="PARTNEREMAIL" ColumnName="PARTNEREMAIL" />
+                <ScalarProperty Name="PARTNERULICA" ColumnName="PARTNERULICA" />
+                <ScalarProperty Name="PARTNERMJESTO" ColumnName="PARTNERMJESTO" />
+                <ScalarProperty Name="MB" ColumnName="MB" />
+                <ScalarProperty Name="NAZIVPARTNER" ColumnName="NAZIVPARTNER" />
+                <ScalarProperty Name="IDPARTNER" ColumnName="IDPARTNER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PROIZVOD">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.PROIZVOD">
+              <MappingFragment StoreEntitySet="PROIZVOD">
+                <ScalarProperty Name="IDJEDINICAMJERE" ColumnName="IDJEDINICAMJERE" />
+                <ScalarProperty Name="CIJENA" ColumnName="CIJENA" />
+                <ScalarProperty Name="FINPOREZIDPOREZ" ColumnName="FINPOREZIDPOREZ" />
+                <ScalarProperty Name="NAZIVPROIZVOD" ColumnName="NAZIVPROIZVOD" />
+                <ScalarProperty Name="IDPROIZVOD" ColumnName="IDPROIZVOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_Ucenik">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Ucenik">
+              <MappingFragment StoreEntitySet="UF_Ucenik">
+                <ScalarProperty Name="Aktivan" ColumnName="Aktivan" />
+                <ScalarProperty Name="ID_Opcina" ColumnName="ID_Opcina" />
+                <ScalarProperty Name="ID_VrstaObiteljskeVeze" ColumnName="ID_VrstaObiteljskeVeze" />
+                <ScalarProperty Name="Preneseno" ColumnName="Preneseno" />
+                <ScalarProperty Name="DatumRodjenja" ColumnName="DatumRodjenja" />
+                <ScalarProperty Name="PostanskiBrojID" ColumnName="PostanskiBrojID" />
+                <ScalarProperty Name="Naselje" ColumnName="Naselje" />
+                <ScalarProperty Name="UlicaKucniBroj" ColumnName="UlicaKucniBroj" />
+                <ScalarProperty Name="SpolID" ColumnName="SpolID" />
+                <ScalarProperty Name="JMBG" ColumnName="JMBG" />
+                <ScalarProperty Name="OIB" ColumnName="OIB" />
+                <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+                <ScalarProperty Name="Ime" ColumnName="Ime" />
+                <ScalarProperty Name="OIBRoditelj" ColumnName="OIBRoditelj" />
+                <ScalarProperty Name="PrezimeRoditelj" ColumnName="PrezimeRoditelj" />
+                <ScalarProperty Name="ImeRoditelj" ColumnName="ImeRoditelj" />
+                <ScalarProperty Name="IBANRoditelj" ColumnName="IBANRoditelj" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UF_Ustanova">
+            <EntityTypeMapping TypeName="MIPSED7EntityFramework.UF_Ustanova">
+              <MappingFragment StoreEntitySet="UF_Ustanova">
+                <ScalarProperty Name="Broj" ColumnName="Broj" />
+                <ScalarProperty Name="ModelOdobrenja2" ColumnName="ModelOdobrenja2" />
+                <ScalarProperty Name="PozivNaBroj01" ColumnName="PozivNaBroj01" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="SifraUstanove" ColumnName="SifraUstanove" />
+                <ScalarProperty Name="PozivNaBrojOdobrenja" ColumnName="PozivNaBrojOdobrenja" />
+                <ScalarProperty Name="ModelOdobrenja" ColumnName="ModelOdobrenja" />
+                <ScalarProperty Name="KorisnikID" ColumnName="KorisnikID" />
+                <ScalarProperty Name="PDVNapomena" ColumnName="PDVNapomena" />
+                <ScalarProperty Name="OtvoreneStavke" ColumnName="OtvoreneStavke" />
+                <ScalarProperty Name="Maticna" ColumnName="Maticna" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="KontaktPodaci" ColumnName="KontaktPodaci" />
+                <ScalarProperty Name="PostanskiBrojID" ColumnName="PostanskiBrojID" />
+                <ScalarProperty Name="UlicaKucniBroj" ColumnName="UlicaKucniBroj" />
+                <ScalarProperty Name="OIB" ColumnName="OIB" />
+                <ScalarProperty Name="SkraceniNaziv" ColumnName="SkraceniNaziv" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="TS" ColumnName="TS" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="dbMIPSED7" ZoomLevel="92" SnapToGrid="false" ShowGrid="true">
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.FINPOREZ" Width="1.5" PointX="0.71843434468864986" PointY="12.909090897802152" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.JEDINICAMJERE" Width="1.5" PointX="9.7560761467234709" PointY="13.723722039596066" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.POSTANSKIBROJEVI" Width="1.5" PointX="0.75" PointY="4.375" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.RADNOMJESTO" Width="1.5" PointX="9.2819600090175278" PointY="10.899306323293022" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.SPOL" Width="1.5" PointX="0.75" PointY="1.375" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Cjenik" Width="1.5" PointX="3.3068180802193594" PointY="6.9469700318695189" Height="2.1725878906250014" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Odjeljenje" Width="1.5" PointX="7.0808080080583071" PointY="0.93560606813189917" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Olaksica" Width="1.5" PointX="6.7474745091565218" PointY="10.294192240294368" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_ProizvodTipKolicine" Width="1.5" PointX="2.7484216507483521" PointY="15.080571838109327" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Razred" Width="1.5" PointX="5.0290404128205495" PointY="1.73484891758421" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_SkolskaGodina" Width="1.5" PointX="12.122474384980185" PointY="8.8345961201471859" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodina" Width="1.5" PointX="8.7537877395598649" PointY="7.7070707534800462" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenje" Width="1.5" PointX="5.7007576472530435" PointY="5.4381314347990388" Height="3.1340950520833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik" Width="2.625" PointX="8.7714646853481462" PointY="4.7032828897438446" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Voditelj" Width="1.5" PointX="12.066208692177787" PointY="11.5447449081429" Height="2.7494921875000102" IsExpanded="true" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Voditelj_RADNOMJESTO" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="32.547841796875" />
+          <ConnectorPoint PointX="5.25" PointY="32.547841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Odjeljenje" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="2.9129850260416674" />
+          <ConnectorPoint PointX="7.125" PointY="3.2879850260416674" />
+          <ConnectorPoint PointX="8.1249995000000013" PointY="3.2879850260416674" />
+          <ConnectorPoint PointX="8.1249995000000013" PointY="8.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Razred" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="13.518992513020834" />
+          <ConnectorPoint PointX="8.25" PointY="13.518992513020834" />
+          <ConnectorPoint PointX="8.25" PointY="11.634095052083339" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_SkolskaGodina" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.4687475" PointY="12.875" />
+          <ConnectorPoint PointX="3.4687475" PointY="10.795146734375003" />
+          <ConnectorPoint PointX="5.25" PointY="10.795146734375003" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_UstanovaSkolskaGodina" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="9.5502020729166688" />
+          <ConnectorPoint PointX="7.5" PointY="9.5502020729166688" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenje_UF_Voditelj" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="32.624746093750005" />
+          <ConnectorPoint PointX="8.65625" PointY="32.624746093750005" />
+          <ConnectorPoint PointX="8.65625" PointY="11.634095052083339" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_UstanovaSkolskaGodinaRazredOdjeljenje" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="10.067047526041669" />
+          <ConnectorPoint PointX="11.0625" PointY="10.067047526041669" />
+          <ConnectorPoint PointX="11.0625" PointY="8.422587890625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_CjenikStavka" Width="2.125" PointX="3.4065656553113506" PointY="10.512626584983021" Height="3.1340950520833246" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_CjenikStavkaUF_Cjenik">
+          <ConnectorPoint PointX="2.25" PointY="16.4612939453125" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="16.4612939453125" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="16.4612939453125" />
+          <ConnectorPoint PointX="4.4375" PointY="16.4612939453125" />
+          <ConnectorPoint PointX="4.4375" PointY="18.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Olaksica">
+          <ConnectorPoint PointX="2.25" PointY="19.5862939453125" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="19.5862939453125" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="19.5862939453125" />
+          <ConnectorPoint PointX="3.375" PointY="19.5862939453125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_ProizvodStavka" Width="1.5" PointX="11.901514797800733" PointY="14.705808877292673" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_ObracunStavka" Width="1.625" PointX="11.507575851648744" PointY="0.782828524909428" Height="2.7494921874999996" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_ObracunStavka">
+          <ConnectorPoint PointX="14.45125" PointY="9.6244921875" />
+          <ConnectorPoint PointX="14.45125" PointY="9.8744921875" />
+          <ConnectorPoint PointX="14.935" PointY="9.8744921875" />
+          <ConnectorPoint PointX="14.935" PointY="9.6244921875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Obracun" Width="1.5" PointX="8.9734847054939113" PointY="0.5" Height="3.1340950520833246" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Obracun">
+          <ConnectorPoint PointX="6.875" PointY="5.3554996744791623" />
+          <ConnectorPoint PointX="8.0416661666666673" PointY="5.3554996744791614" />
+          <ConnectorPoint PointX="8.2083328333333352" PointY="5.3554996744791623" />
+          <ConnectorPoint PointX="14.6875" PointY="5.3554996744791623" />
+          <ConnectorPoint PointX="14.6875" PointY="6.875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.V_UF_CJENIK_STAVKE" Width="2" PointX="12.064393807691763" PointY="4.3800503608052637" Height="3.7109993489583246" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Proizvod" Width="1.5" PointX="6.9065654069586726" PointY="13.481060929671669" Height="4.480205078124996" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Proizvod_FINPOREZ">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="14.605286458333332" />
+          <ConnectorPoint PointX="2.625" PointY="14.980286458333332" />
+          <ConnectorPoint PointX="2.625" PointY="21.25" />
+          <ConnectorPoint PointX="2.5011528461538433" PointY="21.25" />
+          <ConnectorPoint PointX="2.125" PointY="21.626152846153843" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Proizvod_JEDINICAMJERE">
+          <ConnectorPoint PointX="4.5" PointY="26.850444835937502" />
+          <ConnectorPoint PointX="1.8958333333333333" PointY="26.850444835937502" />
+          <ConnectorPoint PointX="1.7291666666666667" PointY="26.850444835937502" />
+          <ConnectorPoint PointX="1.375" PointY="26.850444835937502" />
+          <ConnectorPoint PointX="1.375" PointY="26.105205078124996" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_CjenikStavka_UF_Proizvod">
+          <ConnectorPoint PointX="2.125" PointY="23.944448742187504" />
+          <ConnectorPoint PointX="3.90625" PointY="23.944448742187504" />
+          <ConnectorPoint PointX="3.90625" PointY="21.951396484375003" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod">
+          <ConnectorPoint PointX="1.1569230769230767" PointY="21.625" />
+          <ConnectorPoint PointX="1.1569230769230767" PointY="21.375" />
+          <ConnectorPoint PointX="1.6034615384615383" PointY="21.375" />
+          <ConnectorPoint PointX="1.6034615384615383" PointY="21.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_Proizvod1">
+          <ConnectorPoint PointX="0.625" PointY="23.165607872596151" />
+          <ConnectorPoint PointX="0.375" PointY="23.165607872596151" />
+          <ConnectorPoint PointX="0.375" PointY="24.597906475360574" />
+          <ConnectorPoint PointX="0.625" PointY="24.597906475360574" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Proizvod_UF_ProizvodTipKolicine">
+          <ConnectorPoint PointX="1.8125" PointY="28.625" />
+          <ConnectorPoint PointX="1.8125" PointY="26.105205078124996" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod">
+          <ConnectorPoint PointX="0.96874750000000009" PointY="26.105205078124996" />
+          <ConnectorPoint PointX="0.96874750000000009" PointY="35.836293945312505" />
+          <ConnectorPoint PointX="3" PointY="35.836293945312505" />
+        </AssociationConnector>
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_ProizvodStavka_UF_Proizvod1">
+          <ConnectorPoint PointX="1.17187375" PointY="26.105205078124996" />
+          <ConnectorPoint PointX="1.17187375" PointY="35.261894472656252" />
+          <ConnectorPoint PointX="3" PointY="35.261894472656252" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.JN_Narudzbenica" Width="1.8020833333333339" PointX="0.989583333333333" PointY="19.614583333333339" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.JN_NarudzbenicaProizvod" Width="2.25" PointX="3.4895833333333321" PointY="18.750000000000007" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.PARTNER" Width="1.5" PointX="6.5312500000000009" PointY="19.083333333333336" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.PROIZVOD" Width="1.5" PointX="1.0104166666666643" PointY="16.739583333333339" />
+        <AssociationConnector Association="MIPSED7EntityFramework.IPROIZVOD1" />
+        <AssociationConnector Association="MIPSED7EntityFramework.IPROIZVOD2" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_JN_Narudzbenica_PARTNER" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JN_Narudzbenica" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_PROIZVOD" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_JN_NarudzbenicaProizvod_JEDINICAMJERE" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Ucenik" Width="1.5" PointX="13.211309489914452" PointY="22.67261912617959" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_POSTANSKIBROJEVI" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Ucenik_SPOL" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_ObracunStavka_UF_Ucenik" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodinaRazredOdjeljenjeUcenik_UF_Ucenik" />
+        <EntityTypeShape EntityType="MIPSED7EntityFramework.UF_Ustanova" Width="1.875" PointX="3.4107142781116524" PointY="26.601190543347066" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_Ustanova_POSTANSKIBROJEVI" />
+        <AssociationConnector Association="MIPSED7EntityFramework.FK_UF_UstanovaSkolskaGodina_UF_Ustanova" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

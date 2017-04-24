@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+        id="ip-obrazac_4_0"
+        version="4.0"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:ip="http://e-porezna.porezna-uprava.hr/obrasci/ip/v4-0"
+        targetNamespace="http://e-porezna.porezna-uprava.hr/obrasci/ip/v4-0"
+        elementFormDefault="qualified">
+
+    <xsd:element name="Ip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Root element dokumenta kojim poslodavac dostavlja Ip obrasce svojih posloprimaca.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="IsplataUGodini" type="ip:GodinaTip"/>
+                <xsd:element name="Poslodavac" type="ip:PoslodavacTip"/>
+                <xsd:element name="IpObrasci" type="ip:IpObrasciTip">
+                    <xsd:unique name="uniqueIpObrazac">
+                        <xsd:selector xpath="ip:IpObrazac"/>
+                        <xsd:field xpath="@identifikator"/>
+                        <xsd:field xpath="@isplataZaGodinu"/>
+                        <xsd:field xpath=".//@oib"/>
+                        <xsd:field xpath=".//ip:VrPrimanja"/>
+                    </xsd:unique>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="storno" type="xsd:boolean" default="false"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="PoslodavacTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Oib poslodavca ( fizicka ili pravna osoba ).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="KontaktOsoba" type="ip:KontaktOsobaTip"/>
+        </xsd:sequence>
+        <xsd:attribute name="oib" type="ip:OibTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="KontaktOsobaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Kontakt osoba za komunikaciju s poslodavcem.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Ime" type="ip:ImeTip"/>
+            <xsd:element name="Prezime" type="ip:PrezimeTip"/>
+            <xsd:element name="Telefoni" type="ip:TelefoniTip"/>
+            <xsd:element name="Email" type="ip:EmailTip"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="TelefoniTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista telefonskih brojeva kontakt osobe poslodavca.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Telefon" type="ip:TelefonTip" minOccurs="1" maxOccurs="2"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IpObrasciTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista ip obrazaca koju dostavlja poslodavac.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="IpObrazac" type="ip:IpObrazacTip" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IpObrazacTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Ip obrazac - obrazac kojim poslodavac prijavljuje prihode svakog posloprimca u godini.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Obveznik" type="ip:ObveznikTip"/>
+            <xsd:element name="Mjeseci" type="ip:MjeseciTip">
+                <xsd:unique name="uniqueMjesecIsplate">
+                    <xsd:selector xpath="ip:Mjesec"/>
+                    <xsd:field xpath="@mjIspl"/>
+                </xsd:unique>
+            </xsd:element>
+            <xsd:element name="Ukupno" type="ip:IznosiTip"/>
+        </xsd:sequence>
+        <xsd:attribute name="identifikator" type="ip:IdentifikatorIpObrascaTip" use="required"/>
+        <xsd:attribute name="isplataZaGodinu" type="ip:GodinaTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="ObveznikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Specifikacije vrste obveznika za kojeg se podnosi ip obrazac (radnik ili umirovljenik).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice>
+            <xsd:element name="Radnik" type="ip:RadnikTip"/>
+            <xsd:element name="Umirovljenik" type="ip:UmirovljenikTip"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType  name="RadnikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim se oznacava da se u ip obrascu radi o radniku.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+               <xsd:element name="VrPrimanja" type="ip:VrPrimanjaRadnikTip"/>
+        </xsd:sequence>
+           <xsd:attribute name="oib" type="ip:OibTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType  name="UmirovljenikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim se oznacava da se u ip obrascu radi o umirovljeniku (interesantno za HZMO).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="VrPrimanja" type="ip:VrPrimanjaUmirovljenikTip"/>
+            <xsd:element name="OsobniBrojevi">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="OsobniBroj" type="ip:OsobniBrojUmirovljenikaTip" minOccurs="0" maxOccurs="2"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+                <xsd:unique name="uniqueOsobniBroj">
+                    <xsd:selector xpath="ip:OsobniBroj"/>
+                    <xsd:field xpath="."/>
+                </xsd:unique>
+            </xsd:element>
+        </xsd:sequence>
+           <xsd:attribute name="oib" type="ip:OibTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="MjeseciTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista mjeseci u kojima je poslodavac napravio isplatu u korist posloprimca.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Mjesec" type="ip:MjesecniIznosiTip" minOccurs="0" maxOccurs="12"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="MjesecniIznosiTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Skup iznosa koji opisuju jedan mjesec, ukljucujuci i sifru opcine na ciji racun je izvrsena uplata poreza.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ip:IznosiTip">
+                <xsd:attribute name="mjIspl" type="ip:MjesecIsplateTip" use="required"/>
+                <xsd:attribute name="sifGrOp" type="ip:SifraGradaOpcineTip" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="IznosiTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Temeljni tip koji objedinjava sve iznose (koristi se u mjesecnim i ukupnim iznosima).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="IsplPlMir" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="UplDopr" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="UplPremOsig" type="ip:IznosTip" default="0.00" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="Dohodak" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="OsobOdb" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="PorOsn" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="UplPorPrir" type="ip:IznosTip" default="0.00"/>
+            <xsd:element name="PosPorez" type="ip:IznosTip" default="0.00" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="NetoIspl" type="ip:IznosTip" default="0.00"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="IdentifikatorIpObrascaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Identifikator IP obrasca ( redovni ili honorarni rad u tekucem ili prethodnim poreznim razdobljima )
+                    1 - za poslodavce kod kojih je obrazac PK
+                    2 - za druge poslodavce ( ne popunjavaju stupce 5 i 7 )
+                        ( stupac 5 - uplacene premije osiguranja )
+                        ( stupac 7 - osobni odbitak )
+                    3 - za poslodavce koji isplacuju place i mirovine za prethodna porezna razdoblja ( godine )
+                        ( cl. 45. st. 3. Zakona i cl. 61. stavak 10. Pravilnika )
+                    4 - za druge isplatitelje mirovine (kod kojih se nalazi preslika porezne kartice sukladno čl.61 st.18. Pravilnika)    
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="3"/>
+            <xsd:enumeration value="4"/>            
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="VrPrimanjaRadnikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Popis (enumeracija) vrsta primanja za radnika: PL - placa.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="PL"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="VrPrimanjaUmirovljenikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Popis (enumeracija) vrsta primanja za umirovljenika:
+                MI - mirovina
+                OM - obiteljska mirovina
+                OD - obiteljska mirovina koju ostvaruju djeca nakon smrti roditelja
+                OC - obiteljska mirovina koju ostvaruju clanovi obitelji smrtno stradalih, zatocenih i nestalih hrvatskih branitelja
+                NM - naslijedjena mirovina iza smrti korisnika
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="MI"/>
+            <xsd:enumeration value="OM"/>
+            <xsd:enumeration value="OD"/>
+            <xsd:enumeration value="OC"/>
+            <xsd:enumeration value="NM"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OibTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Oib posloprimca - fizicka osoba ili poslodavca - fizicka ili pravna osoba.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="11"/>
+            <xsd:pattern value="\d{11}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OsobniBrojUmirovljenikaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Osobni broj umirovljenika.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="12"/>
+            <xsd:pattern value="\d{12}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="MjesecIsplateTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Redni broj mjeseca isplate. Dozvoljene vrijednosti su: 1-12
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="SifraGradaOpcineTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Sifra grada odnosno opcine.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="3"/>
+            <xsd:pattern value="\d{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="GodinaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Raspon u kojem je dozvoljeno specificirati godinu prijave
+                odnosno godinu na koju se podaci odnose ( od 1991 do 2099 ).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="1991"/>
+            <xsd:maxInclusive value="2099"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="ImeTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirano ime.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="51"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PrezimeTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirano prezime.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="51"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="EmailTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirana e-mail adresa.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="6"/>
+            <xsd:maxLength value="100"/>
+            <xsd:pattern value="[a-zA-Z0-9]([a-zA-Z0-9_\-\.]*)[a-zA-Z0-9]@[a-zA-Z0-9]([a-zA-Z0-9_\-\.]*)(\.[a-zA-Z]{2,4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="IznosTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim su definirani iznosi u ip obrascu.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="15"/>
+            <xsd:fractionDigits value="2"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="TelefonTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip za definiranje formata telefonskih brojeva:
+                    1. obvezno pocinje s +
+                    2. slijedi pozivni broj za drzavu ( jedna do tri znamenke ), broj mora biti veci od nule
+                    3. otvorena zagrada (
+                    4. pozivni broj za grad ( jedno ili dvoznamenkasti broj, ne moze poceti s nulom )
+                    5. zatvorena zagrada )
+                    6. sestero ili sedmeroznamenkasti broj, ne moze poceti s nulom
+                Primjeri: +385(1)1234567, +385(91)123456
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="15"/>
+            <xsd:pattern value="\+((0?0?)[1-9]|(0?[1-9]\d)|[1-9]\d{2})\([1-9]\d?\)[1-9]\d{5,6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

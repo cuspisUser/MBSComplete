@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="SHEMAURADataSet" targetNamespace="http://www.tempuri.org/SHEMAURA" xmlns:mstns="http://www.tempuri.org/SHEMAURA" xmlns="http://www.tempuri.org/SHEMAURA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="SHEMAURADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="SHEMAURADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2109" msprop:DataSetName="SHEMAURADataSet" msprop:DataAdapterInterfaceName="ISHEMAURADataAdapter" msprop:ObjectName="SHEMAURA" msprop:ObjectDescription="Shema kontiranja URA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="SHEMAURA" msprop:ParentLvl="" msprop:LevelName="SHEMAURA" msprop:Description="Shema kontiranja URA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAURA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAURA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVSHEMAURA" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVSHEMAURA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PARTNERSHEMAURAIDPARTNER" msprop:Caption="Partner" default="0" msprop:SuperType="IDPARTNER" msprop:SubtypeGroup="PARTNERSHEMAURA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Partner" msprop:Length="9" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PARTNERSHEMAURAIDPARTNER" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMAURASHEMAURAKONTIRANJE" msprop:ParentLvl="SHEMAURA" msprop:LevelName="SHEMAURAKONTIRANJE" msprop:Description="SHEMAURAKONTIRANJE" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAURA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAURA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAURAKONTOIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="SHEMAURAKONTO" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAURAKONTOIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SHEMAURASTRANEIDSTRANEKNJIZENJA" msprop:Caption="Strana knjiženja" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="SHEMAURASTRANE" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Strana knjiženja" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAURASTRANEIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDURAVRSTAIZNOSA" msprop:Caption="Vrsta iznosa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Vrsta iznosa" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDURAVRSTAIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAURAMTIDMJESTOTROSKA" msprop:Caption="Šifra MT" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="SHEMAURAMT" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra MT" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAURAMTIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAURAOJIDORGJED" msprop:Caption="Šifra OJ" default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="SHEMAURAOJ" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra OJ" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAURAOJIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="SHEMAURAConstraint1" msdata:ConstraintName="SHEMAURAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAURA"/>
+         <xs:field  xpath="IDSHEMAURA"/>
+      </xs:unique>
+      <xs:unique  name="SHEMAURASHEMAURAKONTIRANJEConstraint1" msdata:ConstraintName="SHEMAURASHEMAURAKONTIRANJEConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAURASHEMAURAKONTIRANJE"/>
+         <xs:field  xpath="IDSHEMAURA"/>
+         <xs:field  xpath="SHEMAURAKONTOIDKONTO"/>
+         <xs:field  xpath="SHEMAURASTRANEIDSTRANEKNJIZENJA"/>
+         <xs:field  xpath="IDURAVRSTAIZNOSA"/>
+      </xs:unique>
+      <xs:keyref  name="SHEMAURA_SHEMAURASHEMAURAKONTIRANJE" refer="SHEMAURAConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMAURA_SHEMAURASHEMAURAKONTIRANJE" msprop:rel_Generator_RelationVarName="relationSHEMAURA_SHEMAURASHEMAURAKONTIRANJE" msprop:rel_Generator_UserChildTable="SHEMAURASHEMAURAKONTIRANJE" msprop:rel_Generator_UserParentTable="SHEMAURA" msprop:rel_Generator_ParentPropName="SHEMAURARow" msprop:rel_Generator_ChildPropName="GetSHEMAURASHEMAURAKONTIRANJERows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMAURASHEMAURAKONTIRANJE"/>
+         <xs:field  xpath="IDSHEMAURA"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="SHEMAURA_SHEMAURASHEMAURAKONTIRANJE" msdata:parent="SHEMAURA" msdata:child="SHEMAURASHEMAURAKONTIRANJE" msdata:parentkey="IDSHEMAURA" msdata:childkey="IDSHEMAURA" msprop:Generator_UserRelationName="SHEMAURA_SHEMAURASHEMAURAKONTIRANJE" msprop:Generator_RelationVarName="relationSHEMAURA_SHEMAURASHEMAURAKONTIRANJE" msprop:Generator_UserChildTable="SHEMAURASHEMAURAKONTIRANJE" msprop:Generator_UserParentTable="SHEMAURA" msprop:Generator_ParentPropName="SHEMAURARow" msprop:Generator_ChildPropName="GetSHEMAURASHEMAURAKONTIRANJERows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="ORGJEDSHEMAURAOJIDORGJED" dkdata:BusinessComponent="ORGJED" dkdata:Description="Organizacijske jedinice" dkdata:DataSetName="ORGJEDDataSet" dkdata:DataAdapterName="ORGJEDDataAdapter" dkdata:DataAdapterInterfaceName="IORGJEDDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAURAOJIDORGJED" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKASHEMAURAMTIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAURAMTIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="STRANEKNJIZENJASHEMAURASTRANEIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAURASTRANEIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOSHEMAURAKONTOIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAURAKONTOIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="URAVRSTAIZNOSAIDURAVRSTAIZNOSA" dkdata:BusinessComponent="URAVRSTAIZNOSA" dkdata:Description="Vrste iznosa URA" dkdata:DataSetName="URAVRSTAIZNOSADataSet" dkdata:DataAdapterName="URAVRSTAIZNOSADataAdapter" dkdata:DataAdapterInterfaceName="IURAVRSTAIZNOSADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDURAVRSTAIZNOSA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="PARTNERPARTNERSHEMAURAIDPARTNER" dkdata:BusinessComponent="PARTNER" dkdata:Description="PARTNER" dkdata:DataSetName="PARTNERDataSet" dkdata:DataAdapterName="PARTNERDataAdapter" dkdata:DataAdapterInterfaceName="IPARTNERDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="PARTNERSHEMAURAIDPARTNER" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="240">
+            <dkdata:FillMethod  dkdata:FillString="SHEMAURAKONTOIDKONTO" dkdata:IndexName="ISHEMAURASHEMAURAKONTIRANJE4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURAKONTOIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDURAVRSTAIZNOSA" dkdata:IndexName="ISHEMAURASHEMAURAKONTIRANJE5" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDURAVRSTAIZNOSA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMAURASTRANEIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMAURASHEMAURAKONTIRANJE3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURASTRANEIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMAURAMTIDMJESTOTROSKA" dkdata:IndexName="ISHEMAURASHEMAURAKONTIRANJE2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURAMTIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMAURAOJIDORGJED" dkdata:IndexName="ISHEMAURASHEMAURAKONTIRANJE1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURAOJIDORGJED"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAURA">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAURA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAURASHEMAURAKONTOIDKONTO">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAURA"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURAKONTOIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAURASHEMAURAKONTOIDKONTOSHEMAURASTRANEIDSTRANEKNJIZENJA">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAURA"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURAKONTOIDKONTO"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAURASTRANEIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="214">
+            <dkdata:FillMethod  dkdata:FillString="PARTNERSHEMAURAIDPARTNER" dkdata:IndexName="ISHEMAURA1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="PARTNERSHEMAURAIDPARTNER"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

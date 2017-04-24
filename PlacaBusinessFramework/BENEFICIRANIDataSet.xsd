@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="BENEFICIRANIDataSet" targetNamespace="http://www.tempuri.org/BENEFICIRANI" xmlns:mstns="http://www.tempuri.org/BENEFICIRANI" xmlns="http://www.tempuri.org/BENEFICIRANI" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="BENEFICIRANIDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="BENEFICIRANIDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="1003" msprop:DataSetName="BENEFICIRANIDataSet" msprop:DataAdapterInterfaceName="IBENEFICIRANIDataAdapter" msprop:ObjectName="BENEFICIRANI" msprop:ObjectDescription="Beneficirani radni staž" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="NAZIVBENEFICIRANI" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="BENEFICIRANI" msprop:ParentLvl="" msprop:LevelName="BENEFICIRANI" msprop:Description="Beneficirani radni staž" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDBENEFICIRANI" msprop:Caption="Šifra beneficiranog radnog staža" default="" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Šifra beneficiranog radnog staža" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDBENEFICIRANI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="NAZIVBENEFICIRANI" msprop:Caption="Naziv beneficiranog radnog staža" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv beneficiranog radnog staža" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVBENEFICIRANI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BROJPRIZNATIHMJESECI" msprop:Caption="Broj priznatih mjeseci za 12 mjeseci rada" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Broj priznatih mjeseci za 12 mjeseci rada" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BROJPRIZNATIHMJESECI" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="BENEFICIRANIConstraint1" msdata:ConstraintName="BENEFICIRANIConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//BENEFICIRANI"/>
+         <xs:field  xpath="IDBENEFICIRANI"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="IDBENEFICIRANI"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="3">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

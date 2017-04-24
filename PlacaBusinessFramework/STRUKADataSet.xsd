@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="STRUKADataSet" targetNamespace="http://www.tempuri.org/STRUKA" xmlns:mstns="http://www.tempuri.org/STRUKA" xmlns="http://www.tempuri.org/STRUKA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="STRUKADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="STRUKADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="1024" msprop:DataSetName="STRUKADataSet" msprop:DataAdapterInterfaceName="ISTRUKADataAdapter" msprop:ObjectName="STRUKA" msprop:ObjectDescription="Struke" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="NAZIVSTRUKA" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="STRUKA" msprop:ParentLvl="" msprop:LevelName="STRUKA" msprop:Description="Struke" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSTRUKA" msprop:Caption="Šifra struke" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra struke" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSTRUKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVSTRUKA" msprop:Caption="Naziv struke" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv struke" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVSTRUKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="STRUKAConstraint1" msdata:ConstraintName="STRUKAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//STRUKA"/>
+         <xs:field  xpath="IDSTRUKA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="IDSTRUKA"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="35">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

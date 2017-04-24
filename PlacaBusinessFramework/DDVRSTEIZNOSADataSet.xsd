@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="DDVRSTEIZNOSADataSet" targetNamespace="http://www.tempuri.org/DDVRSTEIZNOSA" xmlns:mstns="http://www.tempuri.org/DDVRSTEIZNOSA" xmlns="http://www.tempuri.org/DDVRSTEIZNOSA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="DDVRSTEIZNOSADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="DDVRSTEIZNOSADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2128" msprop:DataSetName="DDVRSTEIZNOSADataSet" msprop:DataAdapterInterfaceName="IDDVRSTEIZNOSADataAdapter" msprop:ObjectName="DDVRSTEIZNOSA" msprop:ObjectDescription="DD-Vrste iznosa" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="DDVRSTEIZNOSA" msprop:ParentLvl="" msprop:LevelName="DDVRSTEIZNOSA" msprop:Description="DD-Vrste iznosa" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDDDVRSTEIZNOSA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDDDVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVDDVRSTEIZNOSA" msprop:Caption="Vrsta iznosa - DD" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Vrsta iznosa - DD" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVDDVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="DDVRSTEIZNOSAConstraint1" msdata:ConstraintName="DDVRSTEIZNOSAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//DDVRSTEIZNOSA"/>
+         <xs:field  xpath="IDDDVRSTEIZNOSA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="242">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

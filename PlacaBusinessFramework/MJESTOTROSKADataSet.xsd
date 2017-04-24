@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="MJESTOTROSKADataSet" targetNamespace="http://www.tempuri.org/MJESTOTROSKA" xmlns:mstns="http://www.tempuri.org/MJESTOTROSKA" xmlns="http://www.tempuri.org/MJESTOTROSKA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="MJESTOTROSKADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="MJESTOTROSKADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2038" msprop:DataSetName="MJESTOTROSKADataSet" msprop:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter" msprop:ObjectName="MJESTOTROSKA" msprop:ObjectDescription="MJESTOTROSKA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="mt" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="MJESTOTROSKA" msprop:ParentLvl="" msprop:LevelName="MJESTOTROSKA" msprop:Description="MJESTOTROSKA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDMJESTOTROSKA" msprop:Caption="Šifra MT" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra MT" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVMJESTOTROSKA" msprop:Caption="Naziv MT" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv MT" msprop:Length="120" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="mt" msprop:Caption="mt" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="mt" msprop:Length="130" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="mt" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="MJESTOTROSKAConstraint1" msdata:ConstraintName="MJESTOTROSKAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//MJESTOTROSKA"/>
+         <xs:field  xpath="IDMJESTOTROSKA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="GKSTAVKA" dkdata:Description="GKSTAVKA" dkdata:DataSetName="GKSTAVKADataSet" dkdata:DataAdapterName="GKSTAVKADataAdapter" dkdata:DataAdapterInterfaceName="IGKSTAVKADataAdapter">
+                  <dkdata:attribute  name="IDMJESTOTROSKA"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="190">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

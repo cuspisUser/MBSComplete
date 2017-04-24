@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="SHEMAPLACADataSet" targetNamespace="http://www.tempuri.org/SHEMAPLACA" xmlns:mstns="http://www.tempuri.org/SHEMAPLACA" xmlns="http://www.tempuri.org/SHEMAPLACA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="SHEMAPLACADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="SHEMAPLACADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2116" msprop:DataSetName="SHEMAPLACADataSet" msprop:DataAdapterInterfaceName="ISHEMAPLACADataAdapter" msprop:ObjectName="SHEMAPLACA" msprop:ObjectDescription="Shema place" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="SHEMAPLACA" msprop:ParentLvl="" msprop:LevelName="SHEMAPLACA" msprop:Description="Shema place" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAPLACA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAPLACA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVSHEMAPLACA" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVSHEMAPLACA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SHEMAPLOJIDORGJED" msprop:Caption="Organiz. jed." default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="SHEMAPLOJ" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Organiz. jed." msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLOJIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMAPLACASHEMAPLACADOP" msprop:ParentLvl="SHEMAPLACA" msprop:LevelName="SHEMAPLACADOP" msprop:Description="Doprinosi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAPLACA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAPLACA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAPLDOPIDDOPRINOS" msprop:Caption="Šifra doprinosa" default="0" msprop:SuperType="IDDOPRINOS" msprop:SubtypeGroup="SHEMAPLDOP" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra doprinosa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLDOPIDDOPRINOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="KONTODOPIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="KONTODOP" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="KONTODOPIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="MTDOPIDMJESTOTROSKA" msprop:Caption="Mjesto troška" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="MTDOP" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Mjesto troška" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MTDOPIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="STRANEDOPIDSTRANEKNJIZENJA" msprop:Caption="Strana knjiženja" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="STRANEDOP" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Strana knjiženja" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="STRANEDOPIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAPLDOPNAZIVDOPRINOS" msprop:Caption="Naziv doprinosa" default="" msprop:SuperType="NAZIVDOPRINOS" msprop:SubtypeGroup="SHEMAPLDOP" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv doprinosa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLDOPNAZIVDOPRINOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMAPLACASHEMAPLACAELEMENT" msprop:ParentLvl="SHEMAPLACA" msprop:LevelName="SHEMAPLACAELEMENT" msprop:Description="SHEMAPLACAELEMENT" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAPLACA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAPLACA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAPLELEMENTIDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:SuperType="IDELEMENT" msprop:SubtypeGroup="SHEMAPLELEMENT" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLELEMENTIDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="KONTOELEMENTIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="KONTOELEMENT" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="KONTOELEMENTIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="STRANEELEMENTIDSTRANEKNJIZENJA" msprop:Caption="Strana knjiženja" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="STRANEELEMENT" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Strana knjiženja" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="STRANEELEMENTIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="MTELEMENTIDMJESTOTROSKA" msprop:Caption="Mjesto troška" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="MTELEMENT" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Mjesto troška" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MTELEMENTIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAPLELEMENTNAZIVELEMENT" msprop:Caption="Naziv elementa" default="" msprop:SuperType="NAZIVELEMENT" msprop:SubtypeGroup="SHEMAPLELEMENT" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv elementa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLELEMENTNAZIVELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SHEMAPLELEMENTIDVRSTAELEMENTA" msprop:Caption="Šifra Vrste elementa" default="0" msprop:SuperType="IDVRSTAELEMENTA" msprop:SubtypeGroup="SHEMAPLELEMENT" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra Vrste elementa" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLELEMENTIDVRSTAELEMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMAPLACASHEMAPLACASTANDARD" msprop:ParentLvl="SHEMAPLACA" msprop:LevelName="SHEMAPLACASTANDARD" msprop:Description="SHEMAPLACASTANDARD" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMAPLACA" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMAPLACA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMAPLACASTANDARDID" msprop:Caption="SHEMAPLACASTANDARDID" default="" msprop:AutoGenerated="true" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="guid" msprop:Description="SHEMAPLACASTANDARDID" msprop:Length="32" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMAPLACASTANDARDID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDPLVRSTEIZNOSA" msprop:Caption="Šifra iznosa" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra iznosa" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDPLVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="KONTOPLACAVRSTAIZNOSAIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="KONTOPLACAVRSTAIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="KONTOPLACAVRSTAIZNOSAIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="MTPLACAVRSTAIZNOSAIDMJESTOTROSKA" msprop:Caption="Mjesto troška" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="MTPLACAVRSTAIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Mjesto troška" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MTPLACAVRSTAIZNOSAIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="STRANEVRSTEIZNOSAIDSTRANEKNJIZENJA" msprop:Caption="Strana kniženja" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="STRANEVRSTEIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Strana kniženja" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="STRANEVRSTEIZNOSAIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVPLVRSTEIZNOSA" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVPLVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="SHEMAPLACAConstraint1" msdata:ConstraintName="SHEMAPLACAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAPLACA"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+      </xs:unique>
+      <xs:unique  name="SHEMAPLACASHEMAPLACADOPConstraint1" msdata:ConstraintName="SHEMAPLACASHEMAPLACADOPConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACADOP"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+         <xs:field  xpath="SHEMAPLDOPIDDOPRINOS"/>
+         <xs:field  xpath="KONTODOPIDKONTO"/>
+      </xs:unique>
+      <xs:unique  name="SHEMAPLACASHEMAPLACAELEMENTConstraint1" msdata:ConstraintName="SHEMAPLACASHEMAPLACAELEMENTConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACAELEMENT"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+         <xs:field  xpath="SHEMAPLELEMENTIDELEMENT"/>
+         <xs:field  xpath="KONTOELEMENTIDKONTO"/>
+         <xs:field  xpath="STRANEELEMENTIDSTRANEKNJIZENJA"/>
+      </xs:unique>
+      <xs:unique  name="SHEMAPLACASHEMAPLACASTANDARDConstraint1" msdata:ConstraintName="SHEMAPLACASHEMAPLACASTANDARDConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACASTANDARD"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+         <xs:field  xpath="SHEMAPLACASTANDARDID"/>
+      </xs:unique>
+      <xs:keyref  name="SHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" refer="SHEMAPLACAConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" msprop:rel_Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" msprop:rel_Generator_UserChildTable="SHEMAPLACASHEMAPLACASTANDARD" msprop:rel_Generator_UserParentTable="SHEMAPLACA" msprop:rel_Generator_ParentPropName="SHEMAPLACARow" msprop:rel_Generator_ChildPropName="GetSHEMAPLACASHEMAPLACASTANDARDRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACASTANDARD"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+      </xs:keyref>
+      <xs:keyref  name="SHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" refer="SHEMAPLACAConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" msprop:rel_Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" msprop:rel_Generator_UserChildTable="SHEMAPLACASHEMAPLACAELEMENT" msprop:rel_Generator_UserParentTable="SHEMAPLACA" msprop:rel_Generator_ParentPropName="SHEMAPLACARow" msprop:rel_Generator_ChildPropName="GetSHEMAPLACASHEMAPLACAELEMENTRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACAELEMENT"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+      </xs:keyref>
+      <xs:keyref  name="SHEMAPLACA_SHEMAPLACASHEMAPLACADOP" refer="SHEMAPLACAConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACADOP" msprop:rel_Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACADOP" msprop:rel_Generator_UserChildTable="SHEMAPLACASHEMAPLACADOP" msprop:rel_Generator_UserParentTable="SHEMAPLACA" msprop:rel_Generator_ParentPropName="SHEMAPLACARow" msprop:rel_Generator_ChildPropName="GetSHEMAPLACASHEMAPLACADOPRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMAPLACASHEMAPLACADOP"/>
+         <xs:field  xpath="IDSHEMAPLACA"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="SHEMAPLACA_SHEMAPLACASHEMAPLACADOP" msdata:parent="SHEMAPLACA" msdata:child="SHEMAPLACASHEMAPLACADOP" msdata:parentkey="IDSHEMAPLACA" msdata:childkey="IDSHEMAPLACA" msprop:Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACADOP" msprop:Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACADOP" msprop:Generator_UserChildTable="SHEMAPLACASHEMAPLACADOP" msprop:Generator_UserParentTable="SHEMAPLACA" msprop:Generator_ParentPropName="SHEMAPLACARow" msprop:Generator_ChildPropName="GetSHEMAPLACASHEMAPLACADOPRows"/>
+         <msdata:Relationship  name="SHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" msdata:parent="SHEMAPLACA" msdata:child="SHEMAPLACASHEMAPLACAELEMENT" msdata:parentkey="IDSHEMAPLACA" msdata:childkey="IDSHEMAPLACA" msprop:Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" msprop:Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACAELEMENT" msprop:Generator_UserChildTable="SHEMAPLACASHEMAPLACAELEMENT" msprop:Generator_UserParentTable="SHEMAPLACA" msprop:Generator_ParentPropName="SHEMAPLACARow" msprop:Generator_ChildPropName="GetSHEMAPLACASHEMAPLACAELEMENTRows"/>
+         <msdata:Relationship  name="SHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" msdata:parent="SHEMAPLACA" msdata:child="SHEMAPLACASHEMAPLACASTANDARD" msdata:parentkey="IDSHEMAPLACA" msdata:childkey="IDSHEMAPLACA" msprop:Generator_UserRelationName="SHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" msprop:Generator_RelationVarName="relationSHEMAPLACA_SHEMAPLACASHEMAPLACASTANDARD" msprop:Generator_UserChildTable="SHEMAPLACASHEMAPLACASTANDARD" msprop:Generator_UserParentTable="SHEMAPLACA" msprop:Generator_ParentPropName="SHEMAPLACARow" msprop:Generator_ChildPropName="GetSHEMAPLACASHEMAPLACASTANDARDRows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="STRANEKNJIZENJASTRANEVRSTEIZNOSAIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="STRANEVRSTEIZNOSAIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKAMTPLACAVRSTAIZNOSAIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="MTPLACAVRSTAIZNOSAIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOKONTOPLACAVRSTAIZNOSAIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="KONTOPLACAVRSTAIZNOSAIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="PLVRSTEIZNOSAIDPLVRSTEIZNOSA" dkdata:BusinessComponent="PLVRSTEIZNOSA" dkdata:Description="PLVRSTEIZNOSA" dkdata:DataSetName="PLVRSTEIZNOSADataSet" dkdata:DataAdapterName="PLVRSTEIZNOSADataAdapter" dkdata:DataAdapterInterfaceName="IPLVRSTEIZNOSADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDPLVRSTEIZNOSA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVPLVRSTEIZNOSA" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKAMTELEMENTIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="MTELEMENTIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="STRANEKNJIZENJASTRANEELEMENTIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="STRANEELEMENTIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOKONTOELEMENTIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="KONTOELEMENTIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ELEMENTSHEMAPLELEMENTIDELEMENT" dkdata:BusinessComponent="ELEMENT" dkdata:Description="Elementi" dkdata:DataSetName="ELEMENTDataSet" dkdata:DataAdapterName="ELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAPLELEMENTIDELEMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="SHEMAPLELEMENTNAZIVELEMENT" type="String"/>
+                     <dkdata:attribute  name="SHEMAPLELEMENTIDVRSTAELEMENTA" type="Short"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="STRANEKNJIZENJASTRANEDOPIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="STRANEDOPIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKAMTDOPIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="MTDOPIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOKONTODOPIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="KONTODOPIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="DOPRINOSSHEMAPLDOPIDDOPRINOS" dkdata:BusinessComponent="DOPRINOS" dkdata:Description="Doprinosi" dkdata:DataSetName="DOPRINOSDataSet" dkdata:DataAdapterName="DOPRINOSDataAdapter" dkdata:DataAdapterInterfaceName="IDOPRINOSDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAPLDOPIDDOPRINOS" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="SHEMAPLDOPNAZIVDOPRINOS" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ORGJEDSHEMAPLOJIDORGJED" dkdata:BusinessComponent="ORGJED" dkdata:Description="Organizacijske jedinice" dkdata:DataSetName="ORGJEDDataSet" dkdata:DataAdapterName="ORGJEDDataAdapter" dkdata:DataAdapterInterfaceName="IORGJEDDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMAPLOJIDORGJED" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="233">
+            <dkdata:FillMethod  dkdata:FillString="KONTOPLACAVRSTAIZNOSAIDKONTO" dkdata:IndexName="ISHEMAPLACASHEMAPLACASTANDARD3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="KONTOPLACAVRSTAIZNOSAIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLVRSTEIZNOSA" dkdata:IndexName="ISHEMAPLACASHEMAPLACASTANDARD4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLVRSTEIZNOSA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="MTPLACAVRSTAIZNOSAIDMJESTOTROSKA" dkdata:IndexName="ISHEMAPLACASHEMAPLACASTANDARD2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="MTPLACAVRSTAIZNOSAIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="STRANEVRSTEIZNOSAIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMAPLACASHEMAPLACASTANDARD1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="STRANEVRSTEIZNOSAIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACA">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="234">
+            <dkdata:FillMethod  dkdata:FillString="KONTOELEMENTIDKONTO" dkdata:IndexName="ISHEMAPLACASHEMAPLACAELEMENT3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="KONTOELEMENTIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMAPLELEMENTIDELEMENT" dkdata:IndexName="ISHEMAPLACASHEMAPLACAELEMENT4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLELEMENTIDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="STRANEELEMENTIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMAPLACASHEMAPLACAELEMENT2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="STRANEELEMENTIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="MTELEMENTIDMJESTOTROSKA" dkdata:IndexName="ISHEMAPLACASHEMAPLACAELEMENT1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="MTELEMENTIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACA">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACASHEMAPLELEMENTIDELEMENT">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLELEMENTIDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACASHEMAPLELEMENTIDELEMENTKONTOELEMENTIDKONTO">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLELEMENTIDELEMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="KONTOELEMENTIDKONTO"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="230">
+            <dkdata:FillMethod  dkdata:FillString="KONTODOPIDKONTO" dkdata:IndexName="ISHEMAPLACASHEMAPLACADOP3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="KONTODOPIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMAPLDOPIDDOPRINOS" dkdata:IndexName="ISHEMAPLACASHEMAPLACADOP4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLDOPIDDOPRINOS"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="MTDOPIDMJESTOTROSKA" dkdata:IndexName="ISHEMAPLACASHEMAPLACADOP2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="MTDOPIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="STRANEDOPIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMAPLACASHEMAPLACADOP1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="STRANEDOPIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACA">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMAPLACASHEMAPLDOPIDDOPRINOS">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMAPLACA"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLDOPIDDOPRINOS"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="224">
+            <dkdata:FillMethod  dkdata:FillString="SHEMAPLOJIDORGJED" dkdata:IndexName="ISHEMAPLACA1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMAPLOJIDORGJED"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

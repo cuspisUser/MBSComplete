@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="PregledRadnikaDataSet" targetNamespace="http://www.tempuri.org/PregledRadnika" xmlns:mstns="http://www.tempuri.org/PregledRadnika" xmlns="http://www.tempuri.org/PregledRadnika" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="PregledRadnikaDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="PregledRadnikaDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2016" msprop:DataSetName="PregledRadnikaDataSet" msprop:DataAdapterInterfaceName="IPregledRadnikaDataAdapter" msprop:ObjectName="PregledRadnika" msprop:ObjectDescription="PregledRadnika" msprop:ObjectType="DataProvider" msprop:ObjectPath="\DataProviders\DP_Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:DefaultBusinessComponent="RADNIK" msprop:Deklarit.GroupByAttributes="" msprop:Deklarit.GenerateCRUDForDP="false" msprop:Deklarit.ExtendedView="false" msprop:Deklarit.ShowGroupByDP="True" msprop:Deklarit.UseSuggestInFK="True" msprop:Deklarit.BCForNewOption="" msprop:Deklarit.DescriptionAttribute="SPOJENOPREZIME" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RADNIK" msprop:ParentLvl="" msprop:LevelName="PregledRadnika" msprop:Description="RADNIK" msprop:HasOrder="true" msprop:OrderAttributes="PREZIME, IME" msprop:Deklarit.NumberOfRows="0">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDRADNIK" msprop:Caption="Šifra radnika" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra radnika" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDRADNIK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="JMBG" msprop:Caption="JMBG" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="JMBG" msprop:Length="13" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="JMBG" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PREZIME" msprop:Caption="Prezime" default="" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Prezime" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PREZIME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IME" msprop:Caption="Ime" default="" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Ime" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="AKTIVAN" msprop:Caption="Aktivan" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="boolean" msprop:Description="Aktivan" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="AKTIVAN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                     <xs:element  name="OPCINASTANOVANJAIDOPCINE" msprop:Caption="Šifra općine stanovanja" default="" msprop:SuperType="IDOPCINE" msprop:SubtypeGroup="OPCINASTANOVANJA" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Šifra općine stanovanja" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="OPCINASTANOVANJAIDOPCINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SPOJENOPREZIME" msprop:Caption="SPOJENOPREZIME" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="SPOJENOPREZIME" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SPOJENOPREZIME" msprop:Deklarit.IsFormula="true" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:parameters>
+         </dkdata:parameters>
+         <dkdata:Dependencies>
+            <dkdata:Dependency  name="SPOJENOPREZIME">
+               <dkdata:attribute  name="PREZIME"/>
+               <dkdata:attribute  name="IME"/>
+            </dkdata:Dependency>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="2">
+         </dkdata:FillMethods>
+         <dkdata:objectLinks>
+         </dkdata:objectLinks>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

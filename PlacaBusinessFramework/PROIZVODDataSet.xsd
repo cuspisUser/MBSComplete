@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="PROIZVODDataSet" targetNamespace="http://www.tempuri.org/PROIZVOD" xmlns:mstns="http://www.tempuri.org/PROIZVOD" xmlns="http://www.tempuri.org/PROIZVOD" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="PROIZVODDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="PROIZVODDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2003" msprop:DataSetName="PROIZVODDataSet" msprop:DataAdapterInterfaceName="IPROIZVODDataAdapter" msprop:ObjectName="PROIZVOD" msprop:ObjectDescription="PROIZVOD" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="NAZIVPROIZVOD" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="PROIZVOD" msprop:ParentLvl="" msprop:LevelName="PROIZVOD" msprop:Description="PROIZVOD" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDPROIZVOD" msprop:Caption="Šif.proizvod" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šif.proizvod" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDPROIZVOD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.AutoFilterWhenForeignKey="False" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" type="xs:int"/>
+                     <xs:element  name="NAZIVPROIZVOD" msprop:Caption="Proizvod" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Proizvod" msprop:Length="500" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVPROIZVOD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="FINPOREZIDPOREZ" msprop:Caption="FINPOREZIDPOREZ" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="FINPOREZIDPOREZ" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="FINPOREZIDPOREZ" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="FINPOREZSTOPA" msprop:Caption="FINPOREZSTOPA" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="FINPOREZSTOPA" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="FINPOREZSTOPA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="CIJENA" msprop:Caption="CIJENA" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="CIJENA" msprop:Length="9" msprop:Decimals="4" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="CIJENA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="IDJEDINICAMJERE" msprop:Caption="Šifra jed. mjere" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra jed. mjere" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDJEDINICAMJERE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVJEDINICAMJERE" msprop:Caption="Jedinica mjere" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Jedinica mjere" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVJEDINICAMJERE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="PROIZVODConstraint1" msdata:ConstraintName="PROIZVODConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PROIZVOD"/>
+         <xs:field  xpath="IDPROIZVOD"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="JEDINICAMJEREIDJEDINICAMJERE" dkdata:BusinessComponent="JEDINICAMJERE" dkdata:Description="JEDINICAMJERE" dkdata:DataSetName="JEDINICAMJEREDataSet" dkdata:DataAdapterName="JEDINICAMJEREDataAdapter" dkdata:DataAdapterInterfaceName="IJEDINICAMJEREDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDJEDINICAMJERE" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVJEDINICAMJERE" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="FINPOREZFINPOREZIDPOREZ" dkdata:BusinessComponent="FINPOREZ" dkdata:Description="FINPOREZ" dkdata:DataSetName="FINPOREZDataSet" dkdata:DataAdapterName="FINPOREZDataAdapter" dkdata:DataAdapterInterfaceName="IFINPOREZDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="FINPOREZIDPOREZ" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="FINPOREZSTOPA" type="Decimal"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="207">
+            <dkdata:FillMethod  dkdata:FillString="FINPOREZIDPOREZ" dkdata:IndexName="IPROIZVOD1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="FINPOREZIDPOREZ"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDJEDINICAMJERE" dkdata:IndexName="IPROIZVOD2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDJEDINICAMJERE"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

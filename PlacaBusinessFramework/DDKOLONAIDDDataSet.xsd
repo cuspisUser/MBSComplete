@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="DDKOLONAIDDDataSet" targetNamespace="http://www.tempuri.org/DDKOLONAIDD" xmlns:mstns="http://www.tempuri.org/DDKOLONAIDD" xmlns="http://www.tempuri.org/DDKOLONAIDD" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="DDKOLONAIDDDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="DDKOLONAIDDDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2087" msprop:DataSetName="DDKOLONAIDDDataSet" msprop:DataAdapterInterfaceName="IDDKOLONAIDDDataAdapter" msprop:ObjectName="DDKOLONAIDD" msprop:ObjectDescription="Kolona IDD obrasca" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\DD" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="NAZIVKOLONAIDD" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="DDKOLONAIDD" msprop:ParentLvl="" msprop:LevelName="DDKOLONAIDD" msprop:Description="Kolona IDD obrasca" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDKOLONAIDD" msprop:Caption="Kolona" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Kolona" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDKOLONAIDD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVKOLONAIDD" msprop:Caption="Naziv kolone" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv kolone" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVKOLONAIDD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="DDKOLONAIDDConstraint1" msdata:ConstraintName="DDKOLONAIDDConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//DDKOLONAIDD"/>
+         <xs:field  xpath="IDKOLONAIDD"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="DDKATEGORIJA" dkdata:Description="bLA BLA BLA" dkdata:DataSetName="DDKATEGORIJADataSet" dkdata:DataAdapterName="DDKATEGORIJADataAdapter" dkdata:DataAdapterInterfaceName="IDDKATEGORIJADataAdapter">
+                  <dkdata:attribute  name="IDKOLONAIDD"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="164">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

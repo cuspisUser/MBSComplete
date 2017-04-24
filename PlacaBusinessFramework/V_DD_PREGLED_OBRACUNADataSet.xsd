@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="V_DD_PREGLED_OBRACUNADataSet" targetNamespace="http://www.tempuri.org/V_DD_PREGLED_OBRACUNA" xmlns:mstns="http://www.tempuri.org/V_DD_PREGLED_OBRACUNA" xmlns="http://www.tempuri.org/V_DD_PREGLED_OBRACUNA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="V_DD_PREGLED_OBRACUNADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="V_DD_PREGLED_OBRACUNADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2090" msprop:DataSetName="V_DD_PREGLED_OBRACUNADataSet" msprop:DataAdapterInterfaceName="IV_DD_PREGLED_OBRACUNADataAdapter" msprop:ObjectName="V_DD_PREGLED_OBRACUNA" msprop:ObjectDescription="V_DD_PREGLED_OBRACUNA" msprop:ObjectType="DataProvider" msprop:ObjectPath="\DataProviders\DP_DD" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.GroupByAttributes="" msprop:Deklarit.GenerateCRUDForDP="false" msprop:Deklarit.ExtendedView="false" msprop:Deklarit.ShowGroupByDP="True" msprop:Deklarit.UseSuggestInFK="False" msprop:Deklarit.BCForNewOption="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="V_DD_PREGLED_OBRACUNA" msprop:ParentLvl="" msprop:LevelName="V_DD_PREGLED_OBRACUNA" msprop:Description="VW_DD_PREGLED_OBRACUNA" msprop:HasOrder="true" msprop:OrderAttributes="" msprop:Deklarit.NumberOfRows="0">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="DDOBRACUNIDOBRACUN" msprop:Caption="Šifra obračuna" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Šifra obračuna" msprop:Length="11" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DDOBRACUNIDOBRACUN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="DDOPISOBRACUN" msprop:Caption="Opis" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Opis" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DDOPISOBRACUN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="DDDATUMOBRACUNA" msprop:Caption="Datum obračuna" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="date" msprop:Description="Datum obračuna" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DDDATUMOBRACUNA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:dateTime"/>
+                     <xs:element  name="DDZAKLJUCAN" msprop:Caption="DDZAKLJUCAN" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="boolean" msprop:Description="DDZAKLJUCAN" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DDZAKLJUCAN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                     <xs:element  name="DDRSM" msprop:Caption="DDRSM" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="DDRSM" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DDRSM" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:parameters>
+         </dkdata:parameters>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="2">
+         </dkdata:FillMethods>
+         <dkdata:objectLinks>
+         </dkdata:objectLinks>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="S_OS_POSTOJECI_DOKUMENTIDataSet" targetNamespace="http://www.tempuri.org/S_OS_POSTOJECI_DOKUMENTI" xmlns:mstns="http://www.tempuri.org/S_OS_POSTOJECI_DOKUMENTI" xmlns="http://www.tempuri.org/S_OS_POSTOJECI_DOKUMENTI" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="S_OS_POSTOJECI_DOKUMENTIDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="S_OS_POSTOJECI_DOKUMENTIDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2160" msprop:DataSetName="S_OS_POSTOJECI_DOKUMENTIDataSet" msprop:DataAdapterInterfaceName="IS_OS_POSTOJECI_DOKUMENTIDataAdapter" msprop:ObjectName="S_OS_POSTOJECI_DOKUMENTI" msprop:ObjectDescription="S_OS_POSTOJECI_DOKUMENTI" msprop:ObjectType="DataProvider" msprop:ObjectPath="\BusinessComponents\OSNOVNA" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.StoredProcedure="S_OS_POSTOJECI_DOKUMENTI" msprop:Deklarit.GroupByAttributes="" msprop:Deklarit.GenerateCRUDForDP="false" msprop:Deklarit.ExtendedView="false" msprop:Deklarit.ShowGroupByDP="True" msprop:Deklarit.UseSuggestInFK="False" msprop:Deklarit.BCForNewOption="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="S_OS_POSTOJECI_DOKUMENTI" msprop:ParentLvl="" msprop:LevelName="S_OS_POSTOJECI_DOKUMENTI" msprop:Description="_S_OS_POSTOJECI_DOKUMENTI" msprop:HasOrder="false" msprop:OrderAttributes="" msprop:Deklarit.NumberOfRows="0">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDOSDOKUMENT" msprop:Caption="IDOSDOKUMENT" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="IDOSDOKUMENT" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDOSDOKUMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="OSDATUMDOK" msprop:Caption="OSDATUMDOK" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="date" msprop:Description="OSDATUMDOK" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="OSDATUMDOK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:dateTime"/>
+                     <xs:element  name="OSBROJDOKUMENTA" msprop:Caption="OSBROJDOKUMENTA" default="0" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="OSBROJDOKUMENTA" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="OSBROJDOKUMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="OSOPIS" msprop:Caption="OSOPIS" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="OSOPIS" msprop:Length="40" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="OSOPIS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.RelevantData="false" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:parameters>
+         </dkdata:parameters>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="2">
+         </dkdata:FillMethods>
+         <dkdata:objectLinks>
+         </dkdata:objectLinks>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

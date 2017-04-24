@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="GODINEDataSet" targetNamespace="http://www.tempuri.org/GODINE" xmlns:mstns="http://www.tempuri.org/GODINE" xmlns="http://www.tempuri.org/GODINE" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="GODINEDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="GODINEDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2032" msprop:DataSetName="GODINEDataSet" msprop:DataAdapterInterfaceName="IGODINEDataAdapter" msprop:ObjectName="GODINE" msprop:ObjectDescription="GODINE" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="GODINE" msprop:ParentLvl="" msprop:LevelName="GODINE" msprop:Description="GODINE" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDGODINE" msprop:Caption="Godina" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Godina" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="GODINEAKTIVNA" msprop:Caption="Aktivna" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="boolean" msprop:Description="Aktivna" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="GODINEAKTIVNA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="GODINEConstraint1" msdata:ConstraintName="GODINEConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//GODINE"/>
+         <xs:field  xpath="IDGODINE"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="PLAN" dkdata:Description="PLAN" dkdata:DataSetName="PLANDataSet" dkdata:DataAdapterName="PLANDataAdapter" dkdata:DataAdapterInterfaceName="IPLANDataAdapter">
+                  <dkdata:attribute  name="PLANGODINAIDGODINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RACUN" dkdata:Description="Izlazni računi" dkdata:DataSetName="RACUNDataSet" dkdata:DataAdapterName="RACUNDataAdapter" dkdata:DataAdapterInterfaceName="IRACUNDataAdapter">
+                  <dkdata:attribute  name="RACUNGODINAIDGODINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="URA" dkdata:Description="URA" dkdata:DataSetName="URADataSet" dkdata:DataAdapterName="URADataAdapter" dkdata:DataAdapterInterfaceName="IURADataAdapter">
+                  <dkdata:attribute  name="URAGODIDGODINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="IRA" dkdata:Description="IRA" dkdata:DataSetName="IRADataSet" dkdata:DataAdapterName="IRADataAdapter" dkdata:DataAdapterInterfaceName="IIRADataAdapter">
+                  <dkdata:attribute  name="IRAGODIDGODINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="EVIDENCIJA" dkdata:Description="EVIDENCIJA" dkdata:DataSetName="EVIDENCIJADataSet" dkdata:DataAdapterName="EVIDENCIJADataAdapter" dkdata:DataAdapterInterfaceName="IEVIDENCIJADataAdapter">
+                  <dkdata:attribute  name="IDGODINE"/>
+               </dkdata:relation>
+               <dkdata:relation  name="GKSTAVKA" dkdata:Description="GKSTAVKA" dkdata:DataSetName="GKSTAVKADataSet" dkdata:DataAdapterName="GKSTAVKADataAdapter" dkdata:DataAdapterInterfaceName="IGKSTAVKADataAdapter">
+                  <dkdata:attribute  name="GKGODIDGODINE"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="186">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

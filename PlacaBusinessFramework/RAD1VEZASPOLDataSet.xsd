@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="RAD1VEZASPOLDataSet" targetNamespace="http://www.tempuri.org/RAD1VEZASPOL" xmlns:mstns="http://www.tempuri.org/RAD1VEZASPOL" xmlns="http://www.tempuri.org/RAD1VEZASPOL" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="RAD1VEZASPOLDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="RAD1VEZASPOLDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2176" msprop:DataSetName="RAD1VEZASPOLDataSet" msprop:DataAdapterInterfaceName="IRAD1VEZASPOLDataAdapter" msprop:ObjectName="RAD1VEZASPOL" msprop:ObjectDescription="Veza RAD1 i spol" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\VezeRAD1" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RAD1VEZASPOL" msprop:ParentLvl="" msprop:LevelName="RAD1VEZASPOL" msprop:Description="Veza RAD1 i spol" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="RAD1SPOLID" msprop:Caption="Spol u RAD1 obrascu" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Spol u RAD1 obrascu" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1SPOLID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDSPOL" msprop:Caption="Spol iz kadrovske evidencije" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Spol iz kadrovske evidencije" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSPOL" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="RAD1VEZASPOLConstraint1" msdata:ConstraintName="RAD1VEZASPOLConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//RAD1VEZASPOL"/>
+         <xs:field  xpath="RAD1SPOLID"/>
+         <xs:field  xpath="IDSPOL"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="SPOLIDSPOL" dkdata:BusinessComponent="SPOL" dkdata:Description="Spol" dkdata:DataSetName="SPOLDataSet" dkdata:DataAdapterName="SPOLDataAdapter" dkdata:DataAdapterInterfaceName="ISPOLDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDSPOL" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="RAD1SPOLRAD1SPOLID" dkdata:BusinessComponent="RAD1SPOL" dkdata:Description="RAD1SPOL" dkdata:DataSetName="RAD1SPOLDataSet" dkdata:DataAdapterName="RAD1SPOLDataAdapter" dkdata:DataAdapterInterfaceName="IRAD1SPOLDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="RAD1SPOLID" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="285">
+            <dkdata:FillMethod  dkdata:FillString="IDSPOL" dkdata:IndexName="IRAD1VEZASPOL1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDSPOL"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="RAD1SPOLID">
+               <dkdata:Attribute  dkdata:AttributeName="RAD1SPOLID"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

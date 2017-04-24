@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="PLANDataSet" targetNamespace="http://www.tempuri.org/PLAN" xmlns:mstns="http://www.tempuri.org/PLAN" xmlns="http://www.tempuri.org/PLAN" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="PLANDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="PLANDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2125" msprop:DataSetName="PLANDataSet" msprop:DataAdapterInterfaceName="IPLANDataAdapter" msprop:ObjectName="PLAN" msprop:ObjectDescription="PLAN" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="PLAN" msprop:ParentLvl="" msprop:LevelName="PLAN" msprop:Description="PLAN" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDPLAN" msprop:Caption="IDPLAN" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="IDPLAN" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDPLAN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PLANGODINAIDGODINE" msprop:Caption="IDGODINE" default="0" msprop:SuperType="IDGODINE" msprop:SubtypeGroup="PLANGODINA" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="IDGODINE" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANGODINAIDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="RADNINAZIVPLANA" msprop:Caption="RADNINAZIVPLANA" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="RADNINAZIVPLANA" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RADNINAZIVPLANA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="PLANORG" msprop:ParentLvl="PLAN" msprop:LevelName="ORG" msprop:Description="ORG" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDPLAN" msprop:Caption="IDPLAN" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="IDPLAN" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDPLAN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PLANGODINAIDGODINE" msprop:Caption="IDGODINE" default="0" msprop:SuperType="IDGODINE" msprop:SubtypeGroup="PLANGODINA" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="IDGODINE" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANGODINAIDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PLANOJIDORGJED" msprop:Caption="Šifra OJ" default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="PLANOJ" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra OJ" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANOJIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PLANOJNAZIVORGJED" msprop:Caption="Naziv OJ" default="" msprop:SuperType="NAZIVORGJED" msprop:SubtypeGroup="PLANOJ" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv OJ" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANOJNAZIVORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="PLANORGKON" msprop:ParentLvl="PLANORG" msprop:LevelName="KON" msprop:Description="KON" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDPLAN" msprop:Caption="IDPLAN" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="IDPLAN" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDPLAN" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PLANGODINAIDGODINE" msprop:Caption="IDGODINE" default="0" msprop:SuperType="IDGODINE" msprop:SubtypeGroup="PLANGODINA" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="IDGODINE" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANGODINAIDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="PLANOJIDORGJED" msprop:Caption="Šifra OJ" default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="PLANOJ" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra OJ" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANOJIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="PLANKONTOIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="PLANKONTO" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANKONTOIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PLANIRANIIZNOS" msprop:Caption="PLANIRANIIZNOS" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="PLANIRANIIZNOS" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PLANIRANIIZNOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="PLANConstraint1" msdata:ConstraintName="PLANConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PLAN"/>
+         <xs:field  xpath="IDPLAN"/>
+         <xs:field  xpath="PLANGODINAIDGODINE"/>
+      </xs:unique>
+      <xs:unique  name="PLANORGConstraint1" msdata:ConstraintName="PLANORGConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PLANORG"/>
+         <xs:field  xpath="IDPLAN"/>
+         <xs:field  xpath="PLANGODINAIDGODINE"/>
+         <xs:field  xpath="PLANOJIDORGJED"/>
+      </xs:unique>
+      <xs:unique  name="PLANORGKONConstraint1" msdata:ConstraintName="PLANORGKONConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//PLANORGKON"/>
+         <xs:field  xpath="IDPLAN"/>
+         <xs:field  xpath="PLANGODINAIDGODINE"/>
+         <xs:field  xpath="PLANOJIDORGJED"/>
+         <xs:field  xpath="PLANKONTOIDKONTO"/>
+      </xs:unique>
+      <xs:keyref  name="PLANORG_PLANORGKON" refer="PLANORGConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="PLANORG_PLANORGKON" msprop:rel_Generator_RelationVarName="relationPLANORG_PLANORGKON" msprop:rel_Generator_UserChildTable="PLANORGKON" msprop:rel_Generator_UserParentTable="PLANORG" msprop:rel_Generator_ParentPropName="PLANORGRow" msprop:rel_Generator_ChildPropName="GetPLANORGKONRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//PLANORGKON"/>
+         <xs:field  xpath="IDPLAN"/>
+         <xs:field  xpath="PLANGODINAIDGODINE"/>
+         <xs:field  xpath="PLANOJIDORGJED"/>
+      </xs:keyref>
+      <xs:keyref  name="PLAN_PLANORG" refer="PLANConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="PLAN_PLANORG" msprop:rel_Generator_RelationVarName="relationPLAN_PLANORG" msprop:rel_Generator_UserChildTable="PLANORG" msprop:rel_Generator_UserParentTable="PLAN" msprop:rel_Generator_ParentPropName="PLANRow" msprop:rel_Generator_ChildPropName="GetPLANORGRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//PLANORG"/>
+         <xs:field  xpath="IDPLAN"/>
+         <xs:field  xpath="PLANGODINAIDGODINE"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="PLAN_PLANORG" msdata:parent="PLAN" msdata:child="PLANORG" msdata:parentkey="IDPLAN PLANGODINAIDGODINE" msdata:childkey="IDPLAN PLANGODINAIDGODINE" msprop:Generator_UserRelationName="PLAN_PLANORG" msprop:Generator_RelationVarName="relationPLAN_PLANORG" msprop:Generator_UserChildTable="PLANORG" msprop:Generator_UserParentTable="PLAN" msprop:Generator_ParentPropName="PLANRow" msprop:Generator_ChildPropName="GetPLANORGRows"/>
+         <msdata:Relationship  name="PLANORG_PLANORGKON" msdata:parent="PLANORG" msdata:child="PLANORGKON" msdata:parentkey="IDPLAN PLANGODINAIDGODINE PLANOJIDORGJED" msdata:childkey="IDPLAN PLANGODINAIDGODINE PLANOJIDORGJED" msprop:Generator_UserRelationName="PLANORG_PLANORGKON" msprop:Generator_RelationVarName="relationPLANORG_PLANORGKON" msprop:Generator_UserChildTable="PLANORGKON" msprop:Generator_UserParentTable="PLANORG" msprop:Generator_ParentPropName="PLANORGRow" msprop:Generator_ChildPropName="GetPLANORGKONRows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="KONTOPLANKONTOIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="PLANKONTOIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ORGJEDPLANOJIDORGJED" dkdata:BusinessComponent="ORGJED" dkdata:Description="Organizacijske jedinice" dkdata:DataSetName="ORGJEDDataSet" dkdata:DataAdapterName="ORGJEDDataAdapter" dkdata:DataAdapterInterfaceName="IORGJEDDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="PLANOJIDORGJED" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="PLANOJNAZIVORGJED" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="GODINEPLANGODINAIDGODINE" dkdata:BusinessComponent="GODINE" dkdata:Description="GODINE" dkdata:DataSetName="GODINEDataSet" dkdata:DataAdapterName="GODINEDataAdapter" dkdata:DataAdapterInterfaceName="IGODINEDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="PLANGODINAIDGODINE" type="Short"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="239">
+            <dkdata:FillMethod  dkdata:FillString="PLANKONTOIDKONTO" dkdata:IndexName="IPLANORGKON1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="PLANKONTOIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLAN">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLANPLANGODINAIDGODINE">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+               <dkdata:Attribute  dkdata:AttributeName="PLANGODINAIDGODINE"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLANPLANGODINAIDGODINEPLANOJIDORGJED">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+               <dkdata:Attribute  dkdata:AttributeName="PLANGODINAIDGODINE"/>
+               <dkdata:Attribute  dkdata:AttributeName="PLANOJIDORGJED"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="238">
+            <dkdata:FillMethod  dkdata:FillString="PLANOJIDORGJED" dkdata:IndexName="IPLANORG1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="PLANOJIDORGJED"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLAN">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLANPLANGODINAIDGODINE">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+               <dkdata:Attribute  dkdata:AttributeName="PLANGODINAIDGODINE"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="237">
+            <dkdata:FillMethod  dkdata:FillString="PLANGODINAIDGODINE" dkdata:IndexName="IPLAN1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="PLANGODINAIDGODINE"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDPLAN">
+               <dkdata:Attribute  dkdata:AttributeName="IDPLAN"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

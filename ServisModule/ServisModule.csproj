@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C702EC3D-C90D-4B33-B92D-76EE62100264}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ServisModule</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ServisModule\Margine\frmMargine.resx">
+      <DependentUpon>frmMargine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisModule\Migracija\frmKontoZamjena.resx">
+      <DependentUpon>frmKontoZamjena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisModule\Migracija\frmLoginServiseri.resx">
+      <DependentUpon>frmLoginServiseri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisModule\Migracija\MigracijaMIPSED1.resx">
+      <DependentUpon>MigracijaMIPSED1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisModule\RSSWorkWith.resx">
+      <DependentUpon>RSSWorkWith.cs</DependentUpon>
+    </EmbeddedResource>
+    <Reference Include="Infragistics.Practices.CompositeUI.WinForms, Version=1.0.20092.1003, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Infragistics.CompositeUI.WinForms\bin\Debug\Infragistics.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\NetAdvantage for .NET 2008 Vol. 3 CLR 2.0\Windows Forms\Bin\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="Deklarit.Practices.CompositeUI" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="DeKlarit.Resources" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ImageResourcesNew.Designer.cs">
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ServisModule\Margine\frmMargine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServisModule\Margine\frmMargine.Designer.cs">
+      <DependentUpon>frmMargine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\frmKontoZamjena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\frmKontoZamjena.designer.cs">
+      <DependentUpon>frmKontoZamjena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\frmLoginServiseri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\frmLoginServiseri.Designer.cs">
+      <DependentUpon>frmLoginServiseri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\MigracijaMIPSED1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServisModule\Migracija\MigracijaMIPSED1.Designer.cs">
+      <DependentUpon>MigracijaMIPSED1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServisModule\My\MyApplication.cs" />
+    <Compile Include="ServisModule\My\MyComputer.cs" />
+    <Compile Include="ServisModule\My\MyProject.cs" />
+    <Compile Include="ServisModule\MainController.cs" />
+    <Compile Include="ServisModule\RSSWorkWith.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServisModule\RSSWorkWithWorkItem.cs" />
+    <Compile Include="ServisModule\ServisModule\MainWorkItem.cs" />
+    <Compile Include="ServisModule\ServisModule\DeklaritModuleInit.cs" />
+    <Compile Include="ServisModule\My\Resources\Resources.cs" />
+    <Compile Include="ServisModule\My\MySettings.cs" />
+    <EmbeddedResource Include="ImageResourcesNew.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServisModule.Resources.resources" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mipsed.application.framework\mipsed.application.framework.csproj">
+      <Project>{2626A562-FC57-4CB1-9E50-EDE083A5C558}</Project>
+      <Name>mipsed.application.framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Core\Mipsed7.Core.csproj">
+      <Project>{1393FE8B-B9B3-43D3-A08A-200B40C885BA}</Project>
+      <Name>Mipsed7.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.DataAccessLayer\Mipsed7.DataAccessLayer.csproj">
+      <Project>{E45D9F70-C0B0-4D70-B6F5-1B87444486D3}</Project>
+      <Name>Mipsed7.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Emailing\Mipsed7.Emailing.csproj">
+      <Project>{D7E0F54B-610D-450C-99EB-4BF6E9EB6DC3}</Project>
+      <Name>Mipsed7.Emailing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaBusinessFramework\PlacaBusinessFramework.csproj">
+      <Project>{9445B689-F39F-448F-89C5-B6DD7CE8B88E}</Project>
+      <Name>PlacaBusinessFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaExeModule\PlacaExeModule.csproj">
+      <Project>{479B17FC-61D0-4420-9988-E959170D200F}</Project>
+      <Name>PlacaExeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbs.ico" />
+  </ItemGroup>
+</Project>

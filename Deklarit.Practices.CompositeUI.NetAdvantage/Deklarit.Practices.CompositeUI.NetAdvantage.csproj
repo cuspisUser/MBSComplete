@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD1DDF75-109B-4F60-9057-D9C30A3E9065}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Deklarit.Practices.CompositeUI.NetAdvantage</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuPanel.resx">
+      <DependentUpon>MenuPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\InstanceModalForm.resx">
+      <DependentUpon>InstanceModalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\MainShell.resx">
+      <DependentUpon>MainShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\WorkWithModalForm.resx">
+      <DependentUpon>WorkWithModalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Reference Include="Infragistics.Practices.CompositeUI.WinForms">
+      <HintPath>..\LIBRARERIES\Infragistics.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Deklarit.Practices.CompositeUI">
+      <HintPath>..\LIBRARERIES\Deklarit.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI">
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\LIBRARERIES\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v8.3" />
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v8.3" />
+    <Reference Include="System" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.3" />
+    <Reference Include="Infragistics2.Shared.v8.3" />
+    <Reference Include="DeKlaritLibrary">
+      <HintPath>..\LIBRARERIES\DeKlaritLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="DeKlarit.Resources">
+      <HintPath>..\LIBRARERIES\DeKlarit.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.3" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\DeklaritToolBaseCommandAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\DeklaritExplorerBarCommandAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\ExplorerBarTreeItem.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\ExplorerBarTreeItemCollection.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Services\UltraGridSelectedRowsProviderService!1.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\ModalShellServiceToolbar.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\NetAdvantageUtil.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\SearchPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Properties\Resources.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuEntryAdapters\ToolStripExplorerBarAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuEntryAdapters\ToolStripMenuAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuEntryAdapters\ToolStripToolbarAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuEntryAdapters\ToolStripVerticalToolbarAdapter.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\MenuEntryAdapters\NetAdvantageUIElementFactory.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\MainShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\InstanceModalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\ModalShellServiceTaskPane.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\ModalShellService.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\Shell\WorkWithModalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\StatusBarUIMessageService.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\TaskPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\UIElements\ToolbarsManagerBatchUpdateableControl.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\UIElements\ExplorerBarBatchUpdateableControl.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\UIElements\TreeUIAdapterFactory.cs" />
+    <Compile Include="Deklarit\Practices\CompositeUI\NetAdvantage\UIElements\TreeNodesCollectionUIAdapter.cs" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+</Project>

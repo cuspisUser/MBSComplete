@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="ZATVARANJADataSet" targetNamespace="http://www.tempuri.org/ZATVARANJA" xmlns:mstns="http://www.tempuri.org/ZATVARANJA" xmlns="http://www.tempuri.org/ZATVARANJA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="ZATVARANJADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="ZATVARANJADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="1107" msprop:DataSetName="ZATVARANJADataSet" msprop:DataAdapterInterfaceName="IZATVARANJADataAdapter" msprop:ObjectName="ZATVARANJA" msprop:ObjectDescription="ZATVARANJA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="ZATVARANJA" msprop:ParentLvl="" msprop:LevelName="ZATVARANJA" msprop:Description="ZATVARANJA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="GK1IDGKSTAVKA" msprop:Caption="IDGKSTAVKA" default="0" msprop:SuperType="IDGKSTAVKA" msprop:SubtypeGroup="GK1" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="IDGKSTAVKA" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="GK1IDGKSTAVKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="GK2IDGKSTAVKA" msprop:Caption="IDGKSTAVKA" default="0" msprop:SuperType="IDGKSTAVKA" msprop:SubtypeGroup="GK2" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="IDGKSTAVKA" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="GK2IDGKSTAVKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="ZATVARANJAIZNOS" msprop:Caption="ZATVARANJAIZNOS" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="ZATVARANJAIZNOS" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="ZATVARANJAIZNOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="ZATVARANJAConstraint1" msdata:ConstraintName="ZATVARANJAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//ZATVARANJA"/>
+         <xs:field  xpath="GK1IDGKSTAVKA"/>
+         <xs:field  xpath="GK2IDGKSTAVKA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="GKSTAVKAGK2IDGKSTAVKA" dkdata:BusinessComponent="GKSTAVKA" dkdata:Description="GKSTAVKA" dkdata:DataSetName="GKSTAVKADataSet" dkdata:DataAdapterName="GKSTAVKADataAdapter" dkdata:DataAdapterInterfaceName="IGKSTAVKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="GK2IDGKSTAVKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="GKSTAVKAGK1IDGKSTAVKA" dkdata:BusinessComponent="GKSTAVKA" dkdata:Description="GKSTAVKA" dkdata:DataSetName="GKSTAVKADataSet" dkdata:DataAdapterName="GKSTAVKADataAdapter" dkdata:DataAdapterInterfaceName="IGKSTAVKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="GK1IDGKSTAVKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="201">
+            <dkdata:FillMethod  dkdata:FillString="GK2IDGKSTAVKA" dkdata:IndexName="IZATVARANJA2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="GK2IDGKSTAVKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="GK1IDGKSTAVKA">
+               <dkdata:Attribute  dkdata:AttributeName="GK1IDGKSTAVKA"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

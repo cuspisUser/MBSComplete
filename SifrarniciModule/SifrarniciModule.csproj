@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF23EDE5-6462-4B5B-9CF4-17D88CB5B442}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>SifrarniciModule</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="Deklarit.Practices.CompositeUI" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="SifrarniciModule\My\MyApplication.cs" />
+    <Compile Include="SifrarniciModule\My\MyComputer.cs" />
+    <Compile Include="SifrarniciModule\My\MyProject.cs" />
+    <Compile Include="SifrarniciModule\SifrarniciModule\MainController.cs" />
+    <Compile Include="SifrarniciModule\SifrarniciModule\MainWorkItem.cs" />
+    <Compile Include="SifrarniciModule\SifrarniciModule\DeklaritModuleInit.cs" />
+    <Compile Include="SifrarniciModule\My\Resources\Resources.cs" />
+    <Compile Include="SifrarniciModule\My\MySettings.cs" />
+    <EmbeddedResource Include="SifrarniciModule.Resources.resources" />
+    <Reference Include="System.XML" />
+    <Reference Include="UcenickoFakturiranje">
+      <HintPath>..\UcenickoFakturiranje\bin\Debug\UcenickoFakturiranje.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mipsed.application.framework\mipsed.application.framework.csproj">
+      <Project>{2626A562-FC57-4CB1-9E50-EDE083A5C558}</Project>
+      <Name>mipsed.application.framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Core\Mipsed7.Core.csproj">
+      <Project>{1393FE8B-B9B3-43D3-A08A-200B40C885BA}</Project>
+      <Name>Mipsed7.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaExeModule\PlacaExeModule.csproj">
+      <Project>{479B17FC-61D0-4420-9988-E959170D200F}</Project>
+      <Name>PlacaExeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

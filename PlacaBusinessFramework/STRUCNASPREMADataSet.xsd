@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="STRUCNASPREMADataSet" targetNamespace="http://www.tempuri.org/STRUCNASPREMA" xmlns:mstns="http://www.tempuri.org/STRUCNASPREMA" xmlns="http://www.tempuri.org/STRUCNASPREMA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="STRUCNASPREMADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="STRUCNASPREMADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="1023" msprop:DataSetName="STRUCNASPREMADataSet" msprop:DataAdapterInterfaceName="ISTRUCNASPREMADataAdapter" msprop:ObjectName="STRUCNASPREMA" msprop:ObjectDescription="Struene spreme" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="NAZIVSTRUCNASPREMA" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="STRUCNASPREMA" msprop:ParentLvl="" msprop:LevelName="STRUCNASPREMA" msprop:Description="Struene spreme" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSTRUCNASPREMA" msprop:Caption="Šifra stručne spreme" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra stručne spreme" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSTRUCNASPREMA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVSTRUCNASPREMA" msprop:Caption="Naziv stručne spreme" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv stručne spreme" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVSTRUCNASPREMA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="STRUCNASPREMAConstraint1" msdata:ConstraintName="STRUCNASPREMAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//STRUCNASPREMA"/>
+         <xs:field  xpath="IDSTRUCNASPREMA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="TRENUTNASTRUCNASPREMAIDSTRUCNASPREMA"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RADNIK1" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:attribute  name="POTREBNASTRUCNASPREMAIDSTRUCNASPREMA"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RAD1SPREMEVEZA" dkdata:Description="Veza RAD1 i strucne spreme" dkdata:DataSetName="RAD1SPREMEVEZADataSet" dkdata:DataAdapterName="RAD1SPREMEVEZADataAdapter" dkdata:DataAdapterInterfaceName="IRAD1SPREMEVEZADataAdapter">
+                  <dkdata:attribute  name="IDSTRUCNASPREMA"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="34">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

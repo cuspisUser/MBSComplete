@@ -1,0 +1,46 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MIPSED7_developConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=HOMER\SQL2008;Initial Catalog=MIPSED7_develop;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=HOMER\SQL2008;Initial Catalog=MIPSED7_develop;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956</Value>
+    </Setting>
+    <Setting Name="MIPSED7_developConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\VUGER2008;Initial Catalog=MIPSED7_develop;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\VUGER2008;Initial Catalog=MIPSED7_develop;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MIPSED7_GOP1ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=RAZVOJ-PC-1\VUGER2008;Initial Catalog=MIPSED7_GOP1;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=RAZVOJ-PC-1\VUGER2008;Initial Catalog=MIPSED7_GOP1;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956</Value>
+    </Setting>
+    <Setting Name="MIPSED7_JOPPDConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=RAZVOJ-PC-1\VUGER2008;Initial Catalog=MIPSED7_JOPPD;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=RAZVOJ-PC-1\VUGER2008;Initial Catalog=MIPSED7_JOPPD;Persist Security Info=True;User ID=mipsed7;Password=mip7VUG937956</Value>
+    </Setting>
+    <Setting Name="MIPSED7ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=ZAgi2302;Initial Catalog=MIPSED7;User ID=mipsed7;Password=mip7VUG937956&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ZAgi2302;Initial Catalog=MIPSED7;User ID=mipsed7;Password=mip7VUG937956</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="ELEMENTDataSet" targetNamespace="http://www.tempuri.org/ELEMENT" xmlns:mstns="http://www.tempuri.org/ELEMENT" xmlns="http://www.tempuri.org/ELEMENT" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="ELEMENTDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="ELEMENTDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2008" msprop:DataSetName="ELEMENTDataSet" msprop:DataAdapterInterfaceName="IELEMENTDataAdapter" msprop:ObjectName="ELEMENT" msprop:ObjectDescription="Elementi" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="EL" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="ELEMENT" msprop:ParentLvl="" msprop:LevelName="ELEMENT" msprop:Description="Elementi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVELEMENT" msprop:Caption="Naziv elementa" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv elementa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDVRSTAELEMENTA" msprop:Caption="Šifra Vrste elementa" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra Vrste elementa" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDVRSTAELEMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="NAZIVVRSTAELEMENT" msprop:Caption="Naziv vrste elementa" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv vrste elementa" msprop:Length="25" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVVRSTAELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDOSNOVAOSIGURANJA" msprop:Caption="Šifra osnove osiguranja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Šifra osnove osiguranja" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:TreatEmptyAsNull="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDOSNOVAOSIGURANJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="NAZIVOSNOVAOSIGURANJA" msprop:Caption="Naziv osnove osiguranja" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv osnove osiguranja" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVOSNOVAOSIGURANJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="RAZDOBLJESESMIJEPREKLAPATI" msprop:Caption="Razdoblje se smije preklapati" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="boolean" msprop:Description="Razdoblje se smije preklapati" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAZDOBLJESESMIJEPREKLAPATI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                     <xs:element  name="POSTOTAK" msprop:Caption="Postotak" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Postotak" msprop:Length="5" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="MALIIZNOSI" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="POSTOTAK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                     <xs:element  name="ZBRAJASATEUFONDSATI" msprop:Caption="Sati ulaze u fond sati" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="boolean" msprop:Description="Sati ulaze u fond sati" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="ZBRAJASATEUFONDSATI" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                     <xs:element  name="MOELEMENT" msprop:Caption="Model odobrenja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Model odobrenja" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MOELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="POELEMENT" msprop:Caption="Poziv na broj odobrenja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Poziv na broj odobrenja" msprop:Length="22" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="POELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="MZELEMENT" msprop:Caption="Model zaduženja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Model zaduženja" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MZELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="PZELEMENT" msprop:Caption="Poziv na broj zaduženja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Poziv na broj zaduženja" msprop:Length="22" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="PZELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SIFRAOPISAPLACANJAELEMENT" msprop:Caption="Šifra opisa plaćanja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Šifra opisa plaćanja" msprop:Length="2" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SIFRAOPISAPLACANJAELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="OPISPLACANJAELEMENT" msprop:Caption="Opis plaćanja" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Opis plaćanja" msprop:Length="36" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="OPISPLACANJAELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="POSTAVLJAMZPZSVIMVIRMANIMA" msprop:Caption="MZ i PZ svim virmanima obračuna" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="boolean" msprop:Description="MZ i PZ svim virmanima obračuna" msprop:Length="1" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="POSTAVLJAMZPZSVIMVIRMANIMA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:boolean"/>
+                     <xs:element  name="EL" msprop:Caption="EL" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="EL" msprop:Length="150" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="EL" msprop:Deklarit.IsFormula="true" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="ELEMENTConstraint1" msdata:ConstraintName="ELEMENTConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//ELEMENT"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="BOLOVANJEFOND" dkdata:Description="BOLOVANJEFOND" dkdata:DataSetName="BOLOVANJEFONDDataSet" dkdata:DataAdapterName="BOLOVANJEFONDDataAdapter" dkdata:DataAdapterInterfaceName="IBOLOVANJEFONDDataAdapter">
+                  <dkdata:attribute  name="ELEMENTBOLOVANJEIDELEMENT"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RAD1MELEMENTIVEZA" dkdata:Description="Veza RAD1M elementi i elementi" dkdata:DataSetName="RAD1MELEMENTIVEZADataSet" dkdata:DataAdapterName="RAD1MELEMENTIVEZADataAdapter" dkdata:DataAdapterInterfaceName="IRAD1MELEMENTIVEZADataAdapter">
+                  <dkdata:attribute  name="IDELEMENT"/>
+               </dkdata:relation>
+               <dkdata:relation  name="RAD1GELEMENTIVEZA" dkdata:Description="Veza elementi RAD1G i elementi" dkdata:DataSetName="RAD1GELEMENTIVEZADataSet" dkdata:DataAdapterName="RAD1GELEMENTIVEZADataAdapter" dkdata:DataAdapterInterfaceName="IRAD1GELEMENTIVEZADataAdapter">
+                  <dkdata:attribute  name="IDELEMENT"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="OSNOVAOSIGURANJAIDOSNOVAOSIGURANJA" dkdata:BusinessComponent="OSNOVAOSIGURANJA" dkdata:Description="R-Sm - Osnove osiguranja" dkdata:DataSetName="OSNOVAOSIGURANJADataSet" dkdata:DataAdapterName="OSNOVAOSIGURANJADataAdapter" dkdata:DataAdapterInterfaceName="IOSNOVAOSIGURANJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDOSNOVAOSIGURANJA" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVOSNOVAOSIGURANJA" type="String"/>
+                     <dkdata:attribute  name="RAZDOBLJESESMIJEPREKLAPATI" type="Boolean"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="VRSTAELEMENTIDVRSTAELEMENTA" dkdata:BusinessComponent="VRSTAELEMENT" dkdata:Description="Vrste elementa" dkdata:DataSetName="VRSTAELEMENTDataSet" dkdata:DataAdapterName="VRSTAELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IVRSTAELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDVRSTAELEMENTA" type="Short"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVVRSTAELEMENT" type="String"/>
+                     <dkdata:attribute  name="EL" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+            <dkdata:Dependency  name="EL">
+               <dkdata:attribute  name="NAZIVELEMENT"/>
+               <dkdata:attribute  name="NAZIVVRSTAELEMENT"/>
+            </dkdata:Dependency>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="53">
+            <dkdata:FillMethod  dkdata:FillString="IDVRSTAELEMENTA" dkdata:IndexName="IELEMENT2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDVRSTAELEMENTA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDOSNOVAOSIGURANJA" dkdata:IndexName="IELEMENT1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDOSNOVAOSIGURANJA"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="BLAGAJNADataSet" targetNamespace="http://www.tempuri.org/BLAGAJNA" xmlns:mstns="http://www.tempuri.org/BLAGAJNA" xmlns="http://www.tempuri.org/BLAGAJNA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="BLAGAJNADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="BLAGAJNADataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2033" msprop:DataSetName="BLAGAJNADataSet" msprop:DataAdapterInterfaceName="IBLAGAJNADataAdapter" msprop:ObjectName="BLAGAJNA" msprop:ObjectDescription="BLAGAJNA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Finpos" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="BLAGAJNA" msprop:ParentLvl="" msprop:LevelName="BLAGAJNA" msprop:Description="BLAGAJNA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="BLGDOKIDDOKUMENT" msprop:Caption="Šifra dok. blagajne" default="0" msprop:SuperType="IDDOKUMENT" msprop:SubtypeGroup="BLGDOK" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra dok. blagajne" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGDOKIDDOKUMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVBLAGAJNA" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="30" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVBLAGAJNA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGKONTOIDKONTO" msprop:Caption="Konto blagajne" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="BLGKONTO" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto blagajne" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGKONTOIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="BLAGAJNAStavkeBlagajne" msprop:ParentLvl="BLAGAJNA" msprop:LevelName="StavkeBlagajne" msprop:Description="StavkeBlagajne" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="BLGDOKIDDOKUMENT" msprop:Caption="Šifra dok. blagajne" default="0" msprop:SuperType="IDDOKUMENT" msprop:SubtypeGroup="BLGDOK" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra dok. blagajne" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGDOKIDDOKUMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDBLGVRSTEDOK" msprop:Caption="Šifra vrste dok." default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra vrste dok." msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDBLGVRSTEDOK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="blggodineIDGODINE" msprop:Caption="Godina" default="0" msprop:SuperType="IDGODINE" msprop:SubtypeGroup="blggodine" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Godina" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="blggodineIDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="NAZIVVRSTEDOK" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="30" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVVRSTEDOK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGBROJDOKUMENTA" msprop:Caption="Broj dokumenta" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Broj dokumenta" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGBROJDOKUMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="BLGDATUMDOKUMENTA" msprop:Caption="Datum" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="date" msprop:Description="Datum" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGDATUMDOKUMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:dateTime"/>
+                     <xs:element  name="BLGSVRHA" msprop:Caption="Svrha" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Svrha" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGSVRHA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGIZNOS" msprop:Caption="Iznos" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Iznos" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGIZNOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:ParentLvl="BLAGAJNAStavkeBlagajne" msprop:LevelName="StavkeBlagajneKontiranje" msprop:Description="StavkeBlagajneKontiranje" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="BLGDOKIDDOKUMENT" msprop:Caption="Šifra dok. blagajne" default="0" msprop:SuperType="IDDOKUMENT" msprop:SubtypeGroup="BLGDOK" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra dok. blagajne" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGDOKIDDOKUMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDBLGVRSTEDOK" msprop:Caption="Šifra vrste dok." default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra vrste dok." msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDBLGVRSTEDOK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="blggodineIDGODINE" msprop:Caption="Godina" default="0" msprop:SuperType="IDGODINE" msprop:SubtypeGroup="blggodine" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Godina" msprop:Length="4" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="blggodineIDGODINE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:short"/>
+                     <xs:element  name="BLGBROJDOKUMENTA" msprop:Caption="Broj dokumenta" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Broj dokumenta" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGBROJDOKUMENTA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="BLGSTAVKEBLAGAJNEKONTOIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="BLGSTAVKEBLAGAJNEKONTO" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGSTAVKEBLAGAJNEKONTOIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGSTAVKEBLAGAJNEKONTONAZIVKONTO" msprop:Caption="Naziv konta" default="" msprop:SuperType="NAZIVKONTO" msprop:SubtypeGroup="BLGSTAVKEBLAGAJNEKONTO" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv konta" msprop:Length="150" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGSTAVKEBLAGAJNEKONTONAZIVKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGMTIDMJESTOTROSKA" msprop:Caption="Šifra MT" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="BLGMT" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra MT" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGMTIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="BLGMTNAZIVMJESTOTROSKA" msprop:Caption="Naziv MT" default="" msprop:SuperType="NAZIVMJESTOTROSKA" msprop:SubtypeGroup="BLGMT" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv MT" msprop:Length="120" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGMTNAZIVMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGORGJEDIDORGJED" msprop:Caption="Šifra OJ" default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="BLGORGJED" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra OJ" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGORGJEDIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="BLGORGJEDNAZIVORGJED" msprop:Caption="Naziv OJ" default="" msprop:SuperType="NAZIVORGJED" msprop:SubtypeGroup="BLGORGJED" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv OJ" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGORGJEDNAZIVORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="BLGIZNOSKONTIRANJA" msprop:Caption="Iznos kontiranja" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Iznos kontiranja" msprop:Length="12" msprop:Decimals="2" msprop:IsDomainAttribute="true" msprop:DomainType="VELIKIIZNOSI" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="BLGIZNOSKONTIRANJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:decimal"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="BLAGAJNAConstraint1" msdata:ConstraintName="BLAGAJNAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//BLAGAJNA"/>
+         <xs:field  xpath="BLGDOKIDDOKUMENT"/>
+      </xs:unique>
+      <xs:unique  name="BLAGAJNAStavkeBlagajneConstraint1" msdata:ConstraintName="BLAGAJNAStavkeBlagajneConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//BLAGAJNAStavkeBlagajne"/>
+         <xs:field  xpath="BLGDOKIDDOKUMENT"/>
+         <xs:field  xpath="IDBLGVRSTEDOK"/>
+         <xs:field  xpath="blggodineIDGODINE"/>
+         <xs:field  xpath="BLGBROJDOKUMENTA"/>
+      </xs:unique>
+      <xs:unique  name="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranjeConstraint1" msdata:ConstraintName="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranjeConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje"/>
+         <xs:field  xpath="BLGDOKIDDOKUMENT"/>
+         <xs:field  xpath="IDBLGVRSTEDOK"/>
+         <xs:field  xpath="blggodineIDGODINE"/>
+         <xs:field  xpath="BLGBROJDOKUMENTA"/>
+         <xs:field  xpath="BLGSTAVKEBLAGAJNEKONTOIDKONTO"/>
+      </xs:unique>
+      <xs:keyref  name="BLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" refer="BLAGAJNAStavkeBlagajneConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="BLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:rel_Generator_RelationVarName="relationBLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:rel_Generator_UserChildTable="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:rel_Generator_UserParentTable="BLAGAJNAStavkeBlagajne" msprop:rel_Generator_ParentPropName="BLAGAJNAStavkeBlagajneRow" msprop:rel_Generator_ChildPropName="GetBLAGAJNAStavkeBlagajneStavkeBlagajneKontiranjeRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje"/>
+         <xs:field  xpath="BLGDOKIDDOKUMENT"/>
+         <xs:field  xpath="IDBLGVRSTEDOK"/>
+         <xs:field  xpath="blggodineIDGODINE"/>
+         <xs:field  xpath="BLGBROJDOKUMENTA"/>
+      </xs:keyref>
+      <xs:keyref  name="BLAGAJNA_BLAGAJNAStavkeBlagajne" refer="BLAGAJNAConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="BLAGAJNA_BLAGAJNAStavkeBlagajne" msprop:rel_Generator_RelationVarName="relationBLAGAJNA_BLAGAJNAStavkeBlagajne" msprop:rel_Generator_UserChildTable="BLAGAJNAStavkeBlagajne" msprop:rel_Generator_UserParentTable="BLAGAJNA" msprop:rel_Generator_ParentPropName="BLAGAJNARow" msprop:rel_Generator_ChildPropName="GetBLAGAJNAStavkeBlagajneRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//BLAGAJNAStavkeBlagajne"/>
+         <xs:field  xpath="BLGDOKIDDOKUMENT"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="BLAGAJNA_BLAGAJNAStavkeBlagajne" msdata:parent="BLAGAJNA" msdata:child="BLAGAJNAStavkeBlagajne" msdata:parentkey="BLGDOKIDDOKUMENT" msdata:childkey="BLGDOKIDDOKUMENT" msprop:Generator_UserRelationName="BLAGAJNA_BLAGAJNAStavkeBlagajne" msprop:Generator_RelationVarName="relationBLAGAJNA_BLAGAJNAStavkeBlagajne" msprop:Generator_UserChildTable="BLAGAJNAStavkeBlagajne" msprop:Generator_UserParentTable="BLAGAJNA" msprop:Generator_ParentPropName="BLAGAJNARow" msprop:Generator_ChildPropName="GetBLAGAJNAStavkeBlagajneRows"/>
+         <msdata:Relationship  name="BLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msdata:parent="BLAGAJNAStavkeBlagajne" msdata:child="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msdata:parentkey="BLGDOKIDDOKUMENT IDBLGVRSTEDOK blggodineIDGODINE BLGBROJDOKUMENTA" msdata:childkey="BLGDOKIDDOKUMENT IDBLGVRSTEDOK blggodineIDGODINE BLGBROJDOKUMENTA" msprop:Generator_UserRelationName="BLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:Generator_RelationVarName="relationBLAGAJNAStavkeBlagajne_BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:Generator_UserChildTable="BLAGAJNAStavkeBlagajneStavkeBlagajneKontiranje" msprop:Generator_UserParentTable="BLAGAJNAStavkeBlagajne" msprop:Generator_ParentPropName="BLAGAJNAStavkeBlagajneRow" msprop:Generator_ChildPropName="GetBLAGAJNAStavkeBlagajneStavkeBlagajneKontiranjeRows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="ORGJEDBLGORGJEDIDORGJED" dkdata:BusinessComponent="ORGJED" dkdata:Description="Organizacijske jedinice" dkdata:DataSetName="ORGJEDDataSet" dkdata:DataAdapterName="ORGJEDDataAdapter" dkdata:DataAdapterInterfaceName="IORGJEDDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="BLGORGJEDIDORGJED" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="BLGORGJEDNAZIVORGJED" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKABLGMTIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="BLGMTIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="BLGMTNAZIVMJESTOTROSKA" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOBLGSTAVKEBLAGAJNEKONTOIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="BLGSTAVKEBLAGAJNEKONTOIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="BLGSTAVKEBLAGAJNEKONTONAZIVKONTO" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="GODINEblggodineIDGODINE" dkdata:BusinessComponent="GODINE" dkdata:Description="GODINE" dkdata:DataSetName="GODINEDataSet" dkdata:DataAdapterName="GODINEDataAdapter" dkdata:DataAdapterInterfaceName="IGODINEDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="blggodineIDGODINE" type="Short"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="BLGVRSTEDOKIDBLGVRSTEDOK" dkdata:BusinessComponent="BLGVRSTEDOK" dkdata:Description="BLGVRSTEDOK" dkdata:DataSetName="BLGVRSTEDOKDataSet" dkdata:DataAdapterName="BLGVRSTEDOKDataAdapter" dkdata:DataAdapterInterfaceName="IBLGVRSTEDOKDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDBLGVRSTEDOK" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVVRSTEDOK" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOBLGKONTOIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="BLGKONTOIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="DOKUMENTBLGDOKIDDOKUMENT" dkdata:BusinessComponent="DOKUMENT" dkdata:Description="DOKUMENT" dkdata:DataSetName="DOKUMENTDataSet" dkdata:DataAdapterName="DOKUMENTDataAdapter" dkdata:DataAdapterInterfaceName="IDOKUMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="BLGDOKIDDOKUMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="182">
+            <dkdata:FillMethod  dkdata:FillString="BLGSTAVKEBLAGAJNEKONTOIDKONTO" dkdata:IndexName="IBLAGAJNAStavkeBlagajneStavke3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="BLGSTAVKEBLAGAJNEKONTOIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGMTIDMJESTOTROSKA" dkdata:IndexName="IBLAGAJNAStavkeBlagajneStavke2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="BLGMTIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGORGJEDIDORGJED" dkdata:IndexName="IBLAGAJNAStavkeBlagajneStavke1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="BLGORGJEDIDORGJED"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENT">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENTIDBLGVRSTEDOK">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENTIDBLGVRSTEDOKblggodineIDGODINE">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+               <dkdata:Attribute  dkdata:AttributeName="blggodineIDGODINE"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENTIDBLGVRSTEDOKblggodineIDGODINEBLGBROJDOKUMENTA">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+               <dkdata:Attribute  dkdata:AttributeName="blggodineIDGODINE"/>
+               <dkdata:Attribute  dkdata:AttributeName="BLGBROJDOKUMENTA"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="181">
+            <dkdata:FillMethod  dkdata:FillString="IDBLGVRSTEDOK" dkdata:IndexName="IBLAGAJNAStavkeBlagajne2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="blggodineIDGODINE" dkdata:IndexName="IBLAGAJNAStavkeBlagajne1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="blggodineIDGODINE"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENT">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENTIDBLGVRSTEDOK">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="BLGDOKIDDOKUMENTIDBLGVRSTEDOKblggodineIDGODINE">
+               <dkdata:Attribute  dkdata:AttributeName="BLGDOKIDDOKUMENT"/>
+               <dkdata:Attribute  dkdata:AttributeName="IDBLGVRSTEDOK"/>
+               <dkdata:Attribute  dkdata:AttributeName="blggodineIDGODINE"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="180">
+            <dkdata:FillMethod  dkdata:FillString="BLGKONTOIDKONTO" dkdata:IndexName="IBLAGAJNA1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="BLGKONTOIDKONTO"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

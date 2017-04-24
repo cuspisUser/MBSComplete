@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+        id="id1-obrazac_4_0"
+        version="4.0"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:id1="http://e-porezna.porezna-uprava.hr/obrasci/id1/v4-0"
+        targetNamespace="http://e-porezna.porezna-uprava.hr/obrasci/id1/v4-0"
+        elementFormDefault="qualified">
+
+    <xsd:element name="Id1">
+        <xsd:annotation>
+            <xsd:documentation>
+                Root element dokumenta kojim isplatitelj dostavlja Id1 obrazac
+                za svoje obveznike, tj. izvjesce o isplacenom primitku, dohotku,
+                uplacenom doprinosu, porezu po odbitku i prirezu u godini.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Identifikator" type="id1:IdentifikatorTip"/>
+                <xsd:element name="IsplataUGodini" type="id1:GodinaTip"/>
+                <xsd:element name="Isplatitelj" type="id1:IsplatiteljTip"/>
+                <xsd:element name="Obveznici" type="id1:ObvezniciTip"/>
+                <xsd:element name="Ukupno" type="id1:UkupnoTip"/>
+            </xsd:sequence>
+            <xsd:attribute name="storno" type="xsd:boolean" default="false"/>
+        </xsd:complexType>
+    </xsd:element>
+
+	<xsd:simpleType name="IdentifikatorTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Identifkator obrasca koji može imati sljedeće vrijednosti:
+                '1' – za oporezive primitke 
+				'2' – za neoporezive primitke od dividendi i udjela u dobiti iz ESPO programa 
+				'3' – za neoporezive primitke od dividendi i udjela u dobiti koji su iskorišteni za 
+	        		  uvećanje temeljnog kapitala društva 
+            </xsd:documentation>
+        </xsd:annotation>
+		<xsd:restriction base="xsd:int">
+			<xsd:enumeration value="1" />
+			<xsd:enumeration value="2" />
+			<xsd:enumeration value="3" />
+		</xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="IsplatiteljTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Podaci o isplatitelju.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="KontaktOsoba" type="id1:KontaktOsobaTip"/>
+        </xsd:sequence>
+        <xsd:attribute name="oib" type="id1:OibTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="KontaktOsobaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Kontakt osoba za komunikaciju s isplatiteljem.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Ime" type="id1:ImeTip"/>
+            <xsd:element name="Prezime" type="id1:PrezimeTip"/>
+            <xsd:element name="Telefoni" type="id1:TelefoniTip"/>
+            <xsd:element name="Email" type="id1:EmailTip"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="TelefoniTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista telefonskih brojeva kontakt osobe isplatitelja.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Telefon" type="id1:TelefonTip" maxOccurs="2"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ObvezniciTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista obveznika.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Obveznik" type="id1:ObveznikTip" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ObveznikTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Podaci o obvezniku s pripadajucim podacima o dohotku, uplacenom porezu i prirezu.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Ime" type="id1:ImeTip"/>
+            <xsd:element name="Prezime" type="id1:PrezimeTip"/>
+            <xsd:group ref="id1:IznosiGroup"/>
+        </xsd:sequence>
+        <xsd:attribute name="oib" type="id1:OibTip" use="required"/>
+        <xsd:attribute name="oznGrOp" type="id1:OznakaGradaOpcineTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="UkupnoTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Ukupni iznosi o dohotku, uplacenom porezu i prirezu.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:group ref="id1:IznosiGroup"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:group name="IznosiGroup">
+        <xsd:annotation>
+            <xsd:documentation>
+                Grupa koja sadrzi iznose primitaka, izdataka, te poreza i prireza po racunima.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Primitak" type="id1:IznosTip" default="0.00"/>
+            <xsd:element name="Izdatak" type="id1:IznosTip" default="0.00" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="IzdatakDoprinosa" type="id1:IznosTip" default="0.00" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="PorezPrirez" type="id1:PorezPrirezTip" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="IsplaceniPrimitak" type="id1:IznosTip" default="0.00"/>
+        </xsd:sequence>
+    </xsd:group>
+
+    <xsd:complexType name="PorezPrirezTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista iznosa uplacenog poreza i prireza
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Racuni" type="id1:RacuniTip">
+                <xsd:unique name="uniqueRacun">
+                    <xsd:selector xpath="id1:Racun"/>
+                    <xsd:field xpath=".//@brojRacuna"/>
+                </xsd:unique>
+            </xsd:element>
+            <xsd:element name="Ukupno" type="id1:IznosTip" default="0.00"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="RacuniTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Lista racuna.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Racun" type="id1:RacunTip" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="RacunTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip koji predstavlja broj racuna i uplaceni iznos po tom racunu.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Iznos" type="id1:IznosTip"/>
+        </xsd:sequence>
+        <xsd:attribute name="brojRacuna" type="id1:BrojRacunaTip" use="required"/>
+    </xsd:complexType>
+
+    <xsd:simpleType name="BrojRacunaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definiran sifarnik brojeva racuna.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{4,6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="EmailTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirana e-mail adresa.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="6"/>
+            <xsd:maxLength value="100"/>
+            <xsd:pattern value="[a-zA-Z0-9]([a-zA-Z0-9_\-\.]*)[a-zA-Z0-9]@[a-zA-Z0-9]([a-zA-Z0-9_\-\.]*)(\.[a-zA-Z]{2,4})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="GodinaTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Raspon u kojem je dozvoljeno specificirati godinu prijave odnosno
+                godinu na koju se podaci odnose ( od 2008. do 2099. ).
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="2009"/>
+            <xsd:maxInclusive value="2099"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="ImeTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirano ime.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="51"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="IznosTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim su definirani iznosi.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="15"/>
+            <xsd:fractionDigits value="2"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OibTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Oib obveznika - fizicka osoba ili isplatitelja - fizicka ili pravna osoba.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="11"/>
+            <xsd:pattern value="\d{11}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="OznakaGradaOpcineTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Oznaka grada odnosno opcine.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="3"/>
+            <xsd:pattern value="\d{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PrezimeTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip kojim je definirano prezime.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="51"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="TelefonTip">
+        <xsd:annotation>
+            <xsd:documentation>
+                Tip za definiranje formata telefonskih brojeva:
+                1. obavezno pocinje sa +
+                2. slijedi pozivni broj za drzavu ( jedna do tri znamenke ), broj mora biti veci od nule
+                3. otvorena zagrada (
+                4. pozivni broj za grad ( jedno ili dvoznamenkasti broj, ne moze poceti sa nulom )
+                5. zatvorena zagrada )
+                6. sestero ili sedmeroznamenkasti broj, ne moze poceti sa nulom
+                Primjeri: +385(1)1234567, +385(91)123456
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="15"/>
+            <xsd:pattern value="\+((0?0?)[1-9]|(0?[1-9]\d)|[1-9]\d{2})\([1-9]\d?\)[1-9]\d{5,6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="RAD1MELEMENTIDataSet" targetNamespace="http://www.tempuri.org/RAD1MELEMENTI" xmlns:mstns="http://www.tempuri.org/RAD1MELEMENTI" xmlns="http://www.tempuri.org/RAD1MELEMENTI" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="RAD1MELEMENTIDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="RAD1MELEMENTIDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2173" msprop:DataSetName="RAD1MELEMENTIDataSet" msprop:DataAdapterInterfaceName="IRAD1MELEMENTIDataAdapter" msprop:ObjectName="RAD1MELEMENTI" msprop:ObjectDescription="RAD1MELEMENTI" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="RAD1ELEMENTINAZIV" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RAD1MELEMENTI" msprop:ParentLvl="" msprop:LevelName="RAD1MELEMENTI" msprop:Description="RAD1MELEMENTI" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="RAD1ELEMENTIID" msprop:Caption="RAD1 ELEMENTIID" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="RAD1 ELEMENTIID" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1ELEMENTIID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="RAD1ELEMENTINAZIV" msprop:Caption="RAD1 ELEMENTINAZIV" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="RAD1 ELEMENTINAZIV" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1ELEMENTINAZIV" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="RAD1MELEMENTIConstraint1" msdata:ConstraintName="RAD1MELEMENTIConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//RAD1MELEMENTI"/>
+         <xs:field  xpath="RAD1ELEMENTIID"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RAD1MELEMENTIVEZA" dkdata:Description="Veza RAD1M elementi i elementi" dkdata:DataSetName="RAD1MELEMENTIVEZADataSet" dkdata:DataAdapterName="RAD1MELEMENTIVEZADataAdapter" dkdata:DataAdapterInterfaceName="IRAD1MELEMENTIVEZADataAdapter">
+                  <dkdata:attribute  name="RAD1ELEMENTIID"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="282">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

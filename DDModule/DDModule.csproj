@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CC23222-585C-43B2-A2BA-69331597ED16}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>DDModule</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="DDModule\ID1OBRAZAC\id1-obrazac_4_0.cs" />
+    <Compile Include="DDModule\NetAdvantage\SmartParts\frmDNR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\NetAdvantage\SmartParts\frmDNR.Designer.cs">
+      <DependentUpon>frmDNR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResourcesNew.Designer.cs">
+      <DependentUpon>ImageResourcesNew.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="DDModule.DDModule.KratkaRekap.resources" />
+    <EmbeddedResource Include="DDModule.Resources.resources" />
+    <EmbeddedResource Include="DDModule\fmProgress.resx">
+      <DependentUpon>fmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\frmDDPregleDGodina.resx">
+      <DependentUpon>frmDDPregleDGodina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\frmDDPregledMjeseciGodina.resx">
+      <DependentUpon>frmDDPregledMjeseciGodina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\frmPregledObracuna.resx">
+      <DependentUpon>frmPregledObracuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\frmPregledRadnika.resx">
+      <DependentUpon>frmPregledRadnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\frmUnosPodatakaOObracunu.resx">
+      <DependentUpon>frmUnosPodatakaOObracunu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\ID1\IP1SmartPart.resx">
+      <DependentUpon>IP1SmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\NetAdvantage\SmartParts\frmDNR.resx">
+      <DependentUpon>frmDNR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\Obracun\frmUnosVrstePosla.resx">
+      <DependentUpon>frmUnosVrstePosla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDModule\Obracun\ObracunDDSmartPart.resx">
+      <DependentUpon>ObracunDDSmartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageResourcesNew.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResourcesNew.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\..\Program Files\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.1009, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Practices.CompositeUI" />
+    <Reference Include="Deklarit.Practices.CompositeUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="DeKlaritLibrary" />
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="DDModule\My\MyApplication.cs" />
+    <Compile Include="DDModule\My\MyComputer.cs" />
+    <Compile Include="DDModule\My\MyProject.cs" />
+    <Compile Include="DDModule\IDDDataset.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DDModule\dsTotali.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DDModule\ID1\IP1SmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\NetAdvantage\WorkItems\IP1WORKITEM.cs" />
+    <Compile Include="DDModule\NetAdvantage\SmartParts\IDDSMARTPART.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\IDD\IDDWorkItem.cs" />
+    <Compile Include="DDModule\DDModule\sObrazacIDD.cs" />
+    <Compile Include="DDModule\DDModule\sIDDmetapodaci.cs" />
+    <Compile Include="DDModule\DDModule\sNaslovTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak100.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak090.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak080.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak070.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak060.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak056.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak055.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak054.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak053.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak052.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak051.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak040.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak030.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak020.cs" />
+    <Compile Include="DDModule\DDModule\sTijeloPodatak010.cs" />
+    <Compile Include="DDModule\DDModule\sTijelo.cs" />
+    <Compile Include="DDModule\DDModule\sRazdoblje.cs" />
+    <Compile Include="DDModule\DDModule\sAdresa.cs" />
+    <Compile Include="DDModule\DDModule\sPoslovniSubjekt.cs" />
+    <Compile Include="DDModule\DDModule\ItemChoiceType.cs" />
+    <Compile Include="DDModule\DDModule\sZaglavljePodnositeljZahtjeva.cs" />
+    <Compile Include="DDModule\DDModule\sZaglavlje.cs" />
+    <Compile Include="DDModule\DDModule\sAdresantTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\sTipTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\tTip.cs" />
+    <Compile Include="DDModule\DDModule\sUskladjenostTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\sUskladjenost.cs" />
+    <Compile Include="DDModule\DDModule\sIdentifikatorTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\sJezikTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\tJezik.cs" />
+    <Compile Include="DDModule\DDModule\sFormatTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\tFormat.cs" />
+    <Compile Include="DDModule\DDModule\sDatumTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\sAutorTemeljni.cs" />
+    <Compile Include="DDModule\DDModule\KratkaRekap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\NetAdvantage\Controllers\KratkaRekapController.cs" />
+    <Compile Include="DDModule\DDModule\KratkaRekapWorkItem.cs" />
+    <Compile Include="DDModule\DDModule\PregledTemeljnice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\isplate.cs" />
+    <Compile Include="DDModule\structPOREZI.cs" />
+    <Compile Include="DDModule\DDModule\MainController.cs" />
+    <Compile Include="DDModule\DDModule\MainWorkItem.cs" />
+    <Compile Include="DDModule\DDModule\DeklaritModuleInit.cs" />
+    <Compile Include="DDModule\My\Resources\Resources.cs" />
+    <Compile Include="DDModule\My\MySettings.cs" />
+    <Compile Include="DDModule\NetAdvantage\WorkItems\DDWorkItem.cs" />
+    <Compile Include="DDModule\fmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\frmPregledObracuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\frmPregledRadnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\frmUnosPodatakaOObracunu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\Obracun\frmUnosVrstePosla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\Obracun\ObracunDDSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\DDModule\Controllers\ObracunControler.cs" />
+    <Compile Include="DDModule\NetAdvantage\SmartParts\PotvrdaSmartPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDModule\NetAdvantage\WorkItems\PotvrdaWorkItem.cs" />
+    <Compile Include="DDModule\frmDDPregleDGodina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDModule\frmDDPregledMjeseciGodina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hlp\Hlp.csproj">
+      <Project>{1BEA20B8-346D-49DB-9B71-D204C27AD8DD}</Project>
+      <Name>Hlp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mipsed.application.framework\mipsed.application.framework.csproj">
+      <Project>{2626A562-FC57-4CB1-9E50-EDE083A5C558}</Project>
+      <Name>mipsed.application.framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Core\Mipsed7.Core.csproj">
+      <Project>{1393FE8B-B9B3-43D3-A08A-200B40C885BA}</Project>
+      <Name>Mipsed7.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.DataAccessLayer\Mipsed7.DataAccessLayer.csproj">
+      <Project>{e45d9f70-c0b0-4d70-b6f5-1b87444486d3}</Project>
+      <Name>Mipsed7.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mipsed7.Emailing\Mipsed7.Emailing.csproj">
+      <Project>{D7E0F54B-610D-450C-99EB-4BF6E9EB6DC3}</Project>
+      <Name>Mipsed7.Emailing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaBusinessFramework\PlacaBusinessFramework.csproj">
+      <Project>{9445B689-F39F-448F-89C5-B6DD7CE8B88E}</Project>
+      <Name>PlacaBusinessFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlacaExeModule\PlacaExeModule.csproj">
+      <Project>{479B17FC-61D0-4420-9988-E959170D200F}</Project>
+      <Name>PlacaExeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="id1-obrazac_2_0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\mbs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ip-obrazac_4_0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="id1-obrazac_4_0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

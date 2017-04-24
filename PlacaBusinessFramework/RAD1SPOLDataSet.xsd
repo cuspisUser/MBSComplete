@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="RAD1SPOLDataSet" targetNamespace="http://www.tempuri.org/RAD1SPOL" xmlns:mstns="http://www.tempuri.org/RAD1SPOL" xmlns="http://www.tempuri.org/RAD1SPOL" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="RAD1SPOLDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="RAD1SPOLDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2174" msprop:DataSetName="RAD1SPOLDataSet" msprop:DataAdapterInterfaceName="IRAD1SPOLDataAdapter" msprop:ObjectName="RAD1SPOL" msprop:ObjectDescription="RAD1SPOL" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="RAD1SPOLNAZIV" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RAD1SPOL" msprop:ParentLvl="" msprop:LevelName="RAD1SPOL" msprop:Description="RAD1SPOL" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="RAD1SPOLID" msprop:Caption="RAD1 SPOLID" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="RAD1 SPOLID" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1SPOLID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="RAD1SPOLNAZIV" msprop:Caption="RAD1 SPOLNAZIV" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="RAD1 SPOLNAZIV" msprop:Length="20" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1SPOLNAZIV" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="RAD1SPOLConstraint1" msdata:ConstraintName="RAD1SPOLConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//RAD1SPOL"/>
+         <xs:field  xpath="RAD1SPOLID"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RAD1VEZASPOL" dkdata:Description="Veza RAD1 i spol" dkdata:DataSetName="RAD1VEZASPOLDataSet" dkdata:DataAdapterName="RAD1VEZASPOLDataAdapter" dkdata:DataAdapterInterfaceName="IRAD1VEZASPOLDataAdapter">
+                  <dkdata:attribute  name="RAD1SPOLID"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="283">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="RAD1SPREMEDataSet" targetNamespace="http://www.tempuri.org/RAD1SPREME" xmlns:mstns="http://www.tempuri.org/RAD1SPREME" xmlns="http://www.tempuri.org/RAD1SPREME" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="RAD1SPREMEDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="RAD1SPREMEDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2171" msprop:DataSetName="RAD1SPREMEDataSet" msprop:DataAdapterInterfaceName="IRAD1SPREMEDataAdapter" msprop:ObjectName="RAD1SPREME" msprop:ObjectDescription="RAD1SPREME" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="RAD1NAZIVSPREME" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="RAD1SPREME" msprop:ParentLvl="" msprop:LevelName="RAD1SPREME" msprop:Description="RAD1SPREME" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="RAD1IDSPREME" msprop:Caption="RAD1 IDSPREME" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="RAD1 IDSPREME" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1IDSPREME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="RAD1NAZIVSPREME" msprop:Caption="RAD1 NAZIVSPREME" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="RAD1 NAZIVSPREME" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="RAD1NAZIVSPREME" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="RAD1SPREMEConstraint1" msdata:ConstraintName="RAD1SPREMEConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//RAD1SPREME"/>
+         <xs:field  xpath="RAD1IDSPREME"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="RAD1SPREMEVEZA" dkdata:Description="Veza RAD1 i strucne spreme" dkdata:DataSetName="RAD1SPREMEVEZADataSet" dkdata:DataAdapterName="RAD1SPREMEVEZADataAdapter" dkdata:DataAdapterInterfaceName="IRAD1SPREMEVEZADataAdapter">
+                  <dkdata:attribute  name="RAD1IDSPREME"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="280">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

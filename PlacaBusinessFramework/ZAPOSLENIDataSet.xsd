@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="ZAPOSLENIDataSet" targetNamespace="http://www.tempuri.org/ZAPOSLENI" xmlns:mstns="http://www.tempuri.org/ZAPOSLENI" xmlns="http://www.tempuri.org/ZAPOSLENI" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="ZAPOSLENIDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="ZAPOSLENIDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2188" msprop:DataSetName="ZAPOSLENIDataSet" msprop:DataAdapterInterfaceName="IZAPOSLENIDataAdapter" msprop:ObjectName="ZAPOSLENI" msprop:ObjectDescription="ZAPOSLENI" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="ZAPOSLENI" msprop:ParentLvl="" msprop:LevelName="ZAPOSLENI" msprop:Description="ZAPOSLENI" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDRADNIK" msprop:Caption="Šifra radnika" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra radnika" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDRADNIK" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="DATUMZAPOSLENJA" msprop:Caption="Datum zasnivanja radnog odnosa" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="date" msprop:Description="Datum zasnivanja radnog odnosa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="DATUMZAPOSLENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:dateTime"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="ZAPOSLENIConstraint1" msdata:ConstraintName="ZAPOSLENIConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//ZAPOSLENI"/>
+         <xs:field  xpath="IDRADNIK"/>
+         <xs:field  xpath="DATUMZAPOSLENJA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="RADNIKIDRADNIK" dkdata:BusinessComponent="RADNIK" dkdata:Description="Zaposlenici" dkdata:DataSetName="RADNIKDataSet" dkdata:DataAdapterName="RADNIKDataAdapter" dkdata:DataAdapterInterfaceName="IRADNIKDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDRADNIK" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="293">
+            <dkdata:FillMethod  dkdata:FillString="IDRADNIK">
+               <dkdata:Attribute  dkdata:AttributeName="IDRADNIK"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

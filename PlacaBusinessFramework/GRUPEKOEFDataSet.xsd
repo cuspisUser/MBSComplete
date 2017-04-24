@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="GRUPEKOEFDataSet" targetNamespace="http://www.tempuri.org/GRUPEKOEF" xmlns:mstns="http://www.tempuri.org/GRUPEKOEF" xmlns="http://www.tempuri.org/GRUPEKOEF" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="GRUPEKOEFDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="GRUPEKOEFDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2065" msprop:DataSetName="GRUPEKOEFDataSet" msprop:DataAdapterInterfaceName="IGRUPEKOEFDataAdapter" msprop:ObjectName="GRUPEKOEF" msprop:ObjectDescription="Grupe koeficijenata" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Placa" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="True">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="GRUPEKOEF" msprop:ParentLvl="" msprop:LevelName="GRUPEKOEF" msprop:Description="Grupe koeficijenata" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDGRUPEKOEF" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDGRUPEKOEF" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVGRUPEKOEF" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVGRUPEKOEF" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="GRUPEKOEFLevel1" msprop:ParentLvl="GRUPEKOEF" msprop:LevelName="GrupeElementi" msprop:Description="Elementi u grupi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDGRUPEKOEF" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDGRUPEKOEF" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="IDELEMENT" msprop:Caption="Šifra elementa" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra elementa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVELEMENT" msprop:Caption="Naziv elementa" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv elementa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVELEMENT" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDMZOSTABLICE" msprop:Caption="MZOŠ Tablica" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="MZOŠ Tablica" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDMZOSTABLICE" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="GRUPEKOEFConstraint1" msdata:ConstraintName="GRUPEKOEFConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//GRUPEKOEF"/>
+         <xs:field  xpath="IDGRUPEKOEF"/>
+      </xs:unique>
+      <xs:unique  name="GRUPEKOEFLevel1Constraint1" msdata:ConstraintName="GRUPEKOEFLevel1Constraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//GRUPEKOEFLevel1"/>
+         <xs:field  xpath="IDGRUPEKOEF"/>
+         <xs:field  xpath="IDELEMENT"/>
+      </xs:unique>
+      <xs:keyref  name="GRUPEKOEF_GRUPEKOEFLevel1" refer="GRUPEKOEFConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="GRUPEKOEF_GRUPEKOEFLevel1" msprop:rel_Generator_RelationVarName="relationGRUPEKOEF_GRUPEKOEFLevel1" msprop:rel_Generator_UserChildTable="GRUPEKOEFLevel1" msprop:rel_Generator_UserParentTable="GRUPEKOEF" msprop:rel_Generator_ParentPropName="GRUPEKOEFRow" msprop:rel_Generator_ChildPropName="GetGRUPEKOEFLevel1Rows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//GRUPEKOEFLevel1"/>
+         <xs:field  xpath="IDGRUPEKOEF"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="GRUPEKOEF_GRUPEKOEFLevel1" msdata:parent="GRUPEKOEF" msdata:child="GRUPEKOEFLevel1" msdata:parentkey="IDGRUPEKOEF" msdata:childkey="IDGRUPEKOEF" msprop:Generator_UserRelationName="GRUPEKOEF_GRUPEKOEFLevel1" msprop:Generator_RelationVarName="relationGRUPEKOEF_GRUPEKOEFLevel1" msprop:Generator_UserChildTable="GRUPEKOEFLevel1" msprop:Generator_UserParentTable="GRUPEKOEF" msprop:Generator_ParentPropName="GRUPEKOEFRow" msprop:Generator_ChildPropName="GetGRUPEKOEFLevel1Rows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="MZOSTABLICEIDMZOSTABLICE" dkdata:BusinessComponent="MZOSTABLICE" dkdata:Description="MZOŠ Tablica" dkdata:DataSetName="MZOSTABLICEDataSet" dkdata:DataAdapterName="MZOSTABLICEDataAdapter" dkdata:DataAdapterInterfaceName="IMZOSTABLICEDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDMZOSTABLICE" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ELEMENTIDELEMENT" dkdata:BusinessComponent="ELEMENT" dkdata:Description="Elementi" dkdata:DataSetName="ELEMENTDataSet" dkdata:DataAdapterName="ELEMENTDataAdapter" dkdata:DataAdapterInterfaceName="IELEMENTDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDELEMENT" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVELEMENT" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+            <dkdata:Lookup  dkdata:DataProvider="PROVIDER_BRUTO">
+               <dkdata:LookupKey>
+                  <dkdata:Attribute  name="IDELEMENT"/>
+               </dkdata:LookupKey>
+               <dkdata:LookupParameters>
+               </dkdata:LookupParameters>
+            </dkdata:Lookup>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="96">
+            <dkdata:FillMethod  dkdata:FillString="IDMZOSTABLICE" dkdata:IndexName="IGRUPEKOEFLevel13" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDMZOSTABLICE"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDELEMENT" dkdata:IndexName="IGRUPEKOEFLevel11" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDELEMENT"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDGRUPEKOEF">
+               <dkdata:Attribute  dkdata:AttributeName="IDGRUPEKOEF"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="95">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

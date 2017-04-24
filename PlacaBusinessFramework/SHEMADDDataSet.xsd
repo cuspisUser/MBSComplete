@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="SHEMADDDataSet" targetNamespace="http://www.tempuri.org/SHEMADD" xmlns:mstns="http://www.tempuri.org/SHEMADD" xmlns="http://www.tempuri.org/SHEMADD" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="SHEMADDDataSet" msdata:IsDataSet="true" msprop:DataAdapterName="SHEMADDDataAdapter" msprop:BigImage=" " msprop:SmallImage=" " msprop:Image=" " msprop:Deklarit.PermissionBaseId="2127" msprop:DataSetName="SHEMADDDataSet" msprop:DataAdapterInterfaceName="ISHEMADDDataAdapter" msprop:ObjectName="SHEMADD" msprop:ObjectDescription="Shema drugi dohodak" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="SHEMADD" msprop:ParentLvl="" msprop:LevelName="SHEMADD" msprop:Description="Shema drugi dohodak" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMADD" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMADD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVSHEMADD" msprop:Caption="Naziv" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVSHEMADD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="SHEMADDOJIDORGJED" msprop:Caption="Šifra OJ" default="0" msprop:SuperType="IDORGJED" msprop:SubtypeGroup="SHEMADDOJ" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra OJ" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMADDOJIDORGJED" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMADDSHEMADDDOPRINOS" msprop:ParentLvl="SHEMADD" msprop:LevelName="SHEMADDDOPRINOS" msprop:Description="Doprinosi" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMADD" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMADD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMADDDOPRINOSIDDOPRINOS" msprop:Caption="Šifra doprinosa" default="0" msprop:SuperType="IDDOPRINOS" msprop:SubtypeGroup="SHEMADDDOPRINOS" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra doprinosa" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMADDDOPRINOSIDDOPRINOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="KONTODOPIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="KONTODOP" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="KONTODOPIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="MTDOPIDMJESTOTROSKA" msprop:Caption="Šifra MT" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="MTDOP" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra MT" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MTDOPIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="STRANEDOPIDSTRANEKNJIZENJA" msprop:Caption="Šifra strane" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="STRANEDOP" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra strane" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="STRANEDOPIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMADDDOPRINOSNAZIVDOPRINOS" msprop:Caption="Naziv doprinosa" default="" msprop:SuperType="NAZIVDOPRINOS" msprop:SubtypeGroup="SHEMADDDOPRINOS" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Naziv doprinosa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMADDDOPRINOSNAZIVDOPRINOS" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element  name="SHEMADDSHEMADDSTANDARD" msprop:ParentLvl="SHEMADD" msprop:LevelName="SHEMADDSTANDARD" msprop:Description="SHEMADDSTANDARD" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.EditInDataGrid="False" msprop:Deklarit.DefaultSortString="">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDSHEMADD" msprop:Caption="Šifra" default="0" msprop:IsKey="true" msprop:ReadOnly="true" msprop:DeklaritType="int" msprop:Description="Šifra" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDSHEMADD" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="SHEMADDSTANDARDID" msprop:Caption="SHEMADDSTANDARD" default="" msprop:AutoGenerated="true" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="guid" msprop:Description="SHEMADDSTANDARD" msprop:Length="32" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="SHEMADDSTANDARDID" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="IDDDVRSTEIZNOSA" msprop:Caption="Šifra iznosa" default="0" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra iznosa" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDDDVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="KONTODDVRSTAIZNOSAIDKONTO" msprop:Caption="Konto" default="" msprop:SuperType="IDKONTO" msprop:SubtypeGroup="KONTODDVRSTAIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Konto" msprop:Length="14" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:RightTrim="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="KONTODDVRSTAIZNOSAIDKONTO" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                     <xs:element  name="MTDDVRSTAIZNOSAIDMJESTOTROSKA" msprop:Caption="Šifra MT" default="0" msprop:SuperType="IDMJESTOTROSKA" msprop:SubtypeGroup="MTDDVRSTAIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra MT" msprop:Length="8" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="MTDDVRSTAIZNOSAIDMJESTOTROSKA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="STRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA" msprop:Caption="Šifra strane" default="0" msprop:SuperType="IDSTRANEKNJIZENJA" msprop:SubtypeGroup="STRANEDDVRSTEIZNOSA" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Šifra strane" msprop:Length="5" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="STRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVDDVRSTEIZNOSA" msprop:Caption="Vrsta iznosa" default="" msprop:IsKey="false" msprop:ReadOnly="true" msprop:DeklaritType="svchar" msprop:Description="Vrsta iznosa" msprop:Length="50" msprop:Decimals="0" msprop:AllowDBNulls="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVDDVRSTEIZNOSA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="SHEMADDConstraint1" msdata:ConstraintName="SHEMADDConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMADD"/>
+         <xs:field  xpath="IDSHEMADD"/>
+      </xs:unique>
+      <xs:unique  name="SHEMADDSHEMADDDOPRINOSConstraint1" msdata:ConstraintName="SHEMADDSHEMADDDOPRINOSConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMADDSHEMADDDOPRINOS"/>
+         <xs:field  xpath="IDSHEMADD"/>
+         <xs:field  xpath="SHEMADDDOPRINOSIDDOPRINOS"/>
+         <xs:field  xpath="KONTODOPIDKONTO"/>
+      </xs:unique>
+      <xs:unique  name="SHEMADDSHEMADDSTANDARDConstraint1" msdata:ConstraintName="SHEMADDSHEMADDSTANDARDConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//SHEMADDSHEMADDSTANDARD"/>
+         <xs:field  xpath="IDSHEMADD"/>
+         <xs:field  xpath="SHEMADDSTANDARDID"/>
+      </xs:unique>
+      <xs:keyref  name="SHEMADD_SHEMADDSHEMADDSTANDARD" refer="SHEMADDConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMADD_SHEMADDSHEMADDSTANDARD" msprop:rel_Generator_RelationVarName="relationSHEMADD_SHEMADDSHEMADDSTANDARD" msprop:rel_Generator_UserChildTable="SHEMADDSHEMADDSTANDARD" msprop:rel_Generator_UserParentTable="SHEMADD" msprop:rel_Generator_ParentPropName="SHEMADDRow" msprop:rel_Generator_ChildPropName="GetSHEMADDSHEMADDSTANDARDRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMADDSHEMADDSTANDARD"/>
+         <xs:field  xpath="IDSHEMADD"/>
+      </xs:keyref>
+      <xs:keyref  name="SHEMADD_SHEMADDSHEMADDDOPRINOS" refer="SHEMADDConstraint1" msdata:IsNested="true" msprop:rel_Generator_UserRelationName="SHEMADD_SHEMADDSHEMADDDOPRINOS" msprop:rel_Generator_RelationVarName="relationSHEMADD_SHEMADDSHEMADDDOPRINOS" msprop:rel_Generator_UserChildTable="SHEMADDSHEMADDDOPRINOS" msprop:rel_Generator_UserParentTable="SHEMADD" msprop:rel_Generator_ParentPropName="SHEMADDRow" msprop:rel_Generator_ChildPropName="GetSHEMADDSHEMADDDOPRINOSRows" msdata:UpdateRule="None" msdata:DeleteRule="None">
+         <xs:selector  xpath=".//SHEMADDSHEMADDDOPRINOS"/>
+         <xs:field  xpath="IDSHEMADD"/>
+      </xs:keyref>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <msdata:Relationship  name="SHEMADD_SHEMADDSHEMADDDOPRINOS" msdata:parent="SHEMADD" msdata:child="SHEMADDSHEMADDDOPRINOS" msdata:parentkey="IDSHEMADD" msdata:childkey="IDSHEMADD" msprop:Generator_UserRelationName="SHEMADD_SHEMADDSHEMADDDOPRINOS" msprop:Generator_RelationVarName="relationSHEMADD_SHEMADDSHEMADDDOPRINOS" msprop:Generator_UserChildTable="SHEMADDSHEMADDDOPRINOS" msprop:Generator_UserParentTable="SHEMADD" msprop:Generator_ParentPropName="SHEMADDRow" msprop:Generator_ChildPropName="GetSHEMADDSHEMADDDOPRINOSRows"/>
+         <msdata:Relationship  name="SHEMADD_SHEMADDSHEMADDSTANDARD" msdata:parent="SHEMADD" msdata:child="SHEMADDSHEMADDSTANDARD" msdata:parentkey="IDSHEMADD" msdata:childkey="IDSHEMADD" msprop:Generator_UserRelationName="SHEMADD_SHEMADDSHEMADDSTANDARD" msprop:Generator_RelationVarName="relationSHEMADD_SHEMADDSHEMADDSTANDARD" msprop:Generator_UserChildTable="SHEMADDSHEMADDSTANDARD" msprop:Generator_UserParentTable="SHEMADD" msprop:Generator_ParentPropName="SHEMADDRow" msprop:Generator_ChildPropName="GetSHEMADDSHEMADDSTANDARDRows"/>
+         <dkdata:relations>
+            <dkdata:oneToMany>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+               <dkdata:relation  name="STRANEKNJIZENJASTRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="STRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKAMTDDVRSTAIZNOSAIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="MTDDVRSTAIZNOSAIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOKONTODDVRSTAIZNOSAIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="KONTODDVRSTAIZNOSAIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="DDVRSTEIZNOSAIDDDVRSTEIZNOSA" dkdata:BusinessComponent="DDVRSTEIZNOSA" dkdata:Description="DD-Vrste iznosa" dkdata:DataSetName="DDVRSTEIZNOSADataSet" dkdata:DataAdapterName="DDVRSTEIZNOSADataAdapter" dkdata:DataAdapterInterfaceName="IDDVRSTEIZNOSADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="IDDDVRSTEIZNOSA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="NAZIVDDVRSTEIZNOSA" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="STRANEKNJIZENJASTRANEDOPIDSTRANEKNJIZENJA" dkdata:BusinessComponent="STRANEKNJIZENJA" dkdata:Description="Strane knjiženja" dkdata:DataSetName="STRANEKNJIZENJADataSet" dkdata:DataAdapterName="STRANEKNJIZENJADataAdapter" dkdata:DataAdapterInterfaceName="ISTRANEKNJIZENJADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="STRANEDOPIDSTRANEKNJIZENJA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="MJESTOTROSKAMTDOPIDMJESTOTROSKA" dkdata:BusinessComponent="MJESTOTROSKA" dkdata:Description="MJESTOTROSKA" dkdata:DataSetName="MJESTOTROSKADataSet" dkdata:DataAdapterName="MJESTOTROSKADataAdapter" dkdata:DataAdapterInterfaceName="IMJESTOTROSKADataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="MTDOPIDMJESTOTROSKA" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="KONTOKONTODOPIDKONTO" dkdata:BusinessComponent="KONTO" dkdata:Description="Kontni plan" dkdata:DataSetName="KONTODataSet" dkdata:DataAdapterName="KONTODataAdapter" dkdata:DataAdapterInterfaceName="IKONTODataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="KONTODOPIDKONTO" type="String"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="DOPRINOSSHEMADDDOPRINOSIDDOPRINOS" dkdata:BusinessComponent="DOPRINOS" dkdata:Description="Doprinosi" dkdata:DataSetName="DOPRINOSDataSet" dkdata:DataAdapterName="DOPRINOSDataAdapter" dkdata:DataAdapterInterfaceName="IDOPRINOSDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMADDDOPRINOSIDDOPRINOS" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                     <dkdata:attribute  name="SHEMADDDOPRINOSNAZIVDOPRINOS" type="String"/>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+               <dkdata:relation  name="ORGJEDSHEMADDOJIDORGJED" dkdata:BusinessComponent="ORGJED" dkdata:Description="Organizacijske jedinice" dkdata:DataSetName="ORGJEDDataSet" dkdata:DataAdapterName="ORGJEDDataAdapter" dkdata:DataAdapterInterfaceName="IORGJEDDataAdapter">
+                  <dkdata:foreignKey>
+                     <dkdata:attribute  name="SHEMADDOJIDORGJED" type="Integer"/>
+                  </dkdata:foreignKey>
+                  <dkdata:foreignTableAttributes>
+                  </dkdata:foreignTableAttributes>
+               </dkdata:relation>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="244">
+            <dkdata:FillMethod  dkdata:FillString="KONTODDVRSTAIZNOSAIDKONTO" dkdata:IndexName="ISHEMADDSHEMADDSTANDARD3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="KONTODDVRSTAIZNOSAIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="STRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMADDSHEMADDSTANDARD5" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="STRANEDDVRSTEIZNOSAIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="MTDDVRSTAIZNOSAIDMJESTOTROSKA" dkdata:IndexName="ISHEMADDSHEMADDSTANDARD4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="MTDDVRSTAIZNOSAIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDDDVRSTEIZNOSA" dkdata:IndexName="ISHEMADDSHEMADDSTANDARD1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="IDDDVRSTEIZNOSA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMADD">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMADD"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="243">
+            <dkdata:FillMethod  dkdata:FillString="KONTODOPIDKONTO" dkdata:IndexName="ISHEMADDSHEMADDDOPRINOS3" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="KONTODOPIDKONTO"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="SHEMADDDOPRINOSIDDOPRINOS" dkdata:IndexName="ISHEMADDSHEMADDDOPRINOS4" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMADDDOPRINOSIDDOPRINOS"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="MTDOPIDMJESTOTROSKA" dkdata:IndexName="ISHEMADDSHEMADDDOPRINOS2" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="MTDOPIDMJESTOTROSKA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="STRANEDOPIDSTRANEKNJIZENJA" dkdata:IndexName="ISHEMADDSHEMADDDOPRINOS1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="STRANEDOPIDSTRANEKNJIZENJA"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMADD">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMADD"/>
+            </dkdata:FillMethod>
+            <dkdata:FillMethod  dkdata:FillString="IDSHEMADDSHEMADDDOPRINOSIDDOPRINOS">
+               <dkdata:Attribute  dkdata:AttributeName="IDSHEMADD"/>
+               <dkdata:Attribute  dkdata:AttributeName="SHEMADDDOPRINOSIDDOPRINOS"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+         <dkdata:FillMethods  dkdata:Lvl="241">
+            <dkdata:FillMethod  dkdata:FillString="SHEMADDOJIDORGJED" dkdata:IndexName="ISHEMADD1" dkdata:Unique="false">
+               <dkdata:Attribute  dkdata:AttributeName="SHEMADDOJIDORGJED"/>
+            </dkdata:FillMethod>
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xs:schema  id="TIPPARTNERADataSet" targetNamespace="http://www.tempuri.org/TIPPARTNERA" xmlns:mstns="http://www.tempuri.org/TIPPARTNERA" xmlns="http://www.tempuri.org/TIPPARTNERA" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:dkdata="http://www.deklarit.com/XMLSchema">
+   <xs:element  name="TIPPARTNERADataSet" msdata:IsDataSet="true" msprop:DataAdapterName="TIPPARTNERADataAdapter" msprop:Deklarit.PermissionBaseId="1075" msprop:DataSetName="TIPPARTNERADataSet" msprop:DataAdapterInterfaceName="ITIPPARTNERADataAdapter" msprop:ObjectName="TIPPARTNERA" msprop:ObjectDescription="TIPPARTNERA" msprop:ObjectType="BusinessComponent" msprop:ObjectPath="\BusinessComponents\Common" msprop:NameSpace="Placa" msprop:DataChangeFrequency="PrettyOften" msprop:CachePriority="Medium" msprop:Deklarit.ShowGroupBy="False" msprop:Deklarit.AddNewOptionToLowCardinality="True" msprop:Deklarit.HiddenInRelations="" msprop:Deklarit.DataProviderForForeignKeys="" msprop:Deklarit.DescriptionAttribute="" msprop:Deklarit.MenuPath="" msprop:Deklarit.ShowInMenu="True" msprop:Deklarit.DataProviderForWW="" msprop:Deklarit.LowCardinality="False">
+      <xs:complexType>
+         <xs:choice  maxOccurs="unbounded">
+            <xs:element  name="TIPPARTNERA" msprop:ParentLvl="" msprop:LevelName="TIPPARTNERA" msprop:Description="TIPPARTNERA" msprop:AllowInsert="true" msprop:AllowUpdate="true" msprop:AllowDelete="true" msprop:Deklarit.DefaultSortString="" msprop:Deklarit.EditInDataGrid="True">
+               <xs:complexType >
+                  <xs:sequence >
+                     <xs:element  name="IDTIPPARTNERA" msprop:Caption="Tip partnera" default="0" msprop:IsKey="true" msprop:ReadOnly="false" msprop:DeklaritType="int" msprop:Description="Tip partnera" msprop:Length="6" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="IDTIPPARTNERA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:int"/>
+                     <xs:element  name="NAZIVTIPPARTNERA" msprop:Caption="Naziv tipa partnera" default="" msprop:IsKey="false" msprop:ReadOnly="false" msprop:DeklaritType="svchar" msprop:Description="Naziv tipa partnera" msprop:Length="100" msprop:Decimals="0" msprop:AllowDBNulls="false" msprop:IsInReader="true" msprop:Deklarit.Casing="default" msprop:Deklarit.IsPassword="false" msprop:Deklarit.InternalName="NAZIVTIPPARTNERA" msprop:Deklarit.IsDescription="false" msprop:Deklarit.IsVisibleOnForm="true" msprop:Deklarit.IsVisibleOnWorkWith="true" msprop:Deklarit.WinGridFormat="" msprop:Deklarit.WinInputMask="" msprop:Deklarit.AutoFilterWhenForeignKey="False" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:choice>
+      </xs:complexType>
+      <xs:unique  name="TIPPARTNERAConstraint1" msdata:ConstraintName="TIPPARTNERAConstraint1" msdata:PrimaryKey="true">
+         <xs:selector  xpath=".//TIPPARTNERA"/>
+         <xs:field  xpath="IDTIPPARTNERA"/>
+      </xs:unique>
+   </xs:element>
+   <xs:annotation >
+      <xs:appinfo >
+         <dkdata:relations>
+            <dkdata:oneToMany>
+               <dkdata:relation  name="PARTNER" dkdata:Description="Poslovni partneri" dkdata:DataSetName="PARTNERDataSet" dkdata:DataAdapterName="PARTNERDataAdapter" dkdata:DataAdapterInterfaceName="IPARTNERDataAdapter">
+                  <dkdata:attribute  name="IDTIPPARTNERA"/>
+               </dkdata:relation>
+            </dkdata:oneToMany>
+            <dkdata:manyToOne>
+            </dkdata:manyToOne>
+         </dkdata:relations>
+         <dkdata:Dependencies>
+         </dkdata:Dependencies>
+         <dkdata:LookupInfo>
+         </dkdata:LookupInfo>
+         <dkdata:FillMethods  dkdata:Lvl="160">
+         </dkdata:FillMethods>
+      </xs:appinfo>
+   </xs:annotation>
+</xs:schema>
